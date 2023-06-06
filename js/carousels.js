@@ -16,7 +16,6 @@ CAROUSEL__ELS.forEach((carouselEl, nthCarousel) =>{
         currentSlideIndex[nthCarousel]++;
         scrollContainer(containerEl,nthCarousel);
     });
-    console.log(leftButton, rightButton)
 });
 
 function scrollContainer(containerEl, nthCarousel){

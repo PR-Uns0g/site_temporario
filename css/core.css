@@ -337,6 +337,10 @@ a {
 }
 
 /* CAROUSEL */
+.block-row__content--carousel{
+    max-width: 100%;
+}
+
 .carousel{
     position: relative;
 }
@@ -345,6 +349,7 @@ a {
     position: absolute;
     top: 45%;
     display: flex;
+    display: none;
     align-items: center;
     color: var(--primary-color);
     font-size: calc(2*var(--icon-size));
@@ -352,21 +357,15 @@ a {
 }
 
 .carousel__arrow-button--forward{
-    right: 0;
+    right: -50px;
+}
+
+.carousel__arrow-button--back{
+    left: -50px;
 }
 
 .carousel__arrow-button--no-top{
     top: 0;
-}
-
-.carousel__arrow-button--more-right{
-    display: none;
-    right: -50px;
-}
-
-.carousel__arrow-button--more-left{
-    display: none;
-    left: -50px;
 }
 
 .carousel__container{
@@ -423,7 +422,6 @@ a {
 }
 
 .cards-container {
-    padding: 5px;
     gap: 40px;
     text-align: center;
     box-shadow: inset 4px 4px 8px var(--darker-gray-color),
@@ -612,11 +610,7 @@ a {
     }
 
     /* CAROUSEL */
-    .carousel__buttons-container--hides{
-        display: flex;
-    }
-
-    .carousel__arrow-button--more-right, .carousel__arrow-button--more-left {
+    .carousel__arrow-button {
         display: block;
     }
 

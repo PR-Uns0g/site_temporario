@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/core.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/posts.css">
     <title>Propago - Promover o bem é nosso primordial</title>
 </head>
 
@@ -172,7 +173,7 @@
                 <aside class="block-row__content">
                     <div class="block-row">
                         <div class="carousel">
-                            <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--more-left"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel__arrow-button carousel__arrow-button--back"><i class="ri-arrow-left-s-line"></i></button>
                             <div class="carousel__container pns-images-container">
                                 <img src="./imgs/carousel/pns1.svg" alt="Ícone de uma landing page"
                                 class="carousel__item" />
@@ -183,7 +184,7 @@
                                 <img src="./imgs/carousel/pns5.svg" alt="Ícone de agência de performance"
                                 class="carousel__item pns-image" />
                             </div>
-                            <button class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--more-right"><i class="ri-arrow-right-s-line"></i></button>
+                            <button class="carousel__arrow-button carousel__arrow-button--forward"><i class="ri-arrow-right-s-line"></i></button>
                             <small class="carousel__disclaimer"><strong>Você pode rolar para a direita para ver mais ícones dos serviços</strong></small>
                         </div>
                     </div>
@@ -241,7 +242,7 @@
             <div class="block-row">
                 <div class="block-row__content block-row__content--carousel">
                     <div class="carousel">
-                        <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--more-left"><i class="carousel__arrow-icon ri-arrow-left-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--back"><i class="carousel__arrow-icon ri-arrow-left-s-line"></i></button>
                         <div class="carousel__container cards-container">
                             <a href="https://doacao.mataviva.org" target="_blank" class="card">
                                 <div class="card__header">
@@ -279,7 +280,7 @@
                                 </div>
                             </a>
                         </div>
-                        <button class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--more-right"><i class="carousel__arrow-icon ri-arrow-right-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward"><i class="carousel__arrow-icon ri-arrow-right-s-line"></i></button>
                     </div>
                 </div>
             </div>
@@ -297,8 +298,25 @@
                 </header>
             </div>
             <div class="block-row">
-                <div class="block-row__content">
-                    <!-- CONTEÚDOS DO BLOG AQUI -->
+                <div class="block-row__content block-row__content--carousel">
+                    <div class="carousel">
+                        <button class="carousel__arrow-button carousel__arrow-button--back"><i class="carousel__arrow-icon ri-arrow-left-s-line"></i></button>
+                        <div class="carousel__container cards-container posts-container">
+                            <!-- <article class="post">
+                                <div class="post__header">
+                                    <img src="https://propago.com.br/wp-content/uploads/2023/04/21-300x300.jpeg" class="post__image" alt="Imagem do Post"/>
+                                    <h3 class="post__title">Abril Azul e o Dia Mundial de Conscientização do Autismo</h3>
+                                </div>
+                                <div class="post__body">
+                                    <ul class="post__metadata">
+                                        <li class="post__info"><strong class="post__label">Publicado em:</strong> <span class="post__data">01/01/2000</span></li>
+                                    </ul>
+                                </div>
+                                <div class="post__footer"><a href="https://youtube.com" class="post__button">Veja A Página</a></div>
+                            </article> -->
+                        </div>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward"><i class="carousel__arrow-icon ri-arrow-right-s-line"></i></button>
+                    </div>
                 </div>
             </div>
             <div class="block-row"><a href="./blog.html" class="learn-more" id="learnMore-Blog">Ver Mais</a></div>
@@ -351,7 +369,7 @@
             <div class="block-row">
                 <div class="block-row__content block-row__content--carousel">
                     <div class="carousel">
-                        <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--more-left carousel__arrow-button--no-top"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--no-top"><i class="ri-arrow-left-s-line"></i></button>
                         <div class="carousel__container partners-images-container">
                             <img src="imgs/carousel/parceiros/anhembi.jpg" alt="" /><img
                                 src="./imgs/carousel/parceiros/baked.jpg" alt="" /><img
@@ -369,7 +387,7 @@
                                 src="./imgs/carousel/parceiros/selina.jpg" alt="" /><img
                                 src="./imgs/carousel/parceiros/zenklub.jpg" alt="" />
                         </div>
-                        <button class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--more-right carousel__arrow-button--no-top"><i class="ri-arrow-right-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--no-top"><i class="ri-arrow-right-s-line"></i></button>
                         <small class="carousel__disclaimer"><strong>Você pode rolar para a direita para ver mais parceiros</strong></small>
                     </div>
                 </div>
@@ -418,6 +436,6 @@
     </footer>
 </body>
 <script src="./js/main.js" defer></script>
+<script src="./js/getPosts.js" type="module" defer></script>
 <script src="./js/carousels.js" defer></script>
-
 </html>
