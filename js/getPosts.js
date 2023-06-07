@@ -25,8 +25,7 @@ ALL_THE_POSTS.forEach(async (postObject) => {
             </ul>
         </div>
         <div class="post__footer"><a href="${postObject.link}" class="post__button">Veja A Página</a></div>
-    </article> 
-    `;
+    </article>`;
 
     POSTS_CONTAINER_EL.innerHTML += postElement;
 });
