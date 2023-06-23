@@ -2,6 +2,24 @@
     min-width: 256px;
 }
 
+.warning{
+    --strong-color: #8B0000;
+    --light-color: #FFCCCC;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid var(--strong-color);
+    border-radius: 10px;
+    background-color: var(--light-color);
+}
+
+.warning__title{
+    color: var(--strong-color);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .step{
     display: flex;
     align-items: center;

@@ -1,0 +1,18 @@
+.event-photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 100%;
+}
+
+.event-photos__portrait{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    max-width: 100%;
+}
+
+.event-photos__image{
+    object-fit: cover;
+}
