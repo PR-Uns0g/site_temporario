@@ -173,6 +173,10 @@ a {
     background-color: var(--lighter-gray-color);
 }
 
+.block--purple{
+    background-color: var(--primary-color);
+}
+
 .block-row {
     display: flex;
     flex-direction: column;
@@ -211,6 +215,12 @@ a {
     font-size: var(--title-text-size);
 }
 
+.block-row__section-title{
+    color: #FFF;
+    font-size: calc(1.5*var(--title-text-size));
+    text-transform: uppercase;
+}
+
 .block-row__subtitle {
     color: var(--secondary-color);
     font-family: 'DM Sans', sans-serif;
@@ -229,6 +239,10 @@ a {
 
 .block-row__text--yellow{
     color: var(--secondary-color);
+}
+
+.block-row__text--white{
+    color: #FFFFFF;
 }
 
 .block-row__list{
