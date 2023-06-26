@@ -64,10 +64,13 @@ a {
     transition: .3s;
 }
 
+.menu__item-container {
+    list-style-type: none;
+}
+
 .menu__item {
     position: relative;
     border-bottom: 1px solid #000;
-    list-style-type: none;
     overflow-x: hidden;
 }
 

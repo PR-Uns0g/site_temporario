@@ -20,35 +20,9 @@
     text-transform: uppercase;
 }
 
-.step{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.step__aside{
-    padding-right: 20px;
-}
-
-.step__title{
-    margin-bottom: 5px;
-}
-
-.step__list{
-    list-style-type: decimal;
-    margin-left: 40px;
-}
-
-.step__list-item::marker{
-    font-weight: bold;
-}
 
 @media (min-width: 1024px) {
     .icon-container{
         width: 512px;
-    }
-
-    .step__list-item::marker{
-        font-weight: bold;
     }
 }

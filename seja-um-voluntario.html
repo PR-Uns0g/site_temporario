@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/core.css" />
+        <link rel="stylesheet" href="./css/formularios.css" />
+        <title>Propago - Promover o bem é nosso primordial</title>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <!-- See about aria-label later -->
+            <div class="logo">
+                <img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" />
+            </div>
+            <nav class="menu" id="menu-nav">
+                <ul class="menu__item-container">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Home</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item">
+                        <div class="menu__item menu__item--flex">
+                            <a class="menu__link" href="sobre.html">A Propago</a><button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
+                            <span class="menu__item-clapboard"></span>
+                        </div>
+                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu">
+                            <li class="menu__item"><a class="menu__link" href="sobre.html#quem-ajudamos">Quem Ajudamos</a><span class="menu__item-clapboard"></span></li>
+                            <li class="menu__item"><a class="menu__link" href="sobre.html#como-funciona">Como Funciona</a><span class="menu__item-clapboard"></span></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="solucoes.html">Soluções</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item menu__item--active"><a class="menu__link" href="faca-o-bem.html">Faça O Bem!</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="blog.html">Blog</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="parceiros.html">Parceiros</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="contato.html">Contato</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="cadastro.html">Cadastro</a><span class="menu__item-clapboard"></span></li>
+                </ul>
+            </nav>
+            <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
+        </header>
+        <main>
+            <section class="block block--goal">
+                <div class="block-row">
+                    <div class="block-row__content">
+                        <header class="block__header">
+                            <h2 class="block-row__title">Seja Um Voluntário</h2>
+                            <h3 class="block-row__subtitle">
+                                Você sabia que é possível se tornar um voluntário e contribuir com o bem maior diretamente da sua casa?
+                            </h3>
+                        </header>
+                        <div class="block-row__body">
+                            <p class="block-row__text">
+                                A ajuda filantrópica é essencial para ONGs e entidades que atuam na assistência para construir um futuro melhor.
+                            </p>
+                            <p class="block-row__text">
+                                Pensando nisso, queremos te convidar a fazer parte dessa construção e ligar seus dons e habilidades ao nosso propósito de transformar a sociedade em um lugar mais justo e igualitário.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block-row">
+                    <div class="block-row__content">
+                        <section class="form-section">
+                            <header class="form-info">
+                                <h2 class="form-info__title">Cadastro De Voluntários</h2>
+                                <p class="form-info__header-label">
+                                    Para ser voluntário você precisa se cadastrar no formulário abaixo que também te cadastrará como voluntário na <a href="https://www.freehelper.com.br/" target="_blank">FreeHelper</a>
+                                </p>
+                            </header>
+                            <div class="form">
+                                <form class="form__container" action="" method="post">
+                                    <div class="form__header">
+                                        <h3 class="form__title">Cadastro De Voluntário</h3>
+                                    </div>
+                                    <div class="form__errors-container"></div>
+                                    <div class="form__step form__step--active" data-index="0">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">
+                                                Informações Pessoais
+                                            </legend>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Nome Completo</label>
+                                                <input type="text" class="form__input" name="" id="" required="required" />
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Data De Nascimento</label>
+                                                <input type="date" class="form__input" name="" id="" required="required" />
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">E-mail</label>
+                                                <input type="email" class="form__input" name="" id="" required="required" />
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Área De Atuação</label>
+                                                <select class="form__input form__select" name="" id="" required="required">
+                                                    <option label="Selecione uma opção" class="form__option" selected disabled> </option>
+                                                    <option value="" class="form__option">
+                                                        Administração
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Arquitetura
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Artes E Música
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Biologia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Captação De Recursos
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Ciências Sociais
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Contabilidade
+                                                    </option>
+                                                    <option value="" class="form__option"> Design</option>
+                                                    <option value="" class="form__option"> Direito</option>
+                                                    <option value="" class="form__option">
+                                                        Economia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Educação
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Engenharia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Farmácia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Foto e Vídeo
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Jornalismo
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Liderança
+                                                    </option>
+                                                    <option value="" class="form__option"> Línguas</option>
+                                                    <option value="" class="form__option">
+                                                        Logística
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Marketing
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Matemática
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Medicina
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Nutrição
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Odontologia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Pedagogia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Psicologia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Públicidade E Propaganda
+                                                    </option>
+                                                    <option value="" class="form__option"> Química</option>
+                                                    <option value="" class="form__option">
+                                                        Serviço Social
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Tecnologia
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Veterinária
+                                                    </option>
+                                                    <option value="" class="form__option"> Outros</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Escolaridade</label>
+                                                <select class="form__input form__select" name="" id="" required="required">
+                                                    <option label="Selecione uma opção" class="form__option" selected disabled> </option>
+                                                    <option value="" class="form__option">
+                                                        Educação Básica Incompleta
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Educação Básica Completa
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Ensino Superior Incompleto
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Ensino Superior Completo
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Pós-graduação - Especialização
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Pós-graduação - Mestrado
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Pós-graduação - Doutorado
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Estado</label>
+                                                <select class="form__input form__select" name="" id="" required="required">
+                                                    <option label="Selecione uma opção" class="form__option" selected disabled> </option>
+                                                    <option value="" class="form__option"> Acre</option>
+                                                    <option value="" class="form__option"> Alagoas</option>
+                                                    <option value="" class="form__option"> Amapá</option>
+                                                    <option value="" class="form__option">
+                                                        Amazonas
+                                                    </option>
+                                                    <option value="" class="form__option"> Bahia</option>
+                                                    <option value="" class="form__option"> Ceará</option>
+                                                    <option value="" class="form__option">
+                                                        Distrito Federal
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Espírito Santo
+                                                    </option>
+                                                    <option value="" class="form__option"> Goiás</option>
+                                                    <option value="" class="form__option">
+                                                        Maranhão
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        Mato Grosso
+                                                    </option>
+                                                    <option value="" class="form__option"> Mato Grosso do Sul</option>
+                                                    <option value="" class="form__option">
+                                                        Minas Gerais
+                                                    </option>
+                                                    <option value="" class="form__option"> Pará</option>
+                                                    <option value="" class="form__option"> Paraíba</option>
+                                                    <option value="" class="form__option"> Paraná</option>
+                                                    <option value="" class="form__option">
+                                                        Pernambuco
+                                                    </option>
+                                                    <option value="" class="form__option"> Piauí</option>
+                                                    <option value="" class="form__option">
+                                                        Rio de Janeiro
+                                                    </option>
+                                                    <option value="" class="form__option"> Rio Grande do Norte</option>
+                                                    <option value="" class="form__option"> Rio Grande do Sul</option>
+                                                    <option value="" class="form__option">
+                                                        Rondônia
+                                                    </option>
+                                                    <option value="" class="form__option"> Roraima</option>
+                                                    <option value="" class="form__option">
+                                                        Santa Catarina
+                                                    </option>
+                                                    <option value="" class="form__option">
+                                                        São Paulo
+                                                    </option>
+                                                    <option value="" class="form__option"> Sergipe</option>
+                                                    <option value="" class="form__option">
+                                                        Tocantins
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Cidade</label>
+                                                <input type="text" class="form__input" name="" id="" required="required" />
+                                            </div>
+                                            <div class="form__field">
+                                                <label for="" class="form__label">Telefone</label>
+                                                <input type="tel" class="form__input" name="" id="" required="required" />
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <input type="reset" name="reset-button" class="form__previous" value="Apagar" />
+                                            <input type="submit" name="submit-button" class="form__send" value="Enviar" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__section footer__description">
+                <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" /></div>
+                <div class="footer__text">
+                    <p><strong>Transformamos tecnologia em conexões.</strong></p>
+                    <p><strong>E conexões dão significado à vida.</strong></p>
+                    <p>
+                        A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>, visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover o bem-estar e dividir
+                        riqueza.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__section footer__pages-navigation">
+                <div class="footer__label">PÁGINAS</div>
+                <nav class="footer__navbar">
+                    <ul class="footer__navbar-list">
+                        <li class="footer__nav-link"><a href="index.html">Home</a></li>
+                        <li class="footer__nav-link"><a href="sobre.html">A Propago</a></li>
+                        <li class="footer__nav-link"><a href="solucoes.html">Soluções</a></li>
+                        <li class="footer__nav-link footer__nav-link--active"><a href="faca-o-bem.html">Faça O Bem!</a></li>
+                        <li class="footer__nav-link"><a href="./blog/index.html">Blog</a></li>
+                        <li class="footer__nav-link"><a href="eventos.html">Eventos</a></li>
+                        <li class="footer__nav-link"><a href="parceiros.html">Parceiros</a></li>
+                        <li class="footer__nav-link"><a href="contato.html">Contato</a></li>
+                        <li class="footer__nav-link"><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__section footer__contact">
+                <div class="footer__label">SIGA-NOS</div>
+                <div class="footer__social-media-container">
+                    <div class="footer__social-media">
+                        <a href="https://www.facebook.com/propago.brasil" target="_blank"><i class="footer__social-media-icon ri-facebook-circle-fill"></i></a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.instagram.com/propago.brasil/" target="_blank"><i class="footer__social-media-icon ri-instagram-fill"></i></a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer__ssl-badge"></div>
+            </div>
+            <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
+        </footer>
+    </body>
+    <script src="./js/main.js" defer></script>
+</html>
