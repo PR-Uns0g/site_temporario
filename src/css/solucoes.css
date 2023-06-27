@@ -1,10 +1,5 @@
 /* BLOCK STUFF */
 
-.block-row--center{
-    width: 80%;
-    margin: auto;
-}
-
 .block--white-purple{
     --block-background-color: #FFFFFF;
     --block-foreground-color: var(--primary-color);
@@ -22,14 +17,19 @@
     background-color: var(--block-background-color); /* erase this later */
 }
 
-.block-row__text-section--contained {
+.block-row__text-section--contrained {
     position: relative;
-    padding: 0 40px 10px 20px;  
+    padding: 0 40px 10px;  
+}
+
+.block-row__text-section--very-contrained{
+    position: relative;
+    padding: 0 0 10px 50px;
 }
 
 .block-row__item-icon{
     position: absolute;
-    left: -50px;
+    left: -20px;
     color: var(--block-foreground-color);
     font-size: calc(2*var(--icon-size));
 }
@@ -42,7 +42,7 @@
     padding: 8px;
     border-radius: 50%;
     background-color: var(--block-foreground-color);
-    box-shadow: -12px -12px var(--block-background-color);
+    box-shadow: -8px -8px var(--block-background-color);
     color: var(--text-color);
 }
 
@@ -66,7 +66,7 @@
 
 .explanation-card {
     position: relative;
-    padding: 20px 10px;
+    padding: 20px;
     border-radius: 0 50px 50px 50px;
     background-color: var(--block-foreground-color);
     color: #FFF;
