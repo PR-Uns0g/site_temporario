@@ -27,11 +27,13 @@
     padding: 10px;
     color: var(--primary-color);
     text-transform: capitalize;
+    font-size: var(--icon-size);
 }
 
 .post__metadata{
     padding: 5px 10px;
     background-color: var(--darker-gray-color);
+    font-size: var(--normal-text-size);
 }
 
 .post__info{

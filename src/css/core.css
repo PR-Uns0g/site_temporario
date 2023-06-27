@@ -20,12 +20,13 @@ body {
     --title-color: #7446CE;
     --subtitle-color: #FFB100;
     --text-color: #111111;
-    --normal-text-size: 17px;
     --label-text-size: 20px;
-    --title-text-size: 32px;
+    --title-text-size: 30px;
     --subtitle-text-size: 26px;
-    --icon-size: 24px;
     --big-icon-size: 80px;
+    --icon-size: 22px;
+    --normal-text-size: 18px;
+    --menu-text-size: 14px;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -55,7 +56,7 @@ a {
     top: 40px;
     width: 80%;
     background-color: #fff;
-    font-size: 14px;
+    font-size: var(--menu-text-size);
     font-weight: bold;
     visibility: hidden;
     z-index: 3;
@@ -304,6 +305,7 @@ a {
 /* HASHTAG */
 .hashtag-area {
     margin-top: 10px;
+    font-size: var(--normal-text-size);
 }
 
 .hashtag-area__hashtag {
@@ -457,6 +459,7 @@ a {
     padding: 20px;
     background-color: #fff;
     color: var(--text-color);
+    font-size: var(--normal-text-size);
     box-shadow: 4px 4px 10px var(--darker-gray-color);
     cursor: pointer;
 }
@@ -486,6 +489,7 @@ a {
     gap: 10px;
     background-color: var(--primary-color);
     color: #FFF;
+    font-size: 1.5em;
 }
 
 .footer__section {
@@ -548,13 +552,6 @@ a {
 /* TABLETS E DESKTOPS */
 @media (min-width: 1024px) {
     /* VARIÁVEIS */
-    body {
-        --normal-text-size: 20px;
-        --label-text-size: 24px;
-        --title-text-size: 48px;
-        --subtitle-text-size: 32px;
-        --icon-size: 28px;
-    }
 
     /* MENU */
     .menu {
