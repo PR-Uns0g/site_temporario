@@ -17,6 +17,8 @@ body {
     --lighter-gray-color: #F2F2F2;
     --darker-gray-color: #EEEEEE;
     --footer-dark: #202426;
+    --title-color: #7446CE;
+    --subtitle-color: #FFB100;
     --text-color: #111111;
     --normal-text-size: 17px;
     --label-text-size: 20px;
@@ -188,7 +190,13 @@ a {
     padding: 20px;
 }
 
+.block-row__content, 
+.block-row__aside {
+    width: 50%;
+}
+
 .block-row__content,
+.block-row__aside, 
 .block-row__body {
     display: flex;
     flex-direction: column;
@@ -213,19 +221,13 @@ a {
 }
 
 .block-row__title {
-    color: var(--primary-color);
+    color: var(--title-color);
     font-family: 'DM Sans', sans-serif;
     font-size: var(--title-text-size);
 }
 
-.block-row__section-title{
-    color: #FFF;
-    font-size: calc(1.5*var(--title-text-size));
-    text-transform: uppercase;
-}
-
 .block-row__subtitle {
-    color: var(--secondary-color);
+    color: var(--subtitle-color);
     font-family: 'DM Sans', sans-serif;
     font-size: var(--subtitle-text-size);
 }
