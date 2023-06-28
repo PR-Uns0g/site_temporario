@@ -14,6 +14,10 @@
     color: var(--secondary-color);
 }
 
+.contact-form__description-text{
+    font-size: var(--normal-text-size);
+}
+
 .contact-form__fields-container {
     display: flex;
     flex-direction: column;

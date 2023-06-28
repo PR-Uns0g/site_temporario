@@ -17,6 +17,14 @@
     background-color: var(--block-background-color); /* erase this later */
 }
 
+.block--purple-white{
+    --block-background-color: var(--primary-color);
+    --block-foreground-color: #FFFFFF;
+    --title-color: #FFFFFF;
+    --subtitle-color: #FFFFFF;
+    background-color: var(--block-background-color);
+}
+
 .block-row__text-section--contrained {
     position: relative;
     padding: 0 40px 10px;  
@@ -77,6 +85,58 @@
     color: #FFF;
 }
 
+/* PLANOS */
+.plan{
+    background-color: var(--block-foreground-color);
+    border: 2px solid var(--block-foreground-color);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.plan__title{
+    position: relative;
+    padding: 10px;
+    background-color: var(--block-background-color);
+    color: var(--block-foreground-color);
+    font-size: var(--label-text-size);
+    text-align: center;
+}
+
+.plan__title--highlighted{
+    background-color: var(--secondary-color);
+}
+
+.plan__table{
+    width: 100%;
+    margin: 30px 0;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.plan__table-cell{
+    padding: 4px;
+    background-color: var(--lighter-gray-color);
+}
+
+.plan__table-cell--blank{
+    background-color: #FFFFFF;
+}
+
+.plan__table-data{
+    text-align: center;
+}
+
+/* .plan__table-icon-container {
+    padding-left: 12px;
+} */
+
+.plan__table-icon{
+    color: #228b22;
+}
+
+.plan__table-icon--cancel{
+    color: #FF0000;
+}
 
 /* Other stuff */
 .icon-container{

@@ -72,7 +72,7 @@
     border-bottom: 2px double var(--text-color);
     background-color: #fff;
     color: var(--text-color);
-    font-size: var(--subtitle-text-size);
+    font-size: var(--title-text-size);
     text-align: center;
 }
 
@@ -96,7 +96,7 @@
     cursor: pointer;
 }
 
-/* CONTAIINER */
+/* CONTAINER */
 .form__container {
     overflow: hidden;
 }
@@ -287,14 +287,14 @@
 
 .form__next{
     background-color: var(--secondary-color);
-    font-size: var(--label-text-size);
+    font-size: var(--subtitle-text-size);
 }
 
 .form__send{
     background-color: var(--secondary-color);
     color: #fff;
     border-color: #fff;
-    font-size: calc(var(--label-text-size) + 10px);
+    font-size: var(--title-text-size);
 }
 
 .form__send:active{
@@ -302,7 +302,7 @@
 }
 
 .form__previous{
-    font-size: calc(var(--label-text-size)-10px);
+    font-size: var(--label-text-size);
 }
 
 @media (min-width: 650px) {
