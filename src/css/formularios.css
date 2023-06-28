@@ -295,6 +295,7 @@
     color: #fff;
     border-color: #fff;
     font-size: var(--title-text-size);
+    text-align: center;
 }
 
 .form__send:active{

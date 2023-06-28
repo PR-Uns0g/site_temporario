@@ -50,6 +50,7 @@
     color: #fff;
     font-size: var(--label-text-size);
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }

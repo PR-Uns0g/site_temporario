@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="72x72">
+    <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="114x114">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="./css/core.css">
     <link rel="stylesheet" href="./css/formularios.css">
     <title>Propago - Promover o bem é nosso primordial</title>
@@ -18,7 +23,7 @@
         </div>
         <nav class="menu" id="menu-nav">
             <ul class="menu__item-container">
-                <li class="menu__item"><a class="menu__link">Home</a><span
+                <li class="menu__item"><a class="menu__link" href="./index.html">Home</a><span
                         class="menu__item-clapboard"></span></li>
                 <li>
                     <div class="menu__item menu__item--flex">
@@ -66,7 +71,7 @@
                         <div class="form">
                             <form class="form__container" action="formData.php" method="post">
                                 <div class="form__header">
-                                    <h3 class="form__title">CADASTRO</h3>
+                                    <h3 class="form__title">CADASTRO DE ORGANIZAÇÃO</h3>
                                 </div>
                                 <div class="form__errors-container"></div>
                                 <div class="form__step form__step--active" data-index="0">
@@ -141,7 +146,8 @@
                                     </fieldset>
                                     <div class="form__buttons-area">
                                         <input type="reset" class="form__previous" name="reset-button" value="Apagar">
-                                        <input type="submit" class="form__send"  name="submit-button" value="Enviar Tudo">
+                                        <!-- <input type="submit" class="form__send"  name="submit-button" value="Enviar Tudo"> -->
+                                        <a href="mailto:gabriel@propago.com.br?subject=Proposta De Contrato Para [nome da organização] - Propago&body=Olá, sou representante da [coloque o nome da sua organização aqui] e gostaria de contratar o(s) serviço(s) [escrever nome(s) dos serviços aqui] da Propago!" class="form__send" target="_blank">Enviar</a>
                                     </div>
                                 </div>
                             </form>
