@@ -27,7 +27,7 @@
 
 .block-row__text-section--contrained {
     position: relative;
-    padding: 0 40px 10px;  
+    padding: 0 20px 10px 40px;  
 }
 
 .block-row__text-section--very-contrained{
@@ -44,8 +44,8 @@
 
 .block-row__item-icon--circle{
     left: initial;
-    right: -30px;
-    bottom: -35px;
+    right: -5px;
+    bottom: -40px;
     display: block;
     padding: 8px;
     border-radius: 50%;
@@ -62,6 +62,7 @@
 }
 
 .block-row__button {
+    margin: 10px auto;
     padding: 10px 20px;
     border: 5px solid var(--block-foreground-color);
     border-radius: 50px;
@@ -70,6 +71,13 @@
     font-size: var(--icon-size);
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.block-row__button:hover{
+    border-color: var(--text-color);
+    background-color: var(--block-foreground-color);
+    color: var(--text-color);
+    transition: .6s ease;
 }
 
 .explanation-card {
@@ -141,6 +149,7 @@
 /* PLAN ROW */
 .plan-row{
     display: flex;
+    flex-direction: column;
     border: 4px solid var(--block-foreground-color);
     border-radius: 15px;
     overflow: hidden;
@@ -150,9 +159,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
     color: var(--block-foreground-color);
-    font-size: var(--label-text-size);
+    padding: .4em;
+    font-size: var(--subtitle-text-size);
     font-weight: 800;
 }
 
@@ -165,8 +174,8 @@
     display: flex;
 }
 
-.plan-row__price--main{
-    font-size: 3em;
+.plan-row__price--main {
+    font-size: 2em;
 }
 
 /* Other stuff */
@@ -196,5 +205,17 @@
 @media (min-width: 1024px) {
     .icon-container{
         width: 512px;
+    }
+
+    .plan-row {
+        flex-direction: row;
+    }
+
+    .plan-row__cell{
+        padding: 1em;
+    }
+
+    .plan-row__price--main{
+        font-size: 2.8em;
     }
 }

@@ -1,3 +1,7 @@
+const LOGO__EL = document.querySelector('.logo');
+LOGO__EL.addEventListener('click', () => window.location.href = './index.html') 
+// lazy solution, it would be much harder to put the <a> in every page
+
 const MENU__EL = document.getElementById('menu-nav');
 const MENU_BTN__EL = document.getElementById('menu-btn');
 

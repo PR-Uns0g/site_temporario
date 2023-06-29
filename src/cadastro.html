@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="./css/core.css">
     <link rel="stylesheet" href="./css/formularios.css">
     <title>Propago - Promover o bem é nosso primordial</title>
+    <meta name="description" content="Página Inicial Da Propago">
+    <link rel="canonical" href="https://propago.com.br">
+    <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
+    <meta property="og:description" content="Página Inicial Da Propago">
+    <meta property="og:image" content="./assets/socialImage.png">
+    <meta property="og:image:width" content="2500">
+    <meta property="og:image:height" content="1330">
+    <meta property="og:url" content="https://propago.com.br/">
+    <meta property="og:site_name" content="Propago">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
+    <meta name="twitter:description" content="Página Inicial Da Propago">
+    <meta name="twitter:image" content="./assets/socialImage.png">
+
 </head>
 
 <body>
@@ -69,42 +84,17 @@
                             </p>
                         </header>
                         <div class="form">
-                            <form class="form__container" action="formData.php" method="post">
+                            <form class="form__container" action="" method="post" data-subject="Proposta De Contrato De">
                                 <div class="form__header">
                                     <h3 class="form__title">CADASTRO DE ORGANIZAÇÃO</h3>
                                 </div>
                                 <div class="form__errors-container"></div>
                                 <div class="form__step form__step--active" data-index="0">
                                     <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Informações Do Responsável</legend>
-                                        <div class="form__field">
-                                            <label for="in-charge-name" class="form__label">Nome Do Responsável</label>
-                                            <input type="text" class="form__input" id="in-charge-name" name="name"
-                                                minlength="18" maxlength="18" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="in-charge-position" class="form__label">Cargo Do Responsável</label>
-                                            <input type="text" class="form__input" id="position" name="position"
-                                                minlength="18" maxlength="18" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-phone" class="form__label">Telefone Do Responsável (com
-                                                DDD)</label>
-                                            <input type="tel" class="form__input form__input--cellphone" id="org-phone"
-                                                name="phone_number" minlength="15" maxlength="15"
-                                                placeholder="(__) _____-____" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-email" class="form__label">Email Do Responsável</label>
-                                            <input type="email" class="form__input" id="org-email" name="email"
-                                                required>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
                                         <legend class="form__field-title">Informações Da Organização</legend>
                                         <div class="form__field">
                                             <label for="org-name" class="form__label">Nome Da Organização</label>
-                                            <input type="text" class="form__input" id="org-name" name="name" required>
+                                            <input type="text" class="form__input" id="org-name" name="name" required="required"/>
                                         </div>
                                         <div class="form__field">
                                             <label for="org-url" class="form__label">Site</label>
@@ -118,36 +108,58 @@
                                             <label for="org-area" class="form__label">Área De Atuação Da Organização</label>
                                             <select class="form__input form__select" id="org-area" name="area-of-action" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
-                                                <option value="" class="form__option">Arte e Cultura</option>
-                                                <option value="" class="form__option">Assistência Social</option>
-                                                <option value="" class="form__option">Cidadania </option>
-                                                <option value="" class="form__option">Defesa de minorias</option>
-                                                <option value="" class="form__option">Defesa de minorias</option>
-                                                <option value="" class="form__option">Proteção aos animais</option>
-                                                <option value="" class="form__option">Desenvolvimento Econômico</option>
-                                                <option value="" class="form__option">Direitos Humanos</option>
-                                                <option value="" class="form__option">Educação</option>
-                                                <option value="" class="form__option">Infraestrutura e Tecnologia</option>
-                                                <option value="" class="form__option">Meio Ambiente </option>
-                                                <option value="" class="form__option">Saúde</option>
-                                                <option value="" class="form__option">Outros</option>
+                                                <option value="Arte e Cultura" class="form__option">Arte e Cultura</option>
+                                                <option value="Assistência Social" class="form__option">Assistência Social</option>
+                                                <option value="Cidadania" class="form__option">Cidadania </option>
+                                                <option value="Defesa de minorias" class="form__option">Defesa de minorias</option>
+                                                <option value="Defesa de minorias" class="form__option">Defesa de minorias</option>
+                                                <option value="Proteção aos animais" class="form__option">Proteção aos animais</option>
+                                                <option value="Desenvolvimento Econômico" class="form__option">Desenvolvimento Econômico</option>
+                                                <option value="Direitos Humanos" class="form__option">Direitos Humanos</option>
+                                                <option value="Educação" class="form__option">Educação</option>
+                                                <option value="Infraestrutura e Tecnologia" class="form__option">Infraestrutura e Tecnologia</option>
+                                                <option value="Meio Ambiente" class="form__option">Meio Ambiente </option>
+                                                <option value="Saúde" class="form__option">Saúde</option>
+                                                <option value="Outros" class="form__option">Outros</option>
                                             </select>
                                         </div>
                                         <div class="form__field">
                                             <label for="org-structure" class="form__label">Estrutura Jurídica</label>
                                             <select class="form__input form__select" name="legal-structure" id="org-structure" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
-                                                <option value="" class="form__option">Associação</option>
-                                                <option value="" class="form__option">OSCIP</option>
-                                                <option value="" class="form__option">Fundação</option>
-                                                <option value="" class="form__option">Instituto</option>
+                                                <option value="Associação" class="form__option">Associação</option>
+                                                <option value="OSCIP" class="form__option">OSCIP</option>
+                                                <option value="Fundação" class="form__option">Fundação</option>
+                                                <option value="Instituto" class="form__option">Instituto</option>
                                             </select>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="form__field-group">
+                                        <legend class="form__field-title">Informações Do Responsável</legend>
+                                        <div class="form__field">
+                                            <label for="in-charge-name" class="form__label">Nome Do Responsável</label>
+                                            <input type="text" class="form__input" id="in-charge-name" name="name" required="required"/>
+                                        </div>
+                                        <div class="form__field">
+                                            <label for="in-charge-position" class="form__label">Cargo Do Responsável</label>
+                                            <input type="text" class="form__input" id="position" name="position" required="required"/>
+                                        </div>
+                                        <div class="form__field">
+                                            <label for="org-phone" class="form__label">Telefone Do Responsável (com
+                                                DDD)</label>
+                                            <input type="tel" class="form__input form__input--cellphone" id="org-phone"
+                                                name="phone_number" minlength="15" maxlength="15"
+                                                placeholder="(__) _____-____" required="required"/>
+                                        </div>
+                                        <div class="form__field">
+                                            <label for="org-email" class="form__label">Email Do Responsável</label>
+                                            <input type="email" class="form__input" id="org-email" name="email"
+                                                required="required"/>
                                         </div>
                                     </fieldset>
                                     <div class="form__buttons-area">
                                         <input type="reset" class="form__previous" name="reset-button" value="Apagar">
-                                        <!-- <input type="submit" class="form__send"  name="submit-button" value="Enviar Tudo"> -->
-                                        <a href="mailto:gabriel@propago.com.br?subject=Proposta De Contrato Para [nome da organização] - Propago&body=Olá, sou representante da [coloque o nome da sua organização aqui] e gostaria de contratar o(s) serviço(s) [escrever nome(s) dos serviços aqui] da Propago!" class="form__send" target="_blank">Enviar</a>
+                                        <input type="submit" class="form__send" name="submit-button" value="Enviar">
                                     </div>
                                 </div>
                             </form>
@@ -159,8 +171,7 @@
     </main>
     <footer class="footer" id="footer">
         <div class="footer__section footer__description">
-            <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago"></div>
-            <div class="footer__text">
+            <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago"></div>       <div class="footer__text">
                 <p><strong>Transformamos tecnologia em conexões.</strong></p>
                 <p><strong>E conexões dão significado à vida.</strong></p>
                 <p>A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
@@ -200,7 +211,6 @@
     </footer>
 </body>
 <script src="./js/main.js" defer></script>
-<script src="./js/getPosts.js" type="module" defer></script>
-<script src="./js/carousels.js" defer></script>
+<script src="./js/cadastros.js" defer></script>
 
 </html>
