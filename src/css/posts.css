@@ -63,6 +63,21 @@
     font-weight: bolder;
 }
 
+.no-post {
+    padding: 20px;
+    margin: auto;
+}
+
+.no-post__title {
+    color: #8B0000;
+    font-size: var(--title-text-size);
+    text-transform: capitalize;
+}
+
+.no-post__message {
+    font-size: 16px;
+}
+
 @media (min-width: 1024px){
     .posts-container{
         overflow-x: auto;

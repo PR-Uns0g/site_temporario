@@ -13,7 +13,7 @@ FORM_SEND_BTN__EL.addEventListener('click', (ev) => {
         for(let i = 0; i < allInputEls.length; i++){
             emailBody += `${allLabelEls[i].innerText.toLowerCase().replaceAll(' ','_').replace('(','').replace(')','')} = '${(allInputEls[i].value != '') ? allInputEls[i].value : 'não informado'}' | `;
         }
-        let mailtoString = `mailto:pedrorossiw@gmail.com?subject=${emailSubject + ' ' + allInputEls[0].value.toUpperCase()} - Propago&body=${emailBody})`;
+        let mailtoString = `mailto:gabriel@propago.com.br?subject=${emailSubject + ' ' + allInputEls[0].value.toUpperCase()} - Propago&body=${emailBody})`;
 
         console.log(mailtoString);
         window.location.href = mailtoString;
