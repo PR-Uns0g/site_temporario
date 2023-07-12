@@ -1,787 +1,661 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/favicon.ico" />
+        <link rel="shortcut icon" href="./assets/favicon.ico" />
+        <link rel="apple-touch-icon" href="./assets/favicon.ico" />
+        <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="72x72" />
+        <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="114x114" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="./css/core.css" />
+        <link rel="stylesheet" href="./css/formularios.css" />
+        <title>Propago - Promover o bem é nosso primordial</title>
+        <meta name="description" content="Página Inicial Da Propago" />
+        <link rel="canonical" href="https://propago.com.br" />
+        <meta property="og:title" content="Propago - Promover o bem é nosso primordial" />
+        <meta property="og:description" content="Página Inicial Da Propago" />
+        <meta property="og:image" content="./assets/socialImage.png" />
+        <meta property="og:image:width" content="2500" />
+        <meta property="og:image:height" content="1330" />
+        <meta property="og:url" content="https://propago.com.br/" />
+        <meta property="og:site_name" content="Propago" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial" />
+        <meta name="twitter:description" content="Página Inicial Da Propago" />
+        <meta name="twitter:image" content="./assets/socialImage.png" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.ico">
-    <link rel="shortcut icon" href="./assets/favicon.ico">
-    <link rel="apple-touch-icon" href="./assets/favicon.ico">
-    <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="72x72">
-    <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="114x114">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
-    <link rel="stylesheet" href="./css/core.css">
-    <link rel="stylesheet" href="./css/formularios.css">
-    <title>Propago - Promover o bem é nosso primordial</title>
-    <meta name="description" content="Página Inicial Da Propago">
-    <link rel="canonical" href="https://propago.com.br">
-    <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
-    <meta property="og:description" content="Página Inicial Da Propago">
-    <meta property="og:image" content="./assets/socialImage.png">
-    <meta property="og:image:width" content="2500">
-    <meta property="og:image:height" content="1330">
-    <meta property="og:url" content="https://propago.com.br/">
-    <meta property="og:site_name" content="Propago">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
-    <meta name="twitter:description" content="Página Inicial Da Propago">
-    <meta name="twitter:image" content="./assets/socialImage.png">
-
-</head>
-
-<body>
-    <header class="header" id="header"> <!-- See about aria-label later -->
-        <a href="./index.html">
-            <div class="logo">
-                    <img src="./imgs/logos/propago_logo.png" alt="Logo da Propago">
-             </div>
-        </a>
-        <nav class="menu" id="menu-nav">
-            <ul class="menu__item-container">
-                <li class="menu__item"><a class="menu__link" href="./index.html">Home</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item">
-                    <div class="menu__item menu__item--flex">
-                        <a class="menu__link" href="./sobre.html">A Propago</a><button
-                            class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
-                        <span class="menu__item-clapboard"></span>
-                    </div>
-                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu">
-                        <li class="menu__item"><a class="menu__link" href="./sobre.html#quem-ajudamos">Quem
-                                Ajudamos</a><span class="menu__item-clapboard"></span></li>
-                        <li class="menu__item"><a class="menu__link" href="./sobre.html#como-funciona">Como
-                                Funciona</a><span class="menu__item-clapboard"></span></li>
-                    </ul>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="./solucoes.html">Soluções</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="nossas_ongs.html">Nossas ONGs</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="./blog/index.html">Blog</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="./eventos.html">Eventos</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="./parceiros.html">Parceiros</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="./contato.html">Contato</a><span
-                        class="menu__item-clapboard"></span></li>
-                <li class="menu__item"><a class="menu__link" href="./cadastro.html">Cadastro</a><span
-                        class="menu__item-clapboard"></span></li>
-            </ul>
-        </nav>
-        <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i
-                class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
-    </header>
-    <main>
-        <section class="block block--gray">
-            <div class="block-row">
-                <div class="block-row__column">
-                    <header class="block-row__header block-row__header--center">
-                        <div class="block-row__label"><i class="ri-draft-line"></i> Cadastro Completo</div>
-                        <h2 class="block-row__title">Cadastre A Sua Organização</h2>
-                    </header>
-                    <div class="block-row__body">
-                        <p class="block-row__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Necessitatibus, incidunt ex voluptas dolorum eaque eveniet omnis reprehenderit dignissimos,
-                            aspernatur fuga, labore accusamus dolore maxime expedita corporis nihil unde. Unde, cumque.
-                        </p>
-                    </div>
+    <body>
+        <header class="header" id="header">
+            <!-- See about aria-label later -->
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" />
                 </div>
-            </div>
-        </section>
-        <section class="block">
-            <div class="block-row">
-                <div class="block-row__column">
-                    <section class="form-section">
-                        <header class="form-info">
-                            <h2 class="form-info__title">Cadastro Completo | Propago.Social</h2>
-                            <p class="form-info__header-label">
-                                Para participar do <strong>Programa de Prosperidade e Performance Social para o Terceiro
-                                    Setor</strong> é necessário preencher o formulário - que é extenso e muito
-                                importante - com o máximo de informações possíveis sobre a sua organização (ONG, OSC,
-                                OSCIP, etc):
-                            </p>
-                        </header>
-                        <div class="form">
-                            <nav class="form-nav">
-                                <div class="form-nav__item">
-                                    <div class="form-nav__item-number"><span>1</span></div>
-                                    <span class="form-nav__item-label">Cadastro</span>
-                                </div>
-                                <div class="form-nav__item">
-                                    <div class="form-nav__item-number">2</div>
-                                    <span class="form-nav__item-label">Financeiro</span>
-                                </div>
-                                <div class="form-nav__item">
-                                    <div class="form-nav__item-number">3</div>
-                                    <span class="form-nav__item-label">Instituição</span>
-                                </div>
-                                <div class="form-nav__item">
-                                    <div class="form-nav__item-number">4</div>
-                                    <span class="form-nav__item-label">Mkt E Comunicação</span>
-                                </div>
-                                <div class="form-nav__item">
-                                    <div class="form-nav__item-number">5</div>
-                                    <span class="form-nav__item-label">Acessos De TI</span>
-                                </div>
-                            </nav>
-                            <form class="form__container" action="formData.php" method="post">
-                                <div class="form__header">
-                                    <h3 class="form__title">CADASTRO</h3>
-                                </div>
-                                <div class="form__errors-container"></div>
-                                <div class="form__step form__step--active" data-index="0">
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Informações Gerais</legend>
-                                        <div class="form__field">
-                                            <label for="org-email" class="form__label">Email</label>
-                                            <input type="email" class="form__input" id="org-email" name="email"
-                                                required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-name" class="form__label">Razão Social</label>
-                                            <input type="text" class="form__input" id="org-name" name="name" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-cnpj" class="form__label">CNPJ</label>
-                                            <input type="text" class="form__input" id="org-cnpj" name="cnpj"
-                                                minlength="18" maxlength="18" placeholder="__.___.___/____-__" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-phone" class="form__label">Telefone Da Organização (com
-                                                DDD)</label>
-                                            <input type="tel" class="form__input form__input--cellphone" id="org-phone"
-                                                name="phone_number" minlength="15" maxlength="15"
-                                                placeholder="(__) _____-____" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="org-birthday" class="form__label">Data De Fundação</label>
-                                            <input type="date" class="form__input" id="org-birthday"
-                                                name="foundation_date" required>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Localização</legend>
-                                        <div class="form__field">
-                                            <label for="locale-zipCode" class="form__label">CEP</label>
-                                            <input type="text" class="form__input" id="locale-zipCode" name="zip_code"
-                                                minlength="9" maxlength="9" placeholder="_____-___" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="locale-address" class="form__label">Endereço Completo (com
-                                                número e complemento)</label>
-                                            <input type="text" class="form__input" id="locale-address"
-                                                name="full_address" required>
-                                        </div>
-                                        <div class="form__field"><label for="locale-neighbourhood"
-                                                class="form__label">Bairro</label>
-                                            <input type="text" class="form__input" id="locale-neighbourhood"
-                                                name="neighborhood" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="locale-city" class="form__label">Cidade e sigla da UF</label>
-                                            <input type="text" class="form__input" id="locale-city" name="city"
-                                                placeholder="Ex: Ribeirão Preto - SP" required>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre O Responsável Pela ONG</legend>
-                                        <div class="form__field">
-                                            <label for="head-name" class="form__label">Nome</label>
-                                            <input type="text" class="form__input" id="head-name" name="head__name"
-                                                required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="head-phone" class="form__label">Telefone (com DDD)</label>
-                                            <input type="tel" class="form__input form__input--cellphone" id="head-phone"
-                                                name="head__phone_number" minlength="15" maxlength="15"
-                                                placeholder="(__) _____-____" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="head-address" class="form__label">Endereço</label>
-                                            <input type="text" class="form__input" id="head-address"
-                                                name="head__address" required>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre A Diretoria</legend>
-                                        <div class="form__field">
-                                            <label for="board-termOffice" class="form__label">Vigência Do Mandato
-                                                Atual</label>
-                                            <input type="text" class="form__input" id="board-termOffice"
-                                                name="current_mandate__term" placeholder="Ex: 4 anos" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="board-termBeginning" class="form__label">Início Do
-                                                Mandato</label>
-                                            <input type="date" class="form__input" id="board-termBeginning"
-                                                name="current_mandate__beginning" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="board-termEnd" class="form__label">Término Do Mandato</label>
-                                            <input type="date" class="form__input" id="board-termEnd"
-                                                name="current_mandate__end" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="board-membersAmount" class="form__label">Número De
-                                                Sócios</label>
-                                            <input type="number" class="form__input" min="0" id="board-membersAmount"
-                                                name="associates_number">
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="board-directors" class="form__label">Composição Atual Da
-                                                Diretoria</label>
-                                            <textarea class="form__input form__input--textbox" id="board-directors"
-                                                name="board_of_directors" placeholder="Nome: função que exerce"
-                                                required></textarea>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form__buttons-area">
-                                        <button type="button" class="form__next">Próximo</button>
-                                    </div>
-                                </div>
-                                <div class="form__step" data-index="1">
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre O Administrador Financeiro</legend>
-                                        <div class="form__field">
-                                            <label for="adm-phone" class="form__label">Telefone (com DDD)</label>
-                                            <input type="tel" class="form__input form__input--cellphone" minlength="15"
-                                                maxlength="15" id="adm-phone" name="finance_manager__phone_number"
-                                                placeholder="(__) _____-____" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="adm-email" class="form__label">E-Mail</label>
-                                            <input type="email" class="form__input" id="adm-email"
-                                                name="finance_manager__email" required>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Banco</legend>
-                                        <div class="form__field" data-has-other>
-                                            <label for="bank-name" class="form__label">Em Qual Banco A Organização
-                                                Possui Conta?</label>
-                                            <select class="form__input form__select" id="bank-name"
-                                                name="bank_account__name" required>
-                                                <option label="Selecione uma opção" class="form__option" selected
-                                                    disabled></option>
-                                                <option value="bb" class="form__option">Banco Do Brasil</option>
-                                                <option value="inter" class="form__option">Banco Inter</option>
-                                                <option value="pan" class="form__option">Banco Pan</option>
-                                                <option value="sofisa" class="form__option">Banco Sofisa</option>
-                                                <option value="bradesco" class="form__option">Bradesco</option>
-                                                <option value="caixa" class="form__option">Caixa Econômica Federal
-                                                </option>
-                                                <option value="cora" class="form__option">Cora</option>
-                                                <option value="itau" class="form__option">Itaú</option>
-                                                <option value="nu" class="form__option">Nubank</option>
-                                                <option value="pagbank" class="form__option">Pag Bank</option>
-                                                <option value="santander" class="form__option">Santander</option>
-                                                <option value="sicoob" class="form__option">Sicoob</option>
-                                                <option value="sicredi" class="form__option">Sicredi</option>
-                                                <option value="" class="form__option form__option--other">Outro:
-                                                </option>
-                                            </select>
-                                            <input class="form__input form__input--invisible form__input--other"
-                                                placeholder="Especifique aqui" disabled required>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">Dados Da Conta</span>
-                                            <div class="form__input-grouping">
-                                                <div class="form__field form__field--group-item">
-                                                    <label for="bank-branch" class="form__label">Agência</label>
-                                                    <input type="text" class="form__input" id="bank-branch"
-                                                        name="bank_account__branch" maxlength="4" required>
-                                                </div>
-                                                <div class="form__field form__field--group-item">
-                                                    <label for="bank-current" class="form__label">Número De Conta
-                                                        Corrente</label>
-                                                    <input type="text" class="form__input" id="bank-current"
-                                                        name="bank_account__current" required>
-                                                </div>
-                                                <div class="form__field form__field--group-item">
-                                                    <label for="bank-holder" class="form__label">Titular
-                                                        Responsável</label>
-                                                    <input type="text" class="form__input" id="bank-holder"
-                                                        name="bank_account__holder" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">A Organização Possui Cartão De Crédito?</span>
-                                            <div class="form__field form__field--multiple" id="bank-creditCard-options">
-                                                <label class="form__radio-container" for="bank-creditCard-yes">SIM
-                                                    <input type="radio" class="form__radio-option"
-                                                        name="has_credit_card" id="bank-creditCard-yes" value="yes"
-                                                        required>
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="bank-creditCard-no">NÃO
-                                                    <input type="radio" class="form__radio-option"
-                                                        name="has_credit_card" value="no" id="bank-creditCard-no">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre O Faturamento</legend>
-                                        <div class="form__field">
-                                            <label for="revenue-sources" class="form__label">Quais São As Fontes De
-                                                Recursos Da Organização?</label>
-                                            <input type="text" class="form__input" id="revenue-sources"
-                                                name="revenue_sources" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="revenue-anual" class="form__label">Qual é o faturamento anual da
-                                                Organização?</label>
-                                            <input type="text" class="form__input" id="revenue-anual"
-                                                name="annual_revenue" placeholder="R$XXXX,00" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="revenue-amountFromDonations" class="form__label">Desse
-                                                Faturamento, quanto é proveniente de doações?</label>
-                                            <input type="text" class="form__input" id="revenue-amountFromDonations"
-                                                name="annual_revenue__from_donation" placeholder="R$XXXX,00 ou X%"
-                                                required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="revenue-financialControl" class="form__label">A Organização
-                                                Possui algum sistema de controle financeiro? Se sim, qual?</label>
-                                            <input type="text" class="form__input" id="revenue-financialControl"
-                                                name="financial_control_system" required>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form__buttons-area">
-                                        <button type="button" class="form__previous">Anterior</button>
-                                        <button type="button" class="form__next">Próximo</button>
-                                    </div>
-                                </div>
-                                <div class="form__step" data-index="2">
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Descrição Da Organização</legend>
-                                        <div class="form__field">
-                                            <label for="description-history" class="form__label">Discorra Sobre a
-                                                História Da Organização</label>
-                                            <textarea class="form__input form__input--textbox" name="history"
-                                                id="description-history" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="description-whatNhow" class="form__label">O Que A Organização
-                                                Faz? Como ela faz?</label>
-                                            <textarea class="form__input form__input--textbox"
-                                                name="how_does_it_operate" id="description-whatNhow"
-                                                required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="description-mission" class="form__label">Quais São As diretrizes
-                                                da sua organização?</label>
-                                            <textarea class="form__input form__input--textbox" name="mission"
-                                                id="description-mission" placeholder="Missão, visão, valores..."
-                                                required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="description-position" class="form__label">Como A Organização Se
-                                                Posiciona?</label>
-                                            <textarea class="form__input form__input--textbox" name="positioning"
-                                                id="description-position" required></textarea>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Situação Da Organização</legend>
-                                        <div class="form__field">
-                                            <label for="situation-highlights" class="form__label">O Que Você quer
-                                                destacar da sua organização?</label>
-                                            <textarea class="form__input form__input--textbox" name="highlights"
-                                                id="situation-highlights" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="situation-strengths" class="form__label">Quais são os pontos
-                                                fortes da sua organização?</label>
-                                            <textarea class="form__input form__input--textbox" name="strengths"
-                                                id="situation-strengths" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="situation-weaknessess" class="form__label">Quais são os pontos a
-                                                melhorar da sua organização?</label>
-                                            <textarea class="form__input form__input--textbox" name="weaknesses"
-                                                id="situation-weaknessess" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="situation-competition" class="form__label">Cite Outras 5
-                                                Organizações (se houver) que fazem um trabalho similar ou igual à
-                                                sua:</label>
-                                            <textarea class="form__input form__input--textbox" name="competition"
-                                                id="situation-competition" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="situation-differential" class="form__label">A Sua Organização
-                                                Possui Algum Diferencial?</label>
-                                            <textarea class="form__input form__input--textbox" name="differentiators"
-                                                id="situation-differential" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="situation-timeline" class="form__label">Escreva - em uma linha
-                                                do tempo - os principais acontecimentos da sua ONG até o momento (com
-                                                datas se possível)</label>
-                                            <textarea class="form__input form__input--textbox" name="timeline"
-                                                id="situation-timeline" required></textarea>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form__buttons-area">
-                                        <button type="button" class="form__previous">Anterior</button>
-                                        <button type="button" class="form__next">Próximo</button>
-                                    </div>
-                                </div>
-                                <div class="form__step" data-index="3">
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre Os Meios De Comunicação</legend>
-                                        <div class="form__field">
-                                            <label for="social-url" class="form__label">A Organização Possui Site? Se
-                                                sim, cole a URL do site no campo abaixo</label>
-                                            <input type="text" class="form__input" id="social-url" name="website_url"
-                                                placeholder="Sim, possui: https://nome-do-site.dominio" required>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">Quais Redes Sociais a Organização Possui?</span>
-                                            <div class="form__field form__field--multiple" id="social-media-options"
-                                                data-has-other>
-                                                <label class="form__checkbox-container"
-                                                    for="social-media-facebook">Facebook
-                                                    <input type="checkbox" class="form__checkbox-option form__option"
-                                                        name="social_media[]" id="social-media-facebook"
-                                                        value="facebook">
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                                <label class="form__checkbox-container"
-                                                    for="social-media-instagram">Instagram
-                                                    <input type="checkbox" class="form__checkbox-option form__option"
-                                                        name="social_media[]" value="instagram"
-                                                        id="social-media-instagram">
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                                <label class="form__checkbox-container" for="social-media-tiktok">TikTok
-                                                    <input type="checkbox" class="form__checkbox-option form__option"
-                                                        name="social_media[]" value="tiktok" id="social-media-tiktok">
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                                <label class="form__checkbox-container"
-                                                    for="social-media-twitter">Twitter
-                                                    <input type="checkbox" class="form__checkbox-option form__option"
-                                                        name="social_media[]" value="twitter" id="social-media-twitter">
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                                <label class="form__checkbox-container"
-                                                    for="social-media-linkedin">LinkedIn
-                                                    <input type="checkbox" class="form__checkbox-option form__option"
-                                                        name="social_media[]" value="linkedin"
-                                                        id="social-media-linkedin">
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                                <label class="form__checkbox-container" for="social-media-other">Outro:
-                                                    <input type="checkbox"
-                                                        class="form__checkbox-option form__option form__option--other"
-                                                        name="social_media[]" value="" id="social-media-other">
-                                                    <input type="text" name="anyName"
-                                                        class="form__input--invisible form__input--other" disabled
-                                                        required>
-                                                    <span class="form__checkbox-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre O Marketing</legend>
-                                        <div class="form__field">
-                                            <label for="mkt-persona" class="form__label">Descreva o público-alvo da sua
-                                                organização</label>
-                                            <textarea class="form__input form__input--textbox" id="mkt-persona"
-                                                name="persona"
-                                                placeholder="Informe: idade, cidade, escolaridade, gênero, classe social, estado civil e também dados comportamentais e de consumo"
-                                                required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="mkt-ad" class="form__label">A sua organização já anuncia na
-                                                internet? Se sim, quanto investe por mês?</label>
-                                            <input type="text" class="form__input" id="mkt-ad" name="ad_investment"
-                                                required>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">A Organização já possui conta no Google For Non
-                                                Profits e Google Ad Grants?</span>
-                                            <div class="form__field form__field--multiple" id="mkt-accounts-options">
-                                                <label class="form__radio-container" for="mkt-accounts-both">Sim, em
-                                                    ambos
-                                                    <input type="radio" id="mkt-accounts-both" name="has_gservices"
-                                                        class="form__radio-option" required>
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-accounts-gfnp">Somente no
-                                                    Google For Non Profits
-                                                    <input type="radio" id="mkt-accounts-gfnp" name="has_gservices"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-accounts-gag">Somente no
-                                                    Google Ad Grants
-                                                    <input type="radio" id="mkt-accounts-gag" name="has_gservices"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-accounts-none">Não, em
-                                                    nenhuma
-                                                    <input type="radio" id="mkt-accounts-none" name="has_gservices"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">A Organização Já possui conta no Google
-                                                Analytics?</span>
-                                            <div class="form__field form__field--multiple" id="mkt-ga-options">
-                                                <label class="form__radio-container" for="mkt-ga-yes">SIM
-                                                    <input type="radio" class="form__radio-option" id="mkt-ga-yes"
-                                                        name="has_ga_account" required>
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-ga-no">NÃO
-                                                    <input type="radio" class="form__radio-option" id="mkt-ga-no"
-                                                        name="has_ga_account">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">A Organização Já possui conta no Google Tag
-                                                Manager?</span>
-                                            <div class="form__field form__field--multiple" id="mkt-gtm-options">
-                                                <label class="form__radio-container" for="mkt-gtm-yes">SIM
-                                                    <input type="radio" class="form__radio-option" id="mkt-gtm-yes"
-                                                        name="has_gtm_account" required>
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-gtm-no">NÃO
-                                                    <input type="radio" class="form__radio-option" id="mkt-gtm-no"
-                                                        name="has_gtm_account">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form__field">
-                                            <span class="form__label">Qual a verba disponível para a compra de
-                                                publicidade nas plataformas de anúncios?</span>
-                                            <div class="form__field form__field--multiple" id="mkt-budget-options">
-                                                <label class="form__radio-container" for="mkt-budget-1000">Até
-                                                    R$1.000,00
-                                                    <input type="radio" id="mkt-budget-1000" name="advertising_budget"
-                                                        class="form__radio-option" required>
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-budget-2000">Até
-                                                    R$2.000,00
-                                                    <input type="radio" id="mkt-budget-2000" name="advertising_budget"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-budget-3000">Até
-                                                    R$3.000,00
-                                                    <input type="radio" id="mkt-budget-3000" name="advertising_budget"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-budget-4000">Até
-                                                    R$4.000,00
-                                                    <input type="radio" id="mkt-budget-4000" name="advertising_budget"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-budget-5000">Até
-                                                    R$5.000,00
-                                                    <input type="radio" id="mkt-budget-5000" name="advertising_budget"
-                                                        class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                                <label class="form__radio-container" for="mkt-budget-above5000">Acima de
-                                                    R$5.000,00
-                                                    <input type="radio" id="mkt-budget-above5000"
-                                                        name="advertising_budget" class="form__radio-option">
-                                                    <span class="form__radio-button"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Comunicação</legend>
-                                        <div class="form__field">
-                                            <label for="communication-donors" class="form__label">Informe quantos
-                                                doadores a Organização possui, separando-os em doadores Pontuais e
-                                                Recorrentes</label>
-                                            <textarea class="form__input form__input--textbox" id="communication-donors"
-                                                name="occasional_current_donors" required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="communication-emailFrequency" class="form__label">Com qual
-                                                frequência você envia e-mails para a sua base de doadores? E não
-                                                doadores?</label>
-                                            <textarea class="form__input form__input--textbox"
-                                                id="communication-emailFrequency" name="emailing_cadence"
-                                                required></textarea>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="communication-goals" class="form__label">Quais são as metas da
-                                                sua Organização?</label>
-                                            <textarea class="form__input form__input--textbox" id="communication-goals"
-                                                name="goals"
-                                                placeholder="Ex: visitas no site, fãs nas redes sociais, quantidades de pessoas cadastradas/interessadas, doações/doadores"
-                                                required></textarea>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form__buttons-area">
-                                        <button type="button" class="form__previous">Anterior</button>
-                                        <button type="button" class="form__next">Próximo</button>
-                                    </div>
-                                </div>
-                                <div class="form__step" data-index="4">
-                                    <fieldset class="form__field-group">
-                                        <legend class="form__field-title">Sobre Os Acessos</legend>
-                                        <div class="form__field" data-has-other>
-                                            <label for="access-host" class="form__label">Serviço De Hospedagem Onde Está
-                                                o Site Da Organização</label>
-                                            <select class="form__input form__select" id="access-host"
-                                                name="website_host" required>
-                                                <option label="Selecione um serviço" class="form__option" selected
-                                                    disabled></option>
-                                                <option value="godaddy" class="form__option">Go Daddy</option>
-                                                <option value="hostgator" class="form__option">Hostgator</option>
-                                                <option value="hostinger" class="form__option">Hostinger</option>
-                                                <option value="ionos" class="form__option">IONOS</option>
-                                                <option value="kinghost" class="form__option">Kinghost</option>
-                                                <option value="locaweb" class="form__option">Locaweb</option>
-                                                <option value="weblink" class="form__option">WebLink</option>
-                                                <option value="wix" class="form__option">WIX</option>
-                                                <option value="" class="form__option form__option--other">Outro:
-                                                </option>
-                                            </select>
-                                            <input name="anyName"
-                                                class="form__input form__input--invisible form__input--other"
-                                                placeholder="Especifique aqui" disabled required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="access-emailHost" class="form__label">Servidor De E-Mail</label>
-                                            <input type="text" class="form__input" id="access-emailHost"
-                                                name="email_host">
-                                        </div>
-                                        <div class="form__field" data-has-other>
-                                            <label for="access-cms" class="form__label">CMS usado no site</label>
-                                            <select class="form__input" id="access-cms" name="cms" required>
-                                                <option label="Selecione O CMS" class="form__option" selected disabled>
-                                                </option>
-                                                <option value="canvas" class="form__option">Canvas CMS</option>
-                                                <option value="craft" class="form__option">Craft CMS</option>
-                                                <option value="drupal" class="form__option">Drupal</option>
-                                                <option value="grav" class="form__option">Grav</option>
-                                                <option value="hubspot" class="form__option">HubSpot CMS</option>
-                                                <option value="joomla" class="form__option">Joomla</option>
-                                                <option value="squarespace" class="form__option">Squarespace</option>
-                                                <option value="wix" class="form__option">WIX</option>
-                                                <option value="wordpress" class="form__option">Wordpress</option>
-                                                <option value="none" class="form__option">Nenhum</option>
-                                                <option value="" class="form__option form__option--other">Outro:
-                                                </option>
-                                            </select>
-                                            <input name="anyName"
-                                                class="form__input form__input--invisible form__input--other"
-                                                placeholder="Especifique aqui" disabled required>
-                                        </div>
-                                        <div class="form__field" data-has-other>
-                                            <label for="access-database" class="form__label">Banco De Dados</label>
-                                            <select class="form__input form__select" id="access-database"
-                                                name="org_database">
-                                                <option label="Selecione O Banco De Dados" class="form__option" selected
-                                                    disabled></option>
-                                                <option value="firebase" class="form__option">Firebase</option>
-                                                <option value="microsoft" class="form__option">Microsoft SQL Server
-                                                </option>
-                                                <option value="mongo" class="form__option">Mongo DB</option>
-                                                <option value="mysql" class="form__option">MySQL</option>
-                                                <option value="oracle" class="form__option">Oracle</option>
-                                                <option value="postgresql" class="form__option">PostgreSQL</option>
-                                                <option value="sqlite" class="form__option">SQLite</option>
-                                                <option value="none" class="form__option">Nenhum</option>
-                                                <option value="" class="form__option form__option--other">Outro:
-                                                </option>
-                                            </select>
-                                            <input name="anyName"
-                                                class="form__input form__input--invisible form__input--other"
-                                                placeholder="Especifique aqui" disabled required>
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="access-crm" class="form__label">CRM</label>
-                                            <input type="text" class="form__input" id="access-crm" name="crm">
-                                        </div>
-                                        <div class="form__field">
-                                            <label for="access-erp" class="form__label">ERP</label>
-                                            <input type="text" class="form__input" id="access-erp" name="erp">
-                                        </div>
-                                    </fieldset>
-                                    <div class="form__buttons-area">
-                                        <button type="button" class="form__previous">Anterior</button>
-                                        <input type="submit" name="submit-button" class="form__send"
-                                            value="Enviar Tudo">
-                                    </div>
-                                </div>
-                            </form>
+            </a>
+            <nav class="menu" id="menu-nav">
+                <ul class="menu__item-container">
+                    <li class="menu__item"><a class="menu__link" href="./index.html">Home</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item">
+                        <div class="menu__item menu__item--flex">
+                            <a class="menu__link" href="./sobre.html">A Propago</a><button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
+                            <span class="menu__item-clapboard"></span>
                         </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer" id="footer">
-        <div class="footer__section footer__description">
-            <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago"></div>
-            <div class="footer__text">
-                <p><strong>Transformamos tecnologia em conexões.</strong></p>
-                <p><strong>E conexões dão significado à vida.</strong></p>
-                <p>A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
-                    visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover
-                    o bem-estar e dividir riqueza.</p>
-            </div>
-        </div>
-        <div class="footer__section footer__pages-navigation">
-            <div class="footer__label">PÁGINAS</div>
-            <nav class="footer__navbar">
-                <ul class="footer__navbar-list">
-                    <li class="footer__nav-link"><a href="./index.html">Home</a></li>
-                    <li class="footer__nav-link"><a href="./sobre.html">A Propago</a></li>
-                    <li class="footer__nav-link"><a href="./solucoes.html">Soluções</a></li>
-                    <li class="footer__nav-link"><a href="nossas_ongs.html">Nossas ONGs</a></li>
-                    <li class="footer__nav-link"><a href="./blog/index.html">Blog</a></li>
-                    <li class="footer__nav-link"><a href="./eventos.html">Eventos</a></li>
-                    <li class="footer__nav-link"><a href="./parceiros.html">Parceiros</a></li>
-                    <li class="footer__nav-link"><a href="./contato.html">Contato</a></li>
-                    <li class="footer__nav-link"><a href="./cadastro.html">Cadastro</a></li>
+                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu">
+                            <li class="menu__item"><a class="menu__link" href="./sobre.html#quem-ajudamos">Quem Ajudamos</a><span class="menu__item-clapboard"></span></li>
+                            <li class="menu__item"><a class="menu__link" href="./sobre.html#como-funciona">Como Funciona</a><span class="menu__item-clapboard"></span></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="./solucoes.html">Soluções</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="nossas_ongs.html">Nossas ONGs</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="./blog/index.html">Blog</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="./eventos.html">Eventos</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="./parceiros.html">Parceiros</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="./contato.html">Contato</a><span class="menu__item-clapboard"></span></li>
+                    <li class="menu__item"><a class="menu__link" href="./cadastro.html">Cadastro</a><span class="menu__item-clapboard"></span></li>
                 </ul>
             </nav>
-        </div>
-        <div class="footer__section footer__contact">
-            <div class="footer__label">SIGA-NOS</div>
-            <div class="footer__social-media-container">
-                <div class="footer__social-media"><a href="https://www.facebook.com/propago.brasil" target="_blank"><i
-                            class="footer__social-media-icon ri-facebook-circle-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.instagram.com/propago.brasil/" target="_blank"><i
-                            class="footer__social-media-icon ri-instagram-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.other.com/company/propago-brasil/"
-                        target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a></div>
+            <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
+        </header>
+        <main>
+            <section class="block block--gray">
+                <div class="block-row">
+                    <div class="block-row__column">
+                        <header class="block-row__header block-row__header--center">
+                            <div class="block-row__label"><i class="ri-draft-line"></i> Cadastro Completo</div>
+                            <h2 class="block-row__title">Cadastre A Sua Organização</h2>
+                        </header>
+                        <div class="block-row__body">
+                            <p class="block-row__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, incidunt ex voluptas dolorum eaque eveniet omnis reprehenderit dignissimos, aspernatur fuga, labore accusamus dolore maxime expedita
+                                corporis nihil unde. Unde, cumque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block-row">
+                    <div class="block-row__column">
+                        <section class="form-section">
+                            <header class="form-info">
+                                <h2 class="form-info__title">Cadastro Completo | Propago.Social</h2>
+                                <p class="form-info__header-label">
+                                    Para participar do <strong>Programa de Prosperidade e Performance Social para o Terceiro Setor</strong> é necessário preencher o formulário - que é extenso e muito importante - com o máximo de informações
+                                    possíveis sobre a sua organização (ONG, OSC, OSCIP, etc):
+                                </p>
+                            </header>
+                            <div class="form">
+                                <nav class="form-nav">
+                                    <div class="form-nav__item">
+                                        <div class="form-nav__item-number"><span>1</span></div>
+                                        <span class="form-nav__item-label">Cadastro</span>
+                                    </div>
+                                    <div class="form-nav__item">
+                                        <div class="form-nav__item-number">2</div>
+                                        <span class="form-nav__item-label">Financeiro</span>
+                                    </div>
+                                    <div class="form-nav__item">
+                                        <div class="form-nav__item-number">3</div>
+                                        <span class="form-nav__item-label">Instituição</span>
+                                    </div>
+                                    <div class="form-nav__item">
+                                        <div class="form-nav__item-number">4</div>
+                                        <span class="form-nav__item-label">Mkt E Comunicação</span>
+                                    </div>
+                                    <div class="form-nav__item">
+                                        <div class="form-nav__item-number">5</div>
+                                        <span class="form-nav__item-label">Acessos De TI</span>
+                                    </div>
+                                </nav>
+                                <form class="form__container" method="post" data-type="test_onboarding">
+                                    <div class="form__meta">
+                                        <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se No Formulário De Onboarding" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_title" value="O Cadastro Foi Realizado" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contato com a sua organização pelo e-mail fornecido" disabled>
+                                    </div>
+                                    <div class="form__header">
+                                        <h3 class="form__title">CADASTRO</h3>
+                                    </div>
+                                    <div class="form__errors-container"></div>
+                                    <div class="form__step form__step--active" data-index="0">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Informações Gerais</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="org-name" class="form__label" data-role="field_question">Razão Social</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="org-name" name="name" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="org-email-address" class="form__label" data-role="field_question">Email Da Organização</label>
+                                                <input type="email" class="form__input" data-role="field_answer" id="org-email-address" name="email" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="org-cnpj" class="form__label" data-role="field_question">CNPJ</label>
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="cnpj" minlength="18" maxlength="18" placeholder="__.___.___/____-__" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="org-phone-number" class="form__label" data-role="field_question">Telefone Da Organização (com DDD)</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org-phone" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="org-foundation-date" class="form__label" data-role="field_question">Data De Fundação</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="org-foundation-date" name="foundation-date" required />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Localização</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="locale-zipcode" class="form__label" data-role="field_question">CEP</label>
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="zip_code" minlength="9" maxlength="9" placeholder="_____-___" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="locale-address" class="form__label" data-role="field_question">Endereço Completo (com número e complemento)</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-address" name="full_address" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="locale-neighbourhood" class="form__label" data-role="field_question">Bairro</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-neighbourhood" name="neighborhood" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="locale-city" class="form__label" data-role="field_question">Cidade e sigla da UF</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-city" name="city" placeholder="Ex: Ribeirão Preto - SP" required />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre O Responsável Pela ONG</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="head-name" class="form__label" data-role="field_question">Nome</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="head-name" name="head__name" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="head-phone" class="form__label" data-role="field_question">Telefone (com DDD)</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head__phone_number" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="head-address" class="form__label" data-role="field_question">Endereço</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="head-address" name="head__address" required />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre A Diretoria</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="board-termOffice" class="form__label" data-role="field_question">Vigência Do Mandato Atual</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="board-termOffice" name="current_mandate__term" placeholder="Ex: 4 anos" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="board-termBeginning" class="form__label" data-role="field_question">Início Do Mandato</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="board-termBeginning" name="current_mandate__beginning" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="board-termEnd" class="form__label" data-role="field_question">Término Do Mandato</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="board-termEnd" name="current_mandate__end" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="board-membersAmount" class="form__label" data-role="field_question">Número De Sócios</label>
+                                                <input type="number" class="form__input" data-role="field_answer" data-mask="only_number" min="0" id="board-membersAmount" name="associates_number" />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="board-directors" class="form__label" data-role="field_question">Composição Atual Da Diretoria</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="board-directors" name="board_of_directors" placeholder="Nome: função que exerce" required></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <button type="button" class="form__next">Próximo</button>
+                                        </div>
+                                    </div>
+                                    <div class="form__step" data-index="1">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre O Administrador Financeiro</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="adm-phone" class="form__label" data-role="field_question">Telefone (com DDD)</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" minlength="15" maxlength="15" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="adm-email" class="form__label" data-role="field_question">E-Mail</label>
+                                                <input type="email" class="form__input" data-role="field_answer" id="adm-email" name="finance_manager__email" required />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Banco</legend>
+                                            <div class="form__field" data-role="field_container" data-has-other>
+                                                <label for="bank-name" class="form__label" data-role="field_question">Em Qual Banco A Organização Possui Conta?</label>
+                                                <select class="form__input form__select" data-role="field_answer" id="bank-name" name="bank_account__name" required>
+                                                    <option label="Selecione uma opção" class="form__option" selected disabled></option>
+                                                    <option value="Banco do Brasil" class="form__option">Banco Do Brasil</option>
+                                                    <option value="Banco Inter" class="form__option">Banco Inter</option>
+                                                    <option value="Banco Pan" class="form__option">Banco Pan</option>
+                                                    <option value="Banco Sofisa" class="form__option">Banco Sofisa</option>
+                                                    <option value="Bradesco" class="form__option">Bradesco</option>
+                                                    <option value="Caixa" class="form__option">Caixa Econômica Federal </option>
+                                                    <option value="Cora" class="form__option">Cora</option>
+                                                    <option value="Itau" class="form__option">Itaú</option>
+                                                    <option value="Nubank" class="form__option">Nubank</option>
+                                                    <option value="Pag Bank" class="form__option">Pag Bank</option>
+                                                    <option value="Santander" class="form__option">Santander</option>
+                                                    <option value="Sicoob" class="form__option">Sicoob</option>
+                                                    <option value="Sicredi" class="form__option">Sicredi</option>
+                                                    <option value="" class="form__option form__option--other">Outro: </option>
+                                                </select>
+                                                <input class="form__input form__input--invisible form__input--other" data-role="field_answer" placeholder="Especifique aqui" disabled required />
+                                            </div>
+                                            <div class="form__field">
+                                                <span class="form__label" data-role="field_question">Dados Da Conta</span>
+                                                <div class="form__input-grouping">
+                                                    <div class="form__field form__field--group-item" data-role="field_container">
+                                                        <label for="bank-branch" class="form__label" data-role="field_question">Agência</label>
+                                                        <input type="text" class="form__input" data-role="field_answer" data-mask="only_number" id="bank-branch" name="bank_account__branch" maxlength="4" required />
+                                                    </div>
+                                                    <div class="form__field form__field--group-item" data-role="field_container">
+                                                        <label for="bank-current" class="form__label" data-role="field_question">Número De Conta Corrente</label>
+                                                        <input type="text" class="form__input" data-role="field_answer" id="bank-current" name="bank_account__current" required />
+                                                    </div>
+                                                    <div class="form__field form__field--group-item" data-role="field_container">
+                                                        <label for="bank-holder" class="form__label" data-role="field_question">Titular Responsável</label>
+                                                        <input type="text" class="form__input" data-role="field_answer" id="bank-holder" name="bank_account__holder" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">A Organização Possui Cartão De Crédito?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="bank-creditCard-options">
+                                                    <label class="form__radio-container" for="bank-creditCard-yes">
+                                                        SIM
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="has_credit_card" id="bank-creditCard-yes" value="SIM" required />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="bank-creditCard-no">
+                                                        NÃO
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="has_credit_card" value="NÃO" id="bank-creditCard-no" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre O Faturamento</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="revenue-sources" class="form__label" data-role="field_question">Quais São As Fontes De Recursos Da Organização?</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-sources" name="revenue_sources" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="revenue-anual" class="form__label" data-role="field_question">Qual é o faturamento anual da Organização?</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-anual" name="annual_revenue" placeholder="R$XXXX,00" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="revenue-amountFromDonations" class="form__label" data-role="field_question">Desse Faturamento, quanto é proveniente de doações?</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-amountFromDonations" name="annual_revenue__from_donation" placeholder="R$XXXX,00 ou X%" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="revenue-financialControl" class="form__label" data-role="field_question">A Organização Possui algum sistema de controle financeiro? Se sim, qual?</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-financialControl" name="financial_control_system" required />
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <button type="button" class="form__previous">Anterior</button>
+                                            <button type="button" class="form__next">Próximo</button>
+                                        </div>
+                                    </div>
+                                    <div class="form__step" data-index="2">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Descrição Da Organização</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="description-history" class="form__label" data-role="field_question">Discorra Sobre a História Da Organização</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="history" id="description-history" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="description-whatNhow" class="form__label" data-role="field_question">O Que A Organização Faz? Como ela faz?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="how_does_it_operate" id="description-whatNhow" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="description-mission" class="form__label" data-role="field_question">Quais São As diretrizes da sua organização?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="mission" id="description-mission" placeholder="Missão, visão, valores..." required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="description-position" class="form__label" data-role="field_question">Como A Organização Se Posiciona?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="positioning" id="description-position" required></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Situação Da Organização</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-highlights" class="form__label" data-role="field_question">O Que Você quer destacar da sua organização?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="highlights" id="situation-highlights" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-strengths" class="form__label" data-role="field_question">Quais são os pontos fortes da sua organização?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="strengths" id="situation-strengths" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-weaknessess" class="form__label" data-role="field_question">Quais são os pontos a melhorar da sua organização?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="weaknesses" id="situation-weaknessess" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-competition" class="form__label" data-role="field_question">Cite Outras 5 Organizações (se houver) que fazem um trabalho similar ou igual à sua:</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="competition" id="situation-competition" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-differential" class="form__label" data-role="field_question">A Sua Organização Possui Algum Diferencial?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="differentiators" id="situation-differential" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="situation-timeline" class="form__label" data-role="field_question">Escreva - em uma linha do tempo - os principais acontecimentos da sua ONG até o momento (com datas se possível)</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="timeline" id="situation-timeline" required></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <button type="button" class="form__previous">Anterior</button>
+                                            <button type="button" class="form__next">Próximo</button>
+                                        </div>
+                                    </div>
+                                    <div class="form__step" data-index="3">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre Os Meios De Comunicação</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="social-url" class="form__label" data-role="field_question">A Organização Possui Site? Se sim, cole a URL do site no campo abaixo</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="social-url" name="website_url" placeholder="Sim, possui: https://nome-do-site.dominio" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">Quais Redes Sociais a Organização Possui?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="social-media-options" data-has-other>
+                                                    <label class="form__checkbox-container" for="social-media-facebook">
+                                                        Facebook
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option" name="social_media[]" id="social-media-facebook" value="facebook" />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                    <label class="form__checkbox-container" for="social-media-instagram">
+                                                        Instagram
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option" name="social_media[]" value="instagram" id="social-media-instagram" />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                    <label class="form__checkbox-container" for="social-media-tiktok">
+                                                        TikTok
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option" name="social_media[]" value="tiktok" id="social-media-tiktok" />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                    <label class="form__checkbox-container" for="social-media-twitter">
+                                                        Twitter
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option" name="social_media[]" value="twitter" id="social-media-twitter" />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                    <label class="form__checkbox-container" for="social-media-linkedin">
+                                                        LinkedIn
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option" name="social_media[]" value="linkedin" id="social-media-linkedin" />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                    <label class="form__checkbox-container" for="social-media-other">
+                                                        Outro:
+                                                        <input type="checkbox" data-role="field_answer" class="form__checkbox-option form__option form__option--other" name="social_media[]" value="" id="social-media-other" />
+                                                        <input type="text" name="anyName" class="form__input--invisible form__input--other" data-role="field_answer" disabled required />
+                                                        <span class="form__checkbox-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre O Marketing</legend>
+                                            <div class="form__field" data-role="form_container">
+                                                <label for="mkt-persona" class="form__label" data-role="field_question">Descreva o público-alvo da sua organização</label>
+                                                <textarea
+                                                    class="form__input form__input--textbox"
+                                                    data-role="field_answer"
+                                                    id="mkt-persona"
+                                                    name="persona"
+                                                    placeholder="Informe: idade, cidade, escolaridade, gênero, classe social, estado civil e também dados comportamentais e de consumo"
+                                                    required
+                                                ></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="form_container">
+                                                <label for="mkt-ad" class="form__label" data-role="field_question">A sua organização já anuncia na internet? Se sim, quanto investe por mês?</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="mkt-ad" name="ad_investment" required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">A Organização já possui conta no Google For Non Profits e Google Ad Grants?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-accounts-options">
+                                                    <label class="form__radio-container" for="mkt-accounts-both">
+                                                        Sim, em ambos
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-both" name="has_gservices" class="form__radio-option" value="Sim, em ambos" required />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-accounts-gfnp">
+                                                        Somente no Google For Non Profits
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gfnp" name="has_gservices" class="form__radio-option" value="Somente no google For Non Profits" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-accounts-gag">
+                                                        Somente no Google Ad Grants
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gag" name="has_gservices" class="form__radio-option" value="Somente no Google Ad Grants" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-accounts-none">
+                                                        Não, em nenhuma
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-none" name="has_gservices" class="form__radio-option" value="Não, em nenhuma" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Analytics?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-ga-options">
+                                                    <label class="form__radio-container" for="mkt-ga-yes">
+                                                        SIM
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-yes" name="has_ga_account" value="SIM" required />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-ga-no">
+                                                        NÃO
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-no" name="has_ga_account" value="NÃO" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Tag Manager?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-gtm-options">
+                                                    <label class="form__radio-container" for="mkt-gtm-yes">
+                                                        SIM
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-yes" name="has_gtm_account" value="SIM" required />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-gtm-no">
+                                                        NÃO
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-no" name="has_gtm_account" value="NÃO" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <span class="form__label" data-role="field_question">Qual a verba disponível para a compra de publicidade nas plataformas de anúncios?</span>
+                                                <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-budget-options">
+                                                    <label class="form__radio-container" for="mkt-budget-1000">
+                                                        Até R$1.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-1000" name="advertising_budget" class="form__radio-option" value="Até R$1.000,00" required />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-budget-2000">
+                                                        Até R$2.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-2000" name="advertising_budget" class="form__radio-option" value="Até R$2.000,00" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-budget-3000">
+                                                        Até R$3.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-3000" name="advertising_budget" class="form__radio-option" value="Até R$3.000,00" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-budget-4000">
+                                                        Até R$4.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-4000" name="advertising_budget" class="form__radio-option" value="Até R$4.000,00"/>
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-budget-5000">
+                                                        Até R$5.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-5000" name="advertising_budget" class="form__radio-option" value="Até R$5.000,00" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                    <label class="form__radio-container" for="mkt-budget-above5000">
+                                                        Acima de R$5.000,00
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-above5000" name="advertising_budget" class="form__radio-option" value="Acima de R$5.000,00" />
+                                                        <span class="form__radio-button"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Comunicação</legend>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="communication-donors" class="form__label" data-role="field_question">Informe quantos doadores a Organização possui, separando-os em doadores Pontuais e Recorrentes</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-donors" name="occasional_current_donors" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="communication-email-frequency" class="form__label" data-role="field_question">Com qual frequência você envia e-mails para a sua base de doadores? E não doadores?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-email-frequency" name="emailing_cadence" required></textarea>
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="communication-goals" class="form__label" data-role="field_question">Quais são as metas da sua Organização?</label>
+                                                <textarea
+                                                    class="form__input form__input--textbox"
+                                                    data-role="field_answer"
+                                                    id="communication-goals"
+                                                    name="goals"
+                                                    placeholder="Ex: visitas no site, fãs nas redes sociais, quantidades de pessoas cadastradas/interessadas, doações/doadores"
+                                                    required
+                                                ></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <button type="button" class="form__previous">Anterior</button>
+                                            <button type="button" class="form__next">Próximo</button>
+                                        </div>
+                                    </div>
+                                    <div class="form__step" data-index="4">
+                                        <fieldset class="form__field-group">
+                                            <legend class="form__field-title">Sobre Os Acessos</legend>
+                                            <div class="form__field" data-role="field_container" data-has-other>
+                                                <label for="access-host" class="form__label" data-role="field_question">Serviço De Hospedagem Onde Está o Site Da Organização</label>
+                                                <select class="form__input form__select" data-role="field_answer" id="access-host" name="website_host" required>
+                                                    <option label="Selecione um serviço" class="form__option" selected disabled></option>
+                                                    <option value="Go Daddy" class="form__option">Go Daddy</option>
+                                                    <option value="Hostgator" class="form__option">Hostgator</option>
+                                                    <option value="Hostinger" class="form__option">Hostinger</option>
+                                                    <option value="IONOS" class="form__option">IONOS</option>
+                                                    <option value="Kinghost" class="form__option">Kinghost</option>
+                                                    <option value="Locaweb" class="form__option">Locaweb</option>
+                                                    <option value="WebLink" class="form__option">WebLink</option>
+                                                    <option value="Wix" class="form__option">WIX</option>
+                                                    <option value="" class="form__option form__option--other">Outro: </option>
+                                                </select>
+                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="access-emailHost" class="form__label" data-role="field_question">Servidor De E-Mail</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-emailHost" name="email_host" />
+                                            </div>
+                                            <div class="form__field" data-role="field_container" data-has-other>
+                                                <label for="access-cms" class="form__label" data-role="field_question">CMS usado no site</label>
+                                                <select class="form__input" data-role="field_answer" id="access-cms" name="cms" required>
+                                                    <option label="Selecione O CMS" class="form__option" selected disabled> </option>
+                                                    <option value="Canvas" class="form__option">Canvas CMS</option>
+                                                    <option value="Craft" class="form__option">Craft CMS</option>
+                                                    <option value="Drupal" class="form__option">Drupal</option>
+                                                    <option value="Grav" class="form__option">Grav</option>
+                                                    <option value="Hubspot" class="form__option">HubSpot CMS</option>
+                                                    <option value="Joomla" class="form__option">Joomla</option>
+                                                    <option value="Squarespace" class="form__option">Squarespace</option>
+                                                    <option value="Wix" class="form__option">WIX</option>
+                                                    <option value="Wordpress" class="form__option">Wordpress</option>
+                                                    <option value="Nenhum" class="form__option">Nenhum</option>
+                                                    <option value="" class="form__option form__option--other">Outro: </option>
+                                                </select>
+                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container" data-has-other>
+                                                <label for="access-database" class="form__label" data-role="field_question">Banco De Dados</label>
+                                                <select class="form__input form__select" data-role="field_answer" id="access-database" name="org_database">
+                                                    <option label="Selecione O Banco De Dados" class="form__option" selected disabled></option>
+                                                    <option value="Firebase" class="form__option">Firebase</option>
+                                                    <option value="Microsoft SQL Server" class="form__option">Microsoft SQL Server </option>
+                                                    <option value="Mongo" class="form__option">Mongo DB</option>
+                                                    <option value="MySQL" class="form__option">MySQL</option>
+                                                    <option value="Oracle" class="form__option">Oracle</option>
+                                                    <option value="PostgreSQL" class="form__option">PostgreSQL</option>
+                                                    <option value="SQLite" class="form__option">SQLite</option>
+                                                    <option value="Nenhum" class="form__option">Nenhum</option>
+                                                    <option value="" class="form__option form__option--other">Outro: </option>
+                                                </select>
+                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="access-crm" class="form__label" data-role="field_question">CRM</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-crm" name="crm" />
+                                            </div>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="access-erp" class="form__label" data-role="field_question">ERP</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-erp" name="erp" />
+                                            </div>
+                                        </fieldset>
+                                        <div class="form__buttons-area">
+                                            <button type="button" class="form__previous">Anterior</button>
+                                            <input type="submit" name="submit-button" class="form__send" value="Enviar Tudo" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__section footer__description">
+                <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" /></div>
+                <div class="footer__text">
+                    <p><strong>Transformamos tecnologia em conexões.</strong></p>
+                    <p><strong>E conexões dão significado à vida.</strong></p>
+                    <p>
+                        A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>, visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover o bem-estar e dividir
+                        riqueza.
+                    </p>
+                </div>
             </div>
-            <div class="footer__ssl-badge"></div>
-        </div>
-        <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
-    </footer>
-</body>
-<script src="./js/main.js" defer></script>
-<script src="./js/forms.js" defer></script>
-
+            <div class="footer__section footer__pages-navigation">
+                <div class="footer__label">PÁGINAS</div>
+                <nav class="footer__navbar">
+                    <ul class="footer__navbar-list">
+                        <li class="footer__nav-link"><a href="./index.html">Home</a></li>
+                        <li class="footer__nav-link"><a href="./sobre.html">A Propago</a></li>
+                        <li class="footer__nav-link"><a href="./solucoes.html">Soluções</a></li>
+                        <li class="footer__nav-link"><a href="nossas_ongs.html">Nossas ONGs</a></li>
+                        <li class="footer__nav-link"><a href="./blog/index.html">Blog</a></li>
+                        <li class="footer__nav-link"><a href="./eventos.html">Eventos</a></li>
+                        <li class="footer__nav-link"><a href="./parceiros.html">Parceiros</a></li>
+                        <li class="footer__nav-link"><a href="./contato.html">Contato</a></li>
+                        <li class="footer__nav-link"><a href="./cadastro.html">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__section footer__contact">
+                <div class="footer__label">SIGA-NOS</div>
+                <div class="footer__social-media-container">
+                    <div class="footer__social-media">
+                        <a href="https://www.facebook.com/propago.brasil" target="_blank"><i class="footer__social-media-icon ri-facebook-circle-fill"></i></a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.instagram.com/propago.brasil/" target="_blank"><i class="footer__social-media-icon ri-instagram-fill"></i></a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.other.com/company/propago-brasil/" target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer__ssl-badge"></div>
+            </div>
+            <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
+        </footer>
+    </body>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/forms/multiStepForm.js" defer></script>
+    <script src="./js/forms/masks.js" defer></script>
+    <script src="./js/forms/sendFormSubmission.js" type="module" defer></script>
 </html>

@@ -8,10 +8,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-body {
     --primary-color: #7446CE;
     --secondary-color: #FFB100;
     --lighter-gray-color: #F2F2F2;
@@ -29,6 +25,7 @@ body {
     --menu-text-size: 14px;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 button {

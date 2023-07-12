@@ -31,7 +31,6 @@ if(ALL_THE_POSTS){
     });
 }
 
-
 async function getThePosts(postsURLValue){
     let result = {}
 

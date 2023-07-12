@@ -86,7 +86,12 @@
                             </p>
                         </header>
                         <div class="form">
-                            <form class="form__container" action="" method="post" data-subject="Proposta De Contrato De">
+                            <form class="form__container" method="post" data-type="test_organization_signup">
+                                <div class="form__meta">
+                                    <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se Para Receber Os Serviços Da Propago" disabled>
+                                    <input type="hidden" class="form__metadata" name="success_modal_title" value="O Cadastro Foi Realizado" disabled>
+                                    <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contato com a sua organização pelo e-mail enviado" disabled>
+                                </div>
                                 <div class="form__header">
                                     <h3 class="form__title">CADASTRO DE ORGANIZAÇÃO</h3>
                                 </div>
@@ -94,21 +99,21 @@
                                 <div class="form__step form__step--active" data-index="0">
                                     <fieldset class="form__field-group">
                                         <legend class="form__field-title">Informações Da Organização</legend>
-                                        <div class="form__field">
-                                            <label for="org-name" class="form__label">Nome Da Organização</label>
-                                            <input type="text" class="form__input" id="org-name" name="name" required="required"/>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="org-name" class="form__label" data-role="field_question">Nome Da Organização</label>
+                                            <input type="text" class="form__input" data-role="field_answer" id="org-name" name="name" required="required"/>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-url" class="form__label">Site</label>
-                                            <input type="url" class="form__input" id="org-url" name="url" placeholder="Cole a url do site aqui">
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="org-url" class="form__label" data-role="field_question">Site</label>
+                                            <input type="url" class="form__input" data-role="field_answer" id="org-url" name="org-url" placeholder="Cole a url do site aqui">
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-social-media" class="form__label">Redes Sociais</label>
-                                            <textarea class="form__input form__input--textbox" id="org-social-media" name="social-media"></textarea>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="org-social-media" class="form__label" data-role="field_question">Redes Sociais</label>
+                                            <textarea class="form__input form__input--textbox" data-role="field_answer" id="org-social-media" name="org-social-media"></textarea>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-area" class="form__label">Área De Atuação Da Organização</label>
-                                            <select class="form__input form__select" id="org-area" name="area-of-action" required>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="org-field" class="form__label" data-role="field_question">Área De Atuação Da Organização</label>
+                                            <select class="form__input form__select" data-role="field_answer" id="org-field" name="org-field" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Arte e Cultura" class="form__option">Arte e Cultura</option>
                                                 <option value="Assistência Social" class="form__option">Assistência Social</option>
@@ -125,9 +130,9 @@
                                                 <option value="Outros" class="form__option">Outros</option>
                                             </select>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-structure" class="form__label">Estrutura Jurídica</label>
-                                            <select class="form__input form__select" name="legal-structure" id="org-structure" required>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="org-legal-structure" class="form__label" data-role="field_question">Estrutura Jurídica</label>
+                                            <select class="form__input form__select" data-role="field_answer" name="org-legal-structure" id="org-legal-structure" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Associação" class="form__option">Associação</option>
                                                 <option value="OSCIP" class="form__option">OSCIP</option>
@@ -138,24 +143,24 @@
                                     </fieldset>
                                     <fieldset class="form__field-group">
                                         <legend class="form__field-title">Informações Do Responsável</legend>
-                                        <div class="form__field">
-                                            <label for="in-charge-name" class="form__label">Nome Do Responsável</label>
-                                            <input type="text" class="form__input" id="in-charge-name" name="name" required="required"/>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="spokeperson-name" class="form__label" data-role="field_question">Nome Do Responsável</label>
+                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-name" name="spokeperson-name" required="required"/>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="in-charge-position" class="form__label">Cargo Do Responsável</label>
-                                            <input type="text" class="form__input" id="position" name="position" required="required"/>
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="spokeperson-position" class="form__label" data-role="field_question">Cargo Do Responsável</label>
+                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-position" name="spokeperson-position" required="required"/>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-phone" class="form__label">Telefone Do Responsável (com
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="spokeperson-phone" class="form__label" data-role="field_question">Telefone Do Responsável (com
                                                 DDD)</label>
-                                            <input type="tel" class="form__input form__input--cellphone" id="org-phone"
-                                                name="phone_number" minlength="15" maxlength="15"
+                                            <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="spokeperson-phone"
+                                                name="spokeperson-phone" minlength="15" maxlength="15"
                                                 placeholder="(__) _____-____" required="required"/>
                                         </div>
-                                        <div class="form__field">
-                                            <label for="org-email" class="form__label">Email Do Responsável</label>
-                                            <input type="email" class="form__input" id="org-email" name="email"
+                                        <div class="form__field" data-role="field_container">
+                                            <label for="spokeperson-email" class="form__label" data-role="field_question">Email Do Responsável</label>
+                                            <input type="email" class="form__input" data-role="field_answer" id="spokeperson-email" name="email"
                                                 required="required"/>
                                         </div>
                                     </fieldset>
@@ -213,6 +218,7 @@
     </footer>
 </body>
 <script src="./js/main.js" defer></script>
-<script src="./js/cadastros.js" defer></script>
+<script src="./js/forms/masks.js" defer></script>
+<script src="./js/forms/sendFormSubmission.js" type="module" defer></script>
 
 </html>

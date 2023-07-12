@@ -1,8 +1,8 @@
-const FIELDS_CTN__EL = document.querySelector('.contact-form__fields-container');
-const SUBMIT_BTN__EL = document.querySelector('.contact-form__submit');
+const FIELDS_CTN__EL = document.querySelector('.form__container');
+const SUBMIT_BTN__EL = document.querySelector('.form__send');
 
 SUBMIT_BTN__EL.addEventListener('click', (ev) =>{
-    let allInputEls = [...FIELDS_CTN__EL.querySelectorAll('.contact-form__field-input')];
+    let allInputEls = [...FIELDS_CTN__EL.querySelectorAll('.form__input')];
 
     console.log(allInputEls);
     if(allInputEls.every((inputEl) => inputEl.checkValidity())){

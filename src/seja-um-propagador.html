@@ -4,25 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <meta name="description" content="Página Inicial Da Propago">
+        <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
+        <meta property="og:description" content="Página Inicial Da Propago">
+        <meta property="og:image" content="./assets/socialImage.png">
+        <meta property="og:image:width" content="2500">
+        <meta property="og:image:height" content="1330">
+        <meta property="og:url" content="https://propago.com.br/">
+        <meta property="og:site_name" content="Propago">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
+        <meta name="twitter:description" content="Página Inicial Da Propago">
+        <meta name="twitter:image" content="./assets/socialImage.png">
+        <link rel="canonical" href="https://propago.com.br">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" />
         <link rel="stylesheet" href="./css/core.css" />
         <link rel="stylesheet" href="./css/formularios.css">
         <title>Propago - Promover o bem é nosso primordial</title>
-    <meta name="description" content="Página Inicial Da Propago">
-    <link rel="canonical" href="https://propago.com.br">
-    <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
-    <meta property="og:description" content="Página Inicial Da Propago">
-    <meta property="og:image" content="./assets/socialImage.png">
-    <meta property="og:image:width" content="2500">
-    <meta property="og:image:height" content="1330">
-    <meta property="og:url" content="https://propago.com.br/">
-    <meta property="og:site_name" content="Propago">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
-    <meta name="twitter:description" content="Página Inicial Da Propago">
-    <meta name="twitter:image" content="./assets/socialImage.png">
-
     </head>
 
     <body>
@@ -81,7 +80,12 @@
                                 </p>
                             </header>
                             <div class="form">
-                                <form class="form__container" action="" method="post" data-subject="Quero Ser Um Propagador! Meu Nome É">
+                                <form class="form__container" method="post" data-type="test_propagator_signup">
+                                    <div class="form__meta">
+                                        <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se Como Voluntário" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_title" value="Teu Cadastro Foi Realizado" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contigo pelo e-mail :)" disabled>
+                                    </div>
                                     <div class="form__header">
                                         <h3 class="form__title">CADASTRO DE PROPAGADOR</h3>
                                     </div>
@@ -91,32 +95,32 @@
                                             <legend class="form__field-title">
                                                 Informações Pessoais
                                             </legend>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">Nome Completo</label>
-                                                <input type="text" class="form__input" name="" id="" required="required"/>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="full-name" class="form__label" data-role="field_question">Nome Completo</label>
+                                                <input type="text" class="form__input" data-role="field_answer" name="name" id="full-name" required="required"/>
                                             </div>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">Data De Nascimento</label>
-                                                <input type="date" class="form__input" name="" id="" required="required"/>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="birthday-date" class="form__label" data-role="field_question">Data De Nascimento</label>
+                                                <input type="date" class="form__input" data-role="field_answer" name="birthday" id="birthday-date" required="required"/>
                                             </div>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">E-mail</label>
-                                                <input type="email" class="form__input" name="" id="" required="required"/>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="email-address" class="form__label" data-role="field_question">E-mail</label>
+                                                <input type="email" class="form__input" data-role="field_answer" name="email" id="email-address" required="required"/>
                                             </div>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">Celular</label>
-                                                <input type="tel" class="form__input" name="" id="" placeholder="(__) _____-____" required="required"/>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="phone-number" class="form__label" data-role="field_question">Celular</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" name="phone" id="phone-number" minlength="15" maxlength="15" placeholder="(__) _____-____" required="required"/>
                                             </div>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">Links para as redes sociais:</label>
-                                                <textarea name="" id="" class="form__input form__input--textbox" placeholder="https://www.facebook.com/nomeDoPerfilOuGrupo&#10;https://instagram.com/nomeDoPerfil&#10;https://www.youtube.com/@nomeDoCanal" required="required"/></textarea>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="social-media-links" class="form__label" data-role="field_question">Links para as redes sociais:</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="social-media" id="social-media-links" placeholder="https://www.facebook.com/nomeDoPerfilOuGrupo&#10;https://instagram.com/nomeDoPerfil&#10;https://www.youtube.com/@nomeDoCanal" required="required"/></textarea>
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Como Quer Contribuir</legend>
-                                            <div class="form__field">
-                                                <label for="" class="form__label">Como Quer Propagar O Bem?</label>
-                                                <textarea name="" id="" class="form__input form__input--textbox" placeholder="Quero contribuir publicando posts, stories e shorts no meu perfil do Facebook, Instagram e canal do Youtube, que divulguem o trabalho da [organização(ões) que quer ajudar] e incentivem minha base de seguidores a doar para esta(s) organização(ões)" required="required"></textarea>
+                                            <div class="form__field" data-role="field_container">
+                                                <label for="propagate-good" class="form__label" data-role="field_question">Como Quer Propagar O Bem?</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="propagate-good" id="propagate-good" placeholder="Quero contribuir publicando posts, stories e shorts no meu perfil do Facebook, Instagram e canal do Youtube, que divulguem o trabalho da [organização(ões) que quer ajudar] e incentivem minha base de seguidores a doar para esta(s) organização(ões)" required="required"></textarea>
                                             </div>
                                         </fieldset>
                                         <div class="form__buttons-area">
@@ -178,5 +182,6 @@
         </footer>
     </body>
     <script src="./js/main.js" defer></script>
-    <script src="./js/cadastros.js" defer></script>
+    <script src="./js/forms/masks.js" defer></script>
+    <script src="./js/forms/sendFormSubmission.js" type="module" defer></script>
 </html>

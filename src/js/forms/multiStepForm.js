@@ -75,8 +75,8 @@ SUBMIT_BTN__EL.addEventListener('click', () => {
 
 // AVOIDING THE FORM TO SUBMIT WHEN THE RADIO AND CHECKBOXES ARE EMPTY
 FORM__CTN.addEventListener('submit', (ev) =>{
-    let allTheMultipleFieldEls = [...FORM__CTN.querySelectorAll('.form__field--multiple')];
-    allTheMultipleFieldEls.forEach((multipleFieldEl) =>{
+    let ALL_THE_MULTIPLE_FIELD_ELS = [...FORM__CTN.querySelectorAll('.form__multiple-fields')];
+    ALL_THE_MULTIPLE_FIELD_ELS.forEach((multipleFieldEl) =>{
         let options = [...multipleFieldEl.querySelectorAll('input')];
         if(options.every(option => !option.checked)){
             ev.preventDefault();
@@ -146,45 +146,8 @@ function createErrorEl(wrongElement, stepIndex, groupName) {
     return ERROR__EL;
 }
 
-// MÁSCARAS PARA CAMPOS
-let masks = {
-    removeAllLetters: (string) => {
-        return string.replace(/\D/g, '');
-    },
 
-    cnpj: (string) => {
-        return string.replace(/\D/g, '').replace(/(\d{2})(\d)/, '$1.$2').replace(/(\d{3})(\d)/, '$1.$2').replace(/(\d{3})(\d)/, '$1/$2').replace(/(\d{4})(\d{1,2})/, '$1-$2').replace(/(-\d{2})\d+?$/, '$1');
-    },
-
-    cep: (string) => {
-        return string.replace(/\D/g, '').replace(/(\d{5})(\d)/, '$1-$2').replace(/(-\d{3})\d+?$/, '$1');
-    },
-
-    cellphone: (string) => {
-        return string.replace(/\D/g, '').replace(/(\d{1,2})/, '($1) ').replace(/(\d{5})(\d)/, '$1-$2').replace(/(-\d{4})\d+?$/, '$1');
-    }
-}
-
-// CAMPOS
-const CNPJ_FIELD__EL = document.getElementById('org-cnpj');
-const CEP_FIELD__EL = document.getElementById('locale-zipCode');
-const CELLPHONE_FIELD__ELS = document.querySelectorAll('.form__input--cellphone');
-const ASSOCIATES_NUMBER_FIELD__EL = document.getElementById('board-membersAmount');
-const BANK_BRANCH_FIELD__EL = document.getElementById('bank-branch');
 const FIELD_WITH_OTHER__ELS = document.querySelectorAll('[data-has-other]');
-
-// Applying the masks
-CNPJ_FIELD__EL.addEventListener('input', ev => ev.target.value = masks.cnpj(ev.target.value));
-
-CEP_FIELD__EL.addEventListener('input', ev => ev.target.value = masks.cep(ev.target.value));
-
-CELLPHONE_FIELD__ELS.forEach((cellphoneField) => {
-    cellphoneField.addEventListener('input', ev => ev.target.value = masks.cellphone(ev.target.value));
-});
-
-ASSOCIATES_NUMBER_FIELD__EL.addEventListener('input', ev => ev.target.value = masks.removeAllLetters(ev.target.value));
-BANK_BRANCH_FIELD__EL.addEventListener('input', ev => ev.target.value = masks.removeAllLetters(ev.target.value));
-
 // Applying the "other" functionality
 FIELD_WITH_OTHER__ELS.forEach((fieldWithOtherEl) => {
     const OPTION_OTHER__EL = fieldWithOtherEl.querySelector('.form__option--other');

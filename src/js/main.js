@@ -1,5 +1,3 @@
-const LOGO__EL = document.querySelector('.logo');
-
 const MENU__EL = document.getElementById('menu-nav');
 const MENU_BTN__EL = document.getElementById('menu-btn');
 
