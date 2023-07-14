@@ -197,7 +197,6 @@
     display: block;
     padding: 4px 0 0 35px;
     font-size: var(--label-text-size);
-    text-transform: capitalize;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -315,13 +314,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: max-content;
     margin: 50px auto;
     padding: 20px;
     border-radius: 15px;
     background-color: #FFF;
     color: var(--text-color);
-    box-shadow: 10px 10px 3px #F2F2F2,
-                -2px -2px 2px #F2F2F2;
+    box-shadow: 10px 10px 4px var(--lighter-gray-color),
+                -2px -2px 3px var(--lighter-gray-color);
+}
+
+.message--consent{
+    margin: 10px auto;
+    border: 2px double var(--secondary-color);
+    box-shadow: none;
 }
 
 .message__icon{
@@ -360,6 +366,12 @@
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+}
+
+.message__option{
+    border: 1px solid #000;
+    background-color: var(--lighter-gray-color);
+    color: #FFF;
 }
 
 @media (min-width: 650px) {

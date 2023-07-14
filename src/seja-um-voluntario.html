@@ -131,7 +131,7 @@
                                             <label for="birthday-date" class="form__label"
                                                 data-role="field_question">Data De Nascimento</label>
                                             <input type="date" class="form__input" data-role="field_answer"
-                                                name="birthday" id="birthday-date" required="required" />
+                                                name="birthday_date" id="birthday-date" required="required" />
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="email-address" class="form__label"
@@ -334,13 +334,23 @@
                                             <label for="phone-number" class="form__label"
                                                 data-role="field_question">Telefone</label>
                                             <input type="tel" class="form__input" data-role="field_answer"
-                                                data-mask="cellphone" name="phone" id="phone-number" minlength="15"
+                                                data-mask="cellphone" name="phone_number" id="phone-number" minlength="15"
                                                 maxlength="15" placeholder="(__) _____-____" required="required" />
                                         </div>
                                     </fieldset>
+                                    <fieldset class="form__field-group">
+                                        <legend class="form__field-title">Consentimento De Envio De Dados</legend>
+                                        <div class="message message--consent">
+                                            <label class="form__checkbox-container" for="email-consent">
+                                                Ao enviar este formulário eu permito também enviar uma cópia dos dados fornecidos por meio dele para o e-mail da Propago
+                                                <input type="checkbox" class="form__checkbox-option form__option" name="email_consent" id="email-consent" value="I allow it" required="required"/>
+                                                <span class="form__checkbox-button message__option"></span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
                                     <div class="form__buttons-area">
-                                        <input type="reset" name="reset-button" class="form__previous" value="Apagar" />
-                                        <input type="submit" name="submit-button" class="form__send" value="Enviar" />
+                                        <input type="reset" name="reset_button" class="form__previous" value="Apagar" />
+                                        <input type="submit" name="submit_button" class="form__send" value="Enviar" />
                                     </div>
                                 </div>
                             </form>

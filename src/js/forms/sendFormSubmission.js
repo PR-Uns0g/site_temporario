@@ -12,7 +12,7 @@ FORM_CTN__EL.addEventListener('submit', async (ev) =>{
         values: []
     }
     let emailRequestBody = new Object({
-        "_subject": document.querySelector('[name="name"]').value+' '+document.querySelector('[name="_subject"]').value, 
+        "_subject": document.querySelector('[name="name"]').value+' - '+document.querySelector('[name="_subject"]').value, 
         "_replyto": document.querySelector('[name="email"]').value,
         "_template": 'box',
     })

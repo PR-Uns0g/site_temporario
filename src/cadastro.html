@@ -105,15 +105,15 @@
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="org-url" class="form__label" data-role="field_question">Site</label>
-                                            <input type="url" class="form__input" data-role="field_answer" id="org-url" name="org-url" placeholder="Cole a url do site aqui">
+                                            <input type="url" class="form__input" data-role="field_answer" id="org-url" name="organization_url" placeholder="Cole a url do site aqui">
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="org-social-media" class="form__label" data-role="field_question">Redes Sociais</label>
-                                            <textarea class="form__input form__input--textbox" data-role="field_answer" id="org-social-media" name="org-social-media"></textarea>
+                                            <textarea class="form__input form__input--textbox" data-role="field_answer" id="org-social-media" name="organization_social_media"></textarea>
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="org-field" class="form__label" data-role="field_question">Área De Atuação Da Organização</label>
-                                            <select class="form__input form__select" data-role="field_answer" id="org-field" name="org-field" required>
+                                            <select class="form__input form__select" data-role="field_answer" id="org-field" name="organization_field" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Arte e Cultura" class="form__option">Arte e Cultura</option>
                                                 <option value="Assistência Social" class="form__option">Assistência Social</option>
@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="org-legal-structure" class="form__label" data-role="field_question">Estrutura Jurídica</label>
-                                            <select class="form__input form__select" data-role="field_answer" name="org-legal-structure" id="org-legal-structure" required>
+                                            <select class="form__input form__select" data-role="field_answer" id="org-legal-structure" name="organization_legal_structure" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Associação" class="form__option">Associação</option>
                                                 <option value="OSCIP" class="form__option">OSCIP</option>
@@ -145,23 +145,33 @@
                                         <legend class="form__field-title">Informações Do Responsável</legend>
                                         <div class="form__field" data-role="field_container">
                                             <label for="spokeperson-name" class="form__label" data-role="field_question">Nome Do Responsável</label>
-                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-name" name="spokeperson-name" required="required"/>
+                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-name" name="spokeperson_name" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="spokeperson-position" class="form__label" data-role="field_question">Cargo Do Responsável</label>
-                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-position" name="spokeperson-position" required="required"/>
+                                            <input type="text" class="form__input" data-role="field_answer" id="spokeperson-position" name="spokeperson_position" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="spokeperson-phone" class="form__label" data-role="field_question">Telefone Do Responsável (com
+                                            <label for="spokeperson-phone-number" class="form__label" data-role="field_question">Telefone Do Responsável (com
                                                 DDD)</label>
-                                            <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="spokeperson-phone"
-                                                name="spokeperson-phone" minlength="15" maxlength="15"
+                                            <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="spokeperson-phone-number"
+                                                name="spokeperson_phone_number" minlength="15" maxlength="15"
                                                 placeholder="(__) _____-____" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="spokeperson-email" class="form__label" data-role="field_question">Email Do Responsável</label>
-                                            <input type="email" class="form__input" data-role="field_answer" id="spokeperson-email" name="email"
+                                            <label for="spokeperson-email-address" class="form__label" data-role="field_question">Email Do Responsável</label>
+                                            <input type="email" class="form__input" data-role="field_answer" id="spokeperson-email-address" name="email"
                                                 required="required"/>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="form__field-group">
+                                        <legend class="form__field-title">Consentimento De Envio De Dados</legend>
+                                        <div class="message message--consent">
+                                            <label class="form__checkbox-container" for="email-consent">
+                                                Ao enviar este formulário eu permito também enviar uma cópia dos dados fornecidos por meio dele para o e-mail da Propago
+                                                <input type="checkbox" class="form__checkbox-option form__option" name="email_consent" id="email-consent" value="I allow it" required="required"/>
+                                                <span class="form__checkbox-button message__option"></span>
+                                            </label>
                                         </div>
                                     </fieldset>
                                     <div class="form__buttons-area">
