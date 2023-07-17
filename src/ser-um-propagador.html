@@ -28,7 +28,7 @@
         <header class="header" id="header"> <!-- See about aria-label later -->
             <a href="./index.html">
                 <div class="logo">
-                        <img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="300" height="70"/>
+                        <img src="./imgs/logos/propago_logo_header.svg" alt="Logo da Propago" width="185" height="45"/>
                  </div>
             </a>
             <nav class="menu" id="menu-nav">
@@ -47,7 +47,7 @@
                     </li>
                     <li>
                         <div class="menu__item menu__item--highlighted">
-                            <span class="menu__link">Saiba Mais</span>
+                            <span class="menu__link" role="button">Saiba Mais</span>
                             <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
                             <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                         </div>
@@ -80,7 +80,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="menu-button" id="menu-btn">
+            <button class="menu-button" id="menu-btn" aria-label="menu-button">
                 <i class="menu-button__icon ri-menu-fill"></i>
                 <i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i>
             </button>
@@ -179,7 +179,7 @@
         </main>
         <footer class="footer" id="footer">
             <div class="footer__section footer__description">
-                <div class="footer__image"><img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" /></div>
+                <div class="footer__image"><img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="300" height="70" /></div>
                 <div class="footer__text">
                     <p><strong>Transformamos tecnologia em conexões.</strong></p>
                     <p><strong>E conexões dão significado à vida.</strong></p>
@@ -209,13 +209,13 @@
                 <div class="footer__label">SIGA-NOS</div>
                 <div class="footer__social-media-container">
                     <div class="footer__social-media">
-                        <a href="https://www.facebook.com/propago.brasil" target="_blank"><i class="footer__social-media-icon ri-facebook-circle-fill"></i></a>
+                        <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link"><i class="footer__social-media-icon ri-facebook-circle-fill"></i></a>
                     </div>
                     <div class="footer__social-media">
-                        <a href="https://www.instagram.com/propago.brasil/" target="_blank"><i class="footer__social-media-icon ri-instagram-fill"></i></a>
+                        <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link"><i class="footer__social-media-icon ri-instagram-fill"></i></a>
                     </div>
                     <div class="footer__social-media">
-                        <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a>
+                        <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a>
                     </div>
                 </div>
                 <div class="footer__ssl-badge"></div>

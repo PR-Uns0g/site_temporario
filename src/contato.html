@@ -53,7 +53,7 @@
                 </li>
                 <li>
                     <div class="menu__item menu__item--highlighted">
-                        <span class="menu__link">Saiba Mais</span>
+                        <span class="menu__link" role="button">Saiba Mais</span>
                         <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                     </div>
@@ -86,7 +86,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i
+        <button class="menu-button" id="menu-btn" aria-label="menu-button"><i class="menu-button__icon ri-menu-fill"></i><i
                 class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
     </header>
     <main>
@@ -156,6 +156,7 @@
                     <div class="block-row__body">
                         <div class="map">
                             <iframe
+                                title="Localização do escritório da Propago em Ribeirão Preto"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.755757930797!2d-47.765078024820916!3d-21.201859379171346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c7cd8c25d4e9%3A0x2826f0446b37a280!2sDabi%20Business%20Park!5e0!3m2!1spt-BR!2sbr!4v1684165674386!5m2!1spt-BR!2sbr"
                                 width="100%" height="500"
                                 style="border: 2px solid var(--primary-color); border-radius: 5px;" allowfullscreen=""
@@ -196,12 +197,21 @@
         <div class="footer__section footer__contact">
             <div class="footer__label">SIGA-NOS</div>
             <div class="footer__social-media-container">
-                <div class="footer__social-media"><a href="https://www.facebook.com/propago.brasil" target="_blank"><i
-                            class="footer__social-media-icon ri-facebook-circle-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.instagram.com/propago.brasil/" target="_blank"><i
-                            class="footer__social-media-icon ri-instagram-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.linkedin.com/company/propago-brasil/"
-                        target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a></div>
+                <div class="footer__social-media">
+                    <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                        <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                        <i class="footer__social-media-icon ri-instagram-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                        <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
             </div>
             <div class="footer__ssl-badge"></div>
         </div>

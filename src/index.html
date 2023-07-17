@@ -54,7 +54,7 @@
                 </li>
                 <li>
                     <div class="menu__item menu__item--highlighted">
-                        <span class="menu__link">Saiba Mais</span>
+                        <span class="menu__link" role="button">Saiba Mais</span>
                         <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                     </div>
@@ -87,7 +87,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="menu-button" id="menu-btn">
+        <button class="menu-button" id="menu-btn" aria-label="menu-button">
             <i class="menu-button__icon ri-menu-fill"></i>
             <i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i>
         </button>
@@ -202,8 +202,9 @@
                 <aside class="block-row__column">
                     <div class="block-row">
                         <div class="carousel">
-                            <button class="carousel__arrow-button carousel__arrow-button--back"><i
-                                    class="ri-arrow-left-s-line"></i></button>
+                            <button class="carousel__arrow-button carousel__arrow-button--back" aria-label="previous-service">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </button>
                             <div class="carousel__container pns-images-container">
                                 <img src="./imgs/carousel/pns1.svg" alt="Ícone de uma landing page"
                                     class="carousel__item" />
@@ -214,10 +215,12 @@
                                 <img src="./imgs/carousel/pns4.svg" alt="Ícone do Crédito Social"
                                     class="carousel__item pns-image" />
                             </div>
-                            <button class="carousel__arrow-button carousel__arrow-button--forward"><i
-                                    class="ri-arrow-right-s-line"></i></button>
-                            <small class="carousel__disclaimer"><strong>Você pode rolar para a direita para ver mais
-                                    ícones dos serviços</strong></small>
+                            <button class="carousel__arrow-button carousel__arrow-button--forward" aria-label="next-service">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </button>
+                            <small class="carousel__disclaimer">
+                                <strong>Você pode rolar para a direita para ver mais ícones dos serviços</strong>
+                            </small>
                         </div>
                     </div>
                 </aside>
@@ -332,12 +335,14 @@
             <div class="block-row">
                 <div class="block-row__column block-row__column--carousel">
                     <div class="carousel">
-                        <button class="carousel__arrow-button carousel__arrow-button--back"><i
-                                class="carousel__arrow-icon ri-arrow-left-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--back" aria-label="previous-post">
+                            <i class="carousel__arrow-icon ri-arrow-left-s-line"></i>
+                            </button>
                         <div class="carousel__container cards-container posts-container">
                         </div>
-                        <button class="carousel__arrow-button carousel__arrow-button--forward"><i
-                                class="carousel__arrow-icon ri-arrow-right-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward" aria-label="next-post">
+                            <i class="carousel__arrow-icon ri-arrow-right-s-line"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -352,15 +357,22 @@
             </div>
             <div class="block-row">
                 <div class="images-container">
-                    <div class="partner-image"><img src="./imgs/logos/allya_logo.png"
-                            alt="Logo da plataforma de descontos Allya" /></div>
-                    <div class="partner-image"><img src="./imgs/logos/techsoup-brasil_logo.png"
-                            alt="Logo da plataforma de apoio a ONGs Techsoup Brasil" />
+                    <div class="partner-image">
+                        <img src="./imgs/logos/allya_logo.png"
+                            alt="Logo da plataforma de descontos Allya" width="200" height="200"/>
                     </div>
-                    <div class="partner-image"><img src="./imgs/logos/atn_logo.png" alt="Logo da OSCIP ATN" /></div>
-                    <div class="partner-image"><img src="./imgs/logos/reurbi_logo.png" alt="Logo da empresa ReUrbi" />
+                    <div class="partner-image">
+                        <img src="./imgs/logos/techsoup-brasil_logo.png"
+                            alt="Logo da plataforma de apoio a ONGs Techsoup Brasil" width="200" height="200"/>
                     </div>
-                    <div class="partner-image"><img src="./imgs/logos/altrus_logo.png" alt="Logo da startup AltruS" />
+                    <div class="partner-image">
+                        <img src="./imgs/logos/atn_logo.png" alt="Logo da OSCIP ATN" width="200" height="200"/>
+                    </div>
+                    <div class="partner-image">
+                        <img src="./imgs/logos/reurbi_logo.png" alt="Logo da empresa ReUrbi" width="200" height="200"/>
+                    </div>
+                    <div class="partner-image">
+                        <img src="./imgs/logos/altrus_logo.png" alt="Logo da startup AltruS" width="200" height="200"/>
                     </div>
                 </div>
             </div>
@@ -379,9 +391,8 @@
                     <div class="block-row__body">
                         <p class="block-row__text">
                             Doando a partir de R$35,00 mensais, você terá acesso a descontos exclusivos em nossa rede de
-                            parceiros. São mais de 30.000 parceiros nas categorias: comércio, saúde, educação, viagens e
-                            muito
-                            mais!
+                            parceiros. São mais de 30.000 parceiros nas categorias: comércio, saúde, educação, viagens e 
+                            muito mais!
                         </p>
                         <div class="hashtag-area">
                             <strong>A propósito, <span class="hashtag-area__hashtag">#FazerOBemFazBem!</span></strong>
@@ -392,31 +403,32 @@
             <div class="block-row">
                 <div class="block-row__column block-row__column--carousel">
                     <div class="carousel">
-                        <button
-                            class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--no-top"><i
-                                class="ri-arrow-left-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--no-top" aria-label="scroll-left">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </button>
                         <div class="carousel__container partners-images-container">
-                            <img src="imgs/carousel/parceiros/anhembi.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/baked.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/berlitz.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/cinemark.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/cna.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/conquer.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/dominos.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/duo.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/gendai.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/mis.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/primepass.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/sd.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/sousmile.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/selina.jpg" alt="" /><img
-                                src="./imgs/carousel/parceiros/zenklub.jpg" alt="" />
+                            <img src="imgs/carousel/parceiros/anhembi.jpg" alt="Logo da Anhembi" />
+                            <img src="./imgs/carousel/parceiros/baked.jpg" alt="Logo da Baked" />
+                            <img src="./imgs/carousel/parceiros/berlitz.jpg" alt="Logo da Berlitz" />
+                            <img src="./imgs/carousel/parceiros/cinemark.jpg" alt="Logo da Cinemark" />
+                            <img src="./imgs/carousel/parceiros/cna.jpg" alt="Logo da CNA" />
+                            <img src="./imgs/carousel/parceiros/conquer.jpg" alt="Logo da Conquer" />
+                            <img src="./imgs/carousel/parceiros/dominos.jpg" alt="Logo da Domino's" />
+                            <img src="./imgs/carousel/parceiros/duo.jpg" alt="Logo da Duo" />
+                            <img src="./imgs/carousel/parceiros/gendai.jpg" alt="Logo da Gendai" />
+                            <img src="./imgs/carousel/parceiros/mis.jpg" alt="Logo do Museu da Imagem e do Som" />
+                            <img src="./imgs/carousel/parceiros/primepass.jpg" alt="Logo do Primepass" />
+                            <img src="./imgs/carousel/parceiros/sd.jpg" alt="Logo da Sobrancelhas Design" />
+                            <img src="./imgs/carousel/parceiros/sousmile.jpg" alt="Logo da Sousmile" />
+                            <img src="./imgs/carousel/parceiros/selina.jpg" alt="Logo da Selina" />
+                            <img src="./imgs/carousel/parceiros/zenklub.jpg" alt="Logo do Zenklub" />
                         </div>
-                        <button
-                            class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--no-top"><i
-                                class="ri-arrow-right-s-line"></i></button>
-                        <small class="carousel__disclaimer"><strong>Você pode rolar para a direita para ver mais
-                                parceiros</strong></small>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward carousel__arrow-button--no-top" aria-label="scroll-right">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                        <small class="carousel__disclaimer">
+                            <strong>Você pode rolar para a direita para ver mais parceiros</strong>
+                        </small>
                     </div>
                 </div>
             </div>
@@ -428,9 +440,11 @@
             <div class="footer__text">
                 <p><strong>Transformamos tecnologia em conexões.</strong></p>
                 <p><strong>E conexões dão significado à vida.</strong></p>
-                <p>A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
+                <p>
+                    A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
                     visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover
-                    o bem-estar e dividir riqueza.</p>
+                    o bem-estar e dividir riqueza.
+                </p>
             </div>
         </div>
         <div class="footer__section footer__pages-navigation">
@@ -452,12 +466,21 @@
         <div class="footer__section footer__contact">
             <div class="footer__label">SIGA-NOS</div>
             <div class="footer__social-media-container">
-                <div class="footer__social-media"><a href="https://www.facebook.com/propago.brasil" target="_blank"><i
-                            class="footer__social-media-icon ri-facebook-circle-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.instagram.com/propago.brasil/" target="_blank"><i
-                            class="footer__social-media-icon ri-instagram-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.linkedin.com/company/propago-brasil/"
-                        target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a></div>
+                <div class="footer__social-media">
+                    <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                        <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                        <i class="footer__social-media-icon ri-instagram-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                        <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
             </div>
             <div class="footer__ssl-badge"></div>
         </div>

@@ -12,10 +12,10 @@
     <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="114x114">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="./css/core.css">
-    <title>Propago - Promover o bem é nosso primordial</title>
+    <title>Propago - Sobre Nós</title>
     <meta name="description" content="Página Inicial Da Propago">
     <link rel="canonical" href="https://propago.com.br">
-    <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
+    <meta property="og:title" content="Propago - Sobre Nós">
     <meta property="og:description" content="Página Inicial Da Propago">
     <meta property="og:image" content="./assets/socialImage.png">
     <meta property="og:image:width" content="2500">
@@ -24,7 +24,7 @@
     <meta property="og:site_name" content="Propago">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
+    <meta name="twitter:title" content="Propago - Sobre Nós">
     <meta name="twitter:description" content="Página Inicial Da Propago">
     <meta name="twitter:image" content="./assets/socialImage.png">
 
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                     <div class="menu__item menu__item--highlighted">
-                        <span class="menu__link">Saiba Mais</span>
+                        <span class="menu__link" role="button">Saiba Mais</span>
                         <button class="menu__dropdown-button ri-arrow-drop-down-fill"
                             id="menu-dropdown-button"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
@@ -88,20 +88,22 @@
             </li>
             </ul>
         </nav>
-        <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i
-                class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
+        <button class="menu-button" id="menu-btn" aria-label="menu-button">
+            <i class="menu-button__icon ri-menu-fill"></i>
+            <i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i>
+        </button>
     </header>
     <main>
         <section class="block " id="quem-somos">
             <div class="block-row ">
                 <aside class="block-row__column">
                     <div class="block-row__image">
-                        <img src="./imgs/people.jpg" alt="Foto de 4 pessoas comemorando">
+                        <img src="./imgs/people.jpg" alt="Foto de 4 pessoas comemorando" width="570" height="520">
                     </div>
                 </aside>
                 <div class="block-row__column">
                     <header class="block-row__header">
-                        <div class="block-row__label"><i class="ri-heart-line"></i> Quem Somos</div>
+                        <h1 class="block-row__label"><i class="ri-heart-line"></i> Quem Somos</h1>
                         <h2 class="block-row__title">Olá, nós somos a Propago</h2>
                         <h3 class="block-row__subtitle"><strong
                                 class="block-row__subtitle--uppercase block-row__subtitle--bigger">FAZER O BEM</strong>
@@ -210,7 +212,7 @@
                             Sociedade Civil de Interesse Público (<strong>OSCIP</strong>), bem como fundações, fundos
                             comunitários, entidades sem fins lucrativos, associações, dentre outros.
                         </p>
-                        <div class="block-row__image"><img src="./imgs/girl.jpg" alt="Foto de criança sorrindo" /></div>
+                        <div class="block-row__image"><img src="./imgs/girl.jpg" alt="Foto de criança sorrindo" width="560" height="440"  /></div>
                         <p class="block-row__text">
                             Além disso, a <strong>Propago</strong> desenvolve seu trabalho nas áreas
                             correlatas a todos os Objetivos de Desenvolvimento Sustentável da ONU. No entanto,
@@ -247,8 +249,9 @@
                             Sociais.
                         </li>
                     </ul>
-                    <div class="block-row__image"><img src="./imgs/hands-768x365.jpg"
-                            alt="Desenho de cinco mãos com um coração no centro de cada uma" /></div>
+                    <div class="block-row__image">
+                        <img src="./imgs/hands-768x365.jpg" alt="Desenho de cinco mãos com um coração no centro de cada uma" width="760" height="365" />
+                    </div>
                     <h3 class="block-row__subtitle">O quê, para quem e porque fazemos</h3>
                     <p class="block-row__text">Oferecemos produtos e serviços para o <strong>Terceiro Setor</strong> –
                         um setor que encontra dificuldades de arrecadação e, consequentemente, aumento de receita –
@@ -298,7 +301,7 @@
                 </div>
                 <div class="block-row__column">
                     <div class="block-row__image">
-                        <img src="./imgs/earth.png" alt="" />
+                        <img src="./imgs/earth.png" alt="Um homem e uma mulher abraçando o planeta Terra" width="400" height="370" />
                     </div>
                 </div>
             </div>
@@ -334,12 +337,21 @@
         <div class="footer__section footer__contact">
             <div class="footer__label">SIGA-NOS</div>
             <div class="footer__social-media-container">
-                <div class="footer__social-media"><a href="https://www.facebook.com/propago.brasil" target="_blank"><i
-                            class="footer__social-media-icon ri-facebook-circle-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.instagram.com/propago.brasil/" target="_blank"><i
-                            class="footer__social-media-icon ri-instagram-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.linkedin.com/company/propago-brasil/"
-                        target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a></div>
+                <div class="footer__social-media">
+                    <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                        <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                        <i class="footer__social-media-icon ri-instagram-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                        <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
             </div>
             <div class="footer__ssl-badge"></div>
         </div>

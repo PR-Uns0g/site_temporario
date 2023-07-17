@@ -55,7 +55,7 @@
                 </li>
                 <li>
                     <div class="menu__item menu__item--highlighted">
-                        <span class="menu__link">Saiba Mais</span>
+                        <span class="menu__link" role="button">Saiba Mais</span>
                         <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                     </div>
@@ -88,7 +88,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i
+        <button class="menu-button" id="menu-btn" aria-label="menu-button"><i class="menu-button__icon ri-menu-fill"></i><i
                 class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
     </header>
     <main>
@@ -226,12 +226,21 @@
         <div class="footer__section footer__contact">
             <div class="footer__label">SIGA-NOS</div>
             <div class="footer__social-media-container">
-                <div class="footer__social-media"><a href="https://www.facebook.com/propago.brasil" target="_blank"><i
-                            class="footer__social-media-icon ri-facebook-circle-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.instagram.com/propago.brasil/" target="_blank"><i
-                            class="footer__social-media-icon ri-instagram-fill"></i></a></div>
-                <div class="footer__social-media"><a href="https://www.linkedin.com/company/propago-brasil/"
-                        target="_blank"><i class="footer__social-media-icon ri-linkedin-box-fill"></i></a></div>
+                <div class="footer__social-media">
+                    <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                        <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                        <i class="footer__social-media-icon ri-instagram-fill"></i>
+                    </a>
+                </div>
+                <div class="footer__social-media">
+                    <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                        <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
             </div>
             <div class="footer__ssl-badge"></div>
         </div>
