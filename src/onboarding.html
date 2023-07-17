@@ -30,36 +30,65 @@
     </head>
 
     <body>
-        <header class="header" id="header">
-            <!-- See about aria-label later -->
+        <header class="header" id="header"> <!-- See about aria-label later -->
             <a href="./index.html">
                 <div class="logo">
-                    <img src="./imgs/logos/propago_logo.png" alt="Logo da Propago" />
-                </div>
+                        <img src="./imgs/logos/propago_logo.png" alt="Logo da Propago">
+                 </div>
             </a>
             <nav class="menu" id="menu-nav">
                 <ul class="menu__item-container">
-                    <li class="menu__item"><a class="menu__link" href="./index.html">Home</a><span class="menu__item-clapboard"></span></li>
                     <li class="menu__item">
-                        <div class="menu__item menu__item--flex">
-                            <a class="menu__link" href="./sobre.html">A Propago</a><button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
-                            <span class="menu__item-clapboard"></span>
+                        <a class="menu__link" href="./index.html">Home</a>
+                        <span class="menu__item-clapboard"></span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./a-propago.html">A Propago</a>
+                        <span class="menu__item-clapboard"></span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./blog/index.html">Blog</a>
+                        <span class="menu__item-clapboard"></span>
+                    </li>
+                    <li>
+                        <div class="menu__item menu__item--highlighted">
+                            <span class="menu__link">Saiba Mais</span>
+                            <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                         </div>
-                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu">
-                            <li class="menu__item"><a class="menu__link" href="./sobre.html#quem-ajudamos">Quem Ajudamos</a><span class="menu__item-clapboard"></span></li>
-                            <li class="menu__item"><a class="menu__link" href="./sobre.html#como-funciona">Como Funciona</a><span class="menu__item-clapboard"></span></li>
+                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu"></li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./faca-o-bem.html">Faça O Bem!</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./solucoes.html">Soluções</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./parceiros.html">Parceiros</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./eventos.html">Eventos</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./contato.html">Contato</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./cadastro.html">Cadastro</a>
+                                <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                            </li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a class="menu__link" href="./solucoes.html">Soluções</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="nossas_ongs.html">Nossas ONGs</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="./blog/index.html">Blog</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="./eventos.html">Eventos</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="./parceiros.html">Parceiros</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="./contato.html">Contato</a><span class="menu__item-clapboard"></span></li>
-                    <li class="menu__item"><a class="menu__link" href="./cadastro.html">Cadastro</a><span class="menu__item-clapboard"></span></li>
                 </ul>
             </nav>
-            <button class="menu-button" id="menu-btn"><i class="menu-button__icon ri-menu-fill"></i><i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i></button>
+            <button class="menu-button" id="menu-btn">
+                <i class="menu-button__icon ri-menu-fill"></i>
+                <i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i>
+            </button>
         </header>
         <main>
             <section class="block block--gray">
@@ -126,81 +155,81 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Informações Gerais</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="org-name" class="form__label" data-role="field_question">Razão Social</label>
+                                                <label for="org-name" class="form__label" data-role="field_question">Razão Social*</label>
                                                 <input type="text" class="form__input" data-role="field_answer" id="org-name" name="name" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="org-email-address" class="form__label" data-role="field_question">Email Da Organização</label>
+                                                <label for="org-email-address" class="form__label" data-role="field_question">Email Da Organização*</label>
                                                 <input type="email" class="form__input" data-role="field_answer" id="org-email-address" name="email" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="org-cnpj" class="form__label" data-role="field_question">CNPJ</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="cnpj" minlength="18" maxlength="18" placeholder="__.___.___/____-__" required />
+                                                <label for="org-cnpj" class="form__label" data-role="field_question">CNPJ*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="org_cnpj" minlength="18" maxlength="18" placeholder="__.___.___/____-__" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="org-phone-number" class="form__label" data-role="field_question">Telefone Da Organização (com DDD)</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org-phone" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                                <label for="org-phone-number" class="form__label" data-role="field_question">Telefone Da Organização (com DDD)*</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org_phone" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="org-foundation-date" class="form__label" data-role="field_question">Data De Fundação</label>
-                                                <input type="date" class="form__input" data-role="field_answer" id="org-foundation-date" name="foundation-date" required />
+                                                <label for="org-foundation-date" class="form__label" data-role="field_question">Data De Fundação*</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="org-foundation-date" name="org_foundation_date" required />
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Localização</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="locale-zipcode" class="form__label" data-role="field_question">CEP</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="zip_code" minlength="9" maxlength="9" placeholder="_____-___" required />
+                                                <label for="locale-zipcode" class="form__label" data-role="field_question">CEP*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="locale_zip_code" minlength="9" maxlength="9" placeholder="_____-___" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="locale-address" class="form__label" data-role="field_question">Endereço Completo (com número e complemento)</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="locale-address" name="full_address" required />
+                                                <label for="locale-address" class="form__label" data-role="field_question">Endereço Completo (com número e complemento)*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-address" name="locale_full_address" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="locale-neighbourhood" class="form__label" data-role="field_question">Bairro</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="locale-neighbourhood" name="neighborhood" required />
+                                                <label for="locale-neighbourhood" class="form__label" data-role="field_question">Bairro*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-neighbourhood" name="locale_neighborhood" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="locale-city" class="form__label" data-role="field_question">Cidade e sigla da UF</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="locale-city" name="city" placeholder="Ex: Ribeirão Preto - SP" required />
+                                                <label for="locale-city" class="form__label" data-role="field_question">Cidade e sigla da UF*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="locale-city" name="locale_city" placeholder="Ex: Ribeirão Preto - SP" required />
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre O Responsável Pela ONG</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="head-name" class="form__label" data-role="field_question">Nome</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="head-name" name="head__name" required />
+                                                <label for="head-name" class="form__label" data-role="field_question">Nome*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="head-name" name="head_name" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="head-phone" class="form__label" data-role="field_question">Telefone (com DDD)</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head__phone_number" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                                <label for="head-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head_phone_number" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="head-address" class="form__label" data-role="field_question">Endereço</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="head-address" name="head__address" required />
+                                                <label for="head-address" class="form__label" data-role="field_question">Endereço*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="head-address" name="head_address" required />
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre A Diretoria</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="board-termOffice" class="form__label" data-role="field_question">Vigência Do Mandato Atual</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="board-termOffice" name="current_mandate__term" placeholder="Ex: 4 anos" required />
+                                                <label for="board-termOffice" class="form__label" data-role="field_question">Vigência Do Mandato Atual*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="board-termOffice" name="board_mandate_term" placeholder="Ex: 4 anos" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="board-termBeginning" class="form__label" data-role="field_question">Início Do Mandato</label>
-                                                <input type="date" class="form__input" data-role="field_answer" id="board-termBeginning" name="current_mandate__beginning" required />
+                                                <label for="board-termBeginning" class="form__label" data-role="field_question">Início Do Mandato*</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="board-termBeginning" name="board_mandate_beginning" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="board-termEnd" class="form__label" data-role="field_question">Término Do Mandato</label>
-                                                <input type="date" class="form__input" data-role="field_answer" id="board-termEnd" name="current_mandate__end" required />
+                                                <label for="board-termEnd" class="form__label" data-role="field_question">Término Do Mandato*</label>
+                                                <input type="date" class="form__input" data-role="field_answer" id="board-termEnd" name="board_mandate_end" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="board-membersAmount" class="form__label" data-role="field_question">Número De Sócios</label>
-                                                <input type="number" class="form__input" data-role="field_answer" data-mask="only_number" min="0" id="board-membersAmount" name="associates_number" />
+                                                <input type="number" class="form__input" data-role="field_answer" data-mask="only_number" min="0" id="board-membersAmount" name="board_associates_number" />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="board-directors" class="form__label" data-role="field_question">Composição Atual Da Diretoria</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="board-directors" name="board_of_directors" placeholder="Nome: função que exerce" required></textarea>
+                                                <label for="board-directors" class="form__label" data-role="field_question">Composição Atual Da Diretoria*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="board-directors" name="board_directors" placeholder="Nome: função que exerce" required></textarea>
                                             </div>
                                         </fieldset>
                                         <div class="form__buttons-area">
@@ -211,19 +240,19 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre O Administrador Financeiro</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="adm-phone" class="form__label" data-role="field_question">Telefone (com DDD)</label>
+                                                <label for="adm-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
                                                 <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" minlength="15" maxlength="15" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="adm-email" class="form__label" data-role="field_question">E-Mail</label>
+                                                <label for="adm-email" class="form__label" data-role="field_question">E-Mail*</label>
                                                 <input type="email" class="form__input" data-role="field_answer" id="adm-email" name="finance_manager__email" required />
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Banco</legend>
                                             <div class="form__field" data-role="field_container" data-has-other>
-                                                <label for="bank-name" class="form__label" data-role="field_question">Em Qual Banco A Organização Possui Conta?</label>
-                                                <select class="form__input form__select" data-role="field_answer" id="bank-name" name="bank_account__name" required>
+                                                <label for="bank-name" class="form__label" data-role="field_question">Em Qual Banco A Organização Possui Conta?*</label>
+                                                <select class="form__input form__select" data-role="field_answer" id="bank-name" name="bank_name" required>
                                                     <option label="Selecione uma opção" class="form__option" selected disabled></option>
                                                     <option value="Banco do Brasil" class="form__option">Banco Do Brasil</option>
                                                     <option value="Banco Inter" class="form__option">Banco Inter</option>
@@ -240,10 +269,10 @@
                                                     <option value="Sicredi" class="form__option">Sicredi</option>
                                                     <option value="" class="form__option form__option--other">Outro: </option>
                                                 </select>
-                                                <input class="form__input form__input--invisible form__input--other" data-role="field_answer" placeholder="Especifique aqui" disabled required />
+                                                <input type="text" name="bank_account" class="form__input--invisible form__input--other" data-role="field_answer" placeholder="Especifique aqui" disabled required />
                                             </div>
                                             <div class="form__field">
-                                                <span class="form__label" data-role="field_question">Dados Da Conta</span>
+                                                <span class="form__label" data-role="field_question">Dados Da Conta*</span>
                                                 <div class="form__input-grouping">
                                                     <div class="form__field form__field--group-item" data-role="field_container">
                                                         <label for="bank-branch" class="form__label" data-role="field_question">Agência</label>
@@ -260,16 +289,16 @@
                                                 </div>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <span class="form__label" data-role="field_question">A Organização Possui Cartão De Crédito?</span>
+                                                <span class="form__label" data-role="field_question">A Organização Possui Cartão De Crédito?*</span>
                                                 <div class="form__field form__field--multiple" data-role="child_field_container" id="bank-creditCard-options">
                                                     <label class="form__radio-container" for="bank-creditCard-yes">
                                                         SIM
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="has_credit_card" id="bank-creditCard-yes" value="SIM" required />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="bank_has_credit_card" id="bank-creditCard-yes" value="SIM" required />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="bank-creditCard-no">
                                                         NÃO
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="has_credit_card" value="NÃO" id="bank-creditCard-no" />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" name="bank_has_credit_card" value="NÃO" id="bank-creditCard-no" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                 </div>
@@ -278,20 +307,20 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre O Faturamento</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="revenue-sources" class="form__label" data-role="field_question">Quais São As Fontes De Recursos Da Organização?</label>
+                                                <label for="revenue-sources" class="form__label" data-role="field_question">Quais São As Fontes De Recursos Da Organização?*</label>
                                                 <input type="text" class="form__input" data-role="field_answer" id="revenue-sources" name="revenue_sources" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="revenue-anual" class="form__label" data-role="field_question">Qual é o faturamento anual da Organização?</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-anual" name="annual_revenue" placeholder="R$XXXX,00" required />
+                                                <label for="revenue-annual" class="form__label" data-role="field_question">Qual é o faturamento anual da Organização?*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-annual" name="revenue_annual" placeholder="R$XXXX,00" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="revenue-amountFromDonations" class="form__label" data-role="field_question">Desse Faturamento, quanto é proveniente de doações?</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-amountFromDonations" name="annual_revenue__from_donation" placeholder="R$XXXX,00 ou X%" required />
+                                                <label for="revenue-amountFromDonations" class="form__label" data-role="field_question">Desse Faturamento, quanto é proveniente de doações?*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-amountFromDonations" name="revenue_from_donation" placeholder="R$XXXX,00 ou X%" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="revenue-financialControl" class="form__label" data-role="field_question">A Organização Possui algum sistema de controle financeiro? Se sim, qual?</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-financialControl" name="financial_control_system" required />
+                                                <label for="revenue-financialControl" class="form__label" data-role="field_question">A Organização Possui algum sistema de controle financeiro? Se sim, qual?*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="revenue-financialControl" name="revenue_financial_control_system" required />
                                             </div>
                                         </fieldset>
                                         <div class="form__buttons-area">
@@ -303,47 +332,47 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Descrição Da Organização</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="description-history" class="form__label" data-role="field_question">Discorra Sobre a História Da Organização</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="history" id="description-history" required></textarea>
+                                                <label for="description-history" class="form__label" data-role="field_question">Discorra Sobre a História Da Organização*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="description_history" id="description-history" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="description-whatNhow" class="form__label" data-role="field_question">O Que A Organização Faz? Como ela faz?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="how_does_it_operate" id="description-whatNhow" required></textarea>
+                                                <label for="description-whatNhow" class="form__label" data-role="field_question">O Que A Organização Faz? Como ela faz?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="description_what_and_how" id="description-whatNhow" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="description-mission" class="form__label" data-role="field_question">Quais São As diretrizes da sua organização?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="mission" id="description-mission" placeholder="Missão, visão, valores..." required></textarea>
+                                                <label for="description-mission" class="form__label" data-role="field_question">Quais São As diretrizes da sua organização?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="description_mission" id="description-mission" placeholder="Missão, visão, valores..." required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="description-position" class="form__label" data-role="field_question">Como A Organização Se Posiciona?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="positioning" id="description-position" required></textarea>
+                                                <label for="description-position" class="form__label" data-role="field_question">Como A Organização Se Posiciona?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="description_positioning" id="description-position" required></textarea>
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Situação Da Organização</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-highlights" class="form__label" data-role="field_question">O Que Você quer destacar da sua organização?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="highlights" id="situation-highlights" required></textarea>
+                                                <label for="situation-highlights" class="form__label" data-role="field_question">O Que Você quer destacar da sua organização?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_highlights" id="situation-highlights" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-strengths" class="form__label" data-role="field_question">Quais são os pontos fortes da sua organização?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="strengths" id="situation-strengths" required></textarea>
+                                                <label for="situation-strengths" class="form__label" data-role="field_question">Quais são os pontos fortes da sua organização?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_strengths" id="situation-strengths" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-weaknessess" class="form__label" data-role="field_question">Quais são os pontos a melhorar da sua organização?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="weaknesses" id="situation-weaknessess" required></textarea>
+                                                <label for="situation-weaknessess" class="form__label" data-role="field_question">Quais são os pontos a melhorar da sua organização?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_weaknesses" id="situation-weaknessess" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-competition" class="form__label" data-role="field_question">Cite Outras 5 Organizações (se houver) que fazem um trabalho similar ou igual à sua:</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="competition" id="situation-competition" required></textarea>
+                                                <label for="situation-competition" class="form__label" data-role="field_question">Cite Outras 5 Organizações (se houver) que fazem um trabalho similar ou igual à sua:*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_competition" id="situation-competition" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-differential" class="form__label" data-role="field_question">A Sua Organização Possui Algum Diferencial?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="differentiators" id="situation-differential" required></textarea>
+                                                <label for="situation-differential" class="form__label" data-role="field_question">A Sua Organização Possui Algum Diferencial?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_differentiators" id="situation-differential" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="situation-timeline" class="form__label" data-role="field_question">Escreva - em uma linha do tempo - os principais acontecimentos da sua ONG até o momento (com datas se possível)</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="timeline" id="situation-timeline" required></textarea>
+                                                <label for="situation-timeline" class="form__label" data-role="field_question">Escreva - em uma linha do tempo - os principais acontecimentos da sua ONG até o momento (com datas se possível)*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" name="situation_timeline" id="situation-timeline" required></textarea>
                                             </div>
                                         </fieldset>
                                         <div class="form__buttons-area">
@@ -355,7 +384,7 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre Os Meios De Comunicação</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="social-url" class="form__label" data-role="field_question">A Organização Possui Site? Se sim, cole a URL do site no campo abaixo</label>
+                                                <label for="social-url" class="form__label" data-role="field_question">A Organização Possui Site? Se sim, cole a URL do site no campo abaixo*</label>
                                                 <input type="text" class="form__input" data-role="field_answer" id="social-url" name="website_url" placeholder="Sim, possui: https://nome-do-site.dominio" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
@@ -398,106 +427,106 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre O Marketing</legend>
                                             <div class="form__field" data-role="form_container">
-                                                <label for="mkt-persona" class="form__label" data-role="field_question">Descreva o público-alvo da sua organização</label>
+                                                <label for="mkt-persona" class="form__label" data-role="field_question">Descreva o público-alvo da sua organização*</label>
                                                 <textarea
                                                     class="form__input form__input--textbox"
                                                     data-role="field_answer"
                                                     id="mkt-persona"
-                                                    name="persona"
+                                                    name="mkt_persona"
                                                     placeholder="Informe: idade, cidade, escolaridade, gênero, classe social, estado civil e também dados comportamentais e de consumo"
                                                     required
                                                 ></textarea>
                                             </div>
                                             <div class="form__field" data-role="form_container">
-                                                <label for="mkt-ad" class="form__label" data-role="field_question">A sua organização já anuncia na internet? Se sim, quanto investe por mês?</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="mkt-ad" name="ad_investment" required />
+                                                <label for="mkt-ad" class="form__label" data-role="field_question">A sua organização já anuncia na internet? Se sim, quanto investe por mês?*</label>
+                                                <input type="text" class="form__input" data-role="field_answer" id="mkt-ad" name="mkt_ads_investment" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <span class="form__label" data-role="field_question">A Organização já possui conta no Google for Non Profits e Google Ad Grants?</span>
+                                                <span class="form__label" data-role="field_question">A Organização já possui conta no Google for Non Profits e Google Ad Grants?*</span>
                                                 <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-accounts-options">
                                                     <label class="form__radio-container" for="mkt-accounts-both">
                                                         Sim, em ambos
-                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-both" name="has_gservices" class="form__radio-option" value="Sim, em ambos" required />
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-both" name="mkt_has_gservices" class="form__radio-option" value="Sim, em ambos" required />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-accounts-gfnp">
                                                         Somente no Google for Non Profits
-                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gfnp" name="has_gservices" class="form__radio-option" value="Somente no google For Non Profits" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gfnp" name="mkt_has_gservices" class="form__radio-option" value="Somente no google For Non Profits" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-accounts-gag">
                                                         Somente no Google Ad Grants
-                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gag" name="has_gservices" class="form__radio-option" value="Somente no Google Ad Grants" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-gag" name="mkt_has_gservices" class="form__radio-option" value="Somente no Google Ad Grants" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-accounts-none">
                                                         Não, em nenhuma
-                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-none" name="has_gservices" class="form__radio-option" value="Não, em nenhuma" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-accounts-none" name="mkt_has_gservices" class="form__radio-option" value="Não, em nenhuma" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Analytics?</span>
+                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Analytics?*</span>
                                                 <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-ga-options">
                                                     <label class="form__radio-container" for="mkt-ga-yes">
                                                         SIM
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-yes" name="has_ga_account" value="SIM" required />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-yes" name="mkt_has_ga_account" value="SIM" required />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-ga-no">
                                                         NÃO
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-no" name="has_ga_account" value="NÃO" />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-ga-no" name="mkt_has_ga_account" value="NÃO" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Tag Manager?</span>
+                                                <span class="form__label" data-role="field_question">A Organização Já possui conta no Google Tag Manager?*</span>
                                                 <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-gtm-options">
                                                     <label class="form__radio-container" for="mkt-gtm-yes">
                                                         SIM
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-yes" name="has_gtm_account" value="SIM" required />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-yes" name="mkt_has_gtm_account" value="SIM" required />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-gtm-no">
                                                         NÃO
-                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-no" name="has_gtm_account" value="NÃO" />
+                                                        <input type="radio" data-role="field_answer" class="form__radio-option" id="mkt-gtm-no" name="mkt_has_gtm_account" value="NÃO" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <span class="form__label" data-role="field_question">Qual a verba disponível para a compra de publicidade nas plataformas de anúncios?</span>
+                                                <span class="form__label" data-role="field_question">Qual a verba disponível para a compra de publicidade nas plataformas de anúncios?*</span>
                                                 <div class="form__field form__field--multiple" data-role="child_field_container" id="mkt-budget-options">
                                                     <label class="form__radio-container" for="mkt-budget-1000">
                                                         Até R$1.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-1000" name="advertising_budget" class="form__radio-option" value="Até R$1.000,00" required />
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-1000" name="mkt_advertising_budget" class="form__radio-option" value="Até R$1.000,00" required />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-budget-2000">
                                                         Até R$2.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-2000" name="advertising_budget" class="form__radio-option" value="Até R$2.000,00" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-2000" name="mkt_advertising_budget" class="form__radio-option" value="Até R$2.000,00" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-budget-3000">
                                                         Até R$3.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-3000" name="advertising_budget" class="form__radio-option" value="Até R$3.000,00" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-3000" name="mkt_advertising_budget" class="form__radio-option" value="Até R$3.000,00" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-budget-4000">
                                                         Até R$4.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-4000" name="advertising_budget" class="form__radio-option" value="Até R$4.000,00"/>
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-4000" name="mkt_advertising_budget" class="form__radio-option" value="Até R$4.000,00"/>
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-budget-5000">
                                                         Até R$5.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-5000" name="advertising_budget" class="form__radio-option" value="Até R$5.000,00" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-5000" name="mkt_advertising_budget" class="form__radio-option" value="Até R$5.000,00" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                     <label class="form__radio-container" for="mkt-budget-above5000">
                                                         Acima de R$5.000,00
-                                                        <input type="radio" data-role="field_answer" id="mkt-budget-above5000" name="advertising_budget" class="form__radio-option" value="Acima de R$5.000,00" />
+                                                        <input type="radio" data-role="field_answer" id="mkt-budget-above5000" name="mkt_advertising_budget" class="form__radio-option" value="Acima de R$5.000,00" />
                                                         <span class="form__radio-button"></span>
                                                     </label>
                                                 </div>
@@ -506,15 +535,15 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Comunicação</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="communication-donors" class="form__label" data-role="field_question">Informe quantos doadores a Organização possui, separando-os em doadores Pontuais e Recorrentes</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-donors" name="occasional_current_donors" required></textarea>
+                                                <label for="communication-donors" class="form__label" data-role="field_question">Informe quantos doadores a Organização possui, separando-os em doadores Pontuais e Recorrentes*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-donors" name="comunication_donors" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="communication-email-frequency" class="form__label" data-role="field_question">Com qual frequência você envia e-mails para a sua base de doadores? E não doadores?</label>
-                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-email-frequency" name="emailing_cadence" required></textarea>
+                                                <label for="communication-email-frequency" class="form__label" data-role="field_question">Com qual frequência você envia e-mails para a sua base de doadores? E não doadores?*</label>
+                                                <textarea class="form__input form__input--textbox" data-role="field_answer" id="communication-email-frequency" name="comunication_emailing_cadence" required></textarea>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="communication-goals" class="form__label" data-role="field_question">Quais são as metas da sua Organização?</label>
+                                                <label for="communication-goals" class="form__label" data-role="field_question">Quais são as metas da sua Organização?*</label>
                                                 <textarea
                                                     class="form__input form__input--textbox"
                                                     data-role="field_answer"
@@ -534,8 +563,8 @@
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Sobre Os Acessos</legend>
                                             <div class="form__field" data-role="field_container" data-has-other>
-                                                <label for="access-host" class="form__label" data-role="field_question">Serviço De Hospedagem Onde Está o Site Da Organização</label>
-                                                <select class="form__input form__select" data-role="field_answer" id="access-host" name="website_host" required>
+                                                <label for="access-host" class="form__label" data-role="field_question">Serviço De Hospedagem Onde Está o Site Da Organização*</label>
+                                                <select class="form__input form__select" data-role="field_answer" id="access-host" name="access_host" required>
                                                     <option label="Selecione um serviço" class="form__option" selected disabled></option>
                                                     <option value="Go Daddy" class="form__option">Go Daddy</option>
                                                     <option value="Hostgator" class="form__option">Hostgator</option>
@@ -547,15 +576,15 @@
                                                     <option value="Wix" class="form__option">WIX</option>
                                                     <option value="" class="form__option form__option--other">Outro: </option>
                                                 </select>
-                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                                <input type="text" name="access_host" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="access-emailHost" class="form__label" data-role="field_question">Servidor De E-Mail</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="access-emailHost" name="email_host" />
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-emailHost" name="access_email_host" />
                                             </div>
                                             <div class="form__field" data-role="field_container" data-has-other>
-                                                <label for="access-cms" class="form__label" data-role="field_question">CMS usado no site</label>
-                                                <select class="form__input" data-role="field_answer" id="access-cms" name="cms" required>
+                                                <label for="access-cms" class="form__label" data-role="field_question">CMS usado no site*</label>
+                                                <select class="form__input" data-role="field_answer" id="access-cms" name="access_cms" required>
                                                     <option label="Selecione O CMS" class="form__option" selected disabled> </option>
                                                     <option value="Canvas" class="form__option">Canvas CMS</option>
                                                     <option value="Craft" class="form__option">Craft CMS</option>
@@ -569,11 +598,11 @@
                                                     <option value="Nenhum" class="form__option">Nenhum</option>
                                                     <option value="" class="form__option form__option--other">Outro: </option>
                                                 </select>
-                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                                <input type="text" name="access_cms" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
                                             </div>
                                             <div class="form__field" data-role="field_container" data-has-other>
                                                 <label for="access-database" class="form__label" data-role="field_question">Banco De Dados</label>
-                                                <select class="form__input form__select" data-role="field_answer" id="access-database" name="org_database">
+                                                <select class="form__input form__select" data-role="field_answer" id="access-database" name="access_database">
                                                     <option label="Selecione O Banco De Dados" class="form__option" selected disabled></option>
                                                     <option value="Firebase" class="form__option">Firebase</option>
                                                     <option value="Microsoft SQL Server" class="form__option">Microsoft SQL Server </option>
@@ -585,15 +614,15 @@
                                                     <option value="Nenhum" class="form__option">Nenhum</option>
                                                     <option value="" class="form__option form__option--other">Outro: </option>
                                                 </select>
-                                                <input name="anyName" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
+                                                <input type="text" name="access_database" class="form__input form__input--invisible form__input--other" placeholder="Especifique aqui" disabled required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="access-crm" class="form__label" data-role="field_question">CRM</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="access-crm" name="crm" />
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-crm" name="access_crm" />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="access-erp" class="form__label" data-role="field_question">ERP</label>
-                                                <input type="text" class="form__input" data-role="field_answer" id="access-erp" name="erp" />
+                                                <input type="text" class="form__input" data-role="field_answer" id="access-erp" name="access_erp" />
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
