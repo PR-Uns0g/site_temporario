@@ -10,7 +10,7 @@ export async function sendToEmail(fields){
         body: JSON.stringify(fields)
     }
 
-    let result = await fetch("https://formsubmit.co/ajax/0c59797b0de7e626abb17b649f9e8bfa", options)
+    let result = await fetch("https://formsubmit.co/ajax/7de9bedd6cdb98993b57752ef1013a10", options)
     .then((response) => { return response.json() })
     .catch((error) => { return error });
 

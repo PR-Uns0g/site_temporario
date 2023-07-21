@@ -9,7 +9,7 @@ if(ALL_THE_POSTS){
         let imageURL = await getTheImageURL(imageURIValue);
         
         // Altering date format
-        let dateValue = postObject.date.slice(0,10)
+        let dateValue = postObject.date.slice(0,10);
         dateValue = dateValue.substring(10,8)+'/'+dateValue.substring(7,5)+'/'+dateValue.substring(4,0);
     
         // creating the element
@@ -32,7 +32,7 @@ if(ALL_THE_POSTS){
 }
 
 async function getThePosts(postsURLValue){
-    let result = {}
+    let result = {};
 
     try {
         await fetch(postsURLValue).then((response) => response.json()).then((data) =>{
@@ -53,7 +53,7 @@ async function getThePosts(postsURLValue){
 }
 
 async function getTheImageURL(imageURI){
-    let imageURL = null
+    let imageURL = null;
 
     let params = '?_fields=media_details';
     await fetch(imageURI+params).then((response) => response.json()).then((data) => {

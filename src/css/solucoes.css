@@ -1,30 +1,4 @@
 /* BLOCK STUFF */
-
-.block--white-purple{
-    --block-background-color: #FFFFFF;
-    --block-foreground-color: var(--primary-color);
-    --title-color: #FFFFFF;
-    --text-color: #111111;
-    --subtitle-color: #111111;
-}
-
-.block--purple-yelow{
-    --block-background-color: var(--primary-color);
-    --block-foreground-color: var(--secondary-color);
-    --title-color: #FFF;
-    --subtitle-color: #FFF;
-    --text-color: #FFF;
-    background-color: var(--block-background-color); /* erase this later */
-}
-
-.block--purple-white{
-    --block-background-color: var(--primary-color);
-    --block-foreground-color: #FFFFFF;
-    --title-color: #FFFFFF;
-    --subtitle-color: #FFFFFF;
-    background-color: var(--block-background-color);
-}
-
 .block-row__text-section--contrained {
     position: relative;
     padding: 0 20px 10px 40px;  
@@ -42,7 +16,7 @@
     font-size: calc(2*var(--icon-size));
 }
 
-.block-row__item-icon--circle{
+.block-column__item-icon--circle{
     left: initial;
     right: -5px;
     bottom: -40px;
@@ -54,12 +28,7 @@
     color: var(--text-color);
 }
 
-.block-row__title--rounded {
-    width: max-content;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: var(--block-foreground-color);
-}
+
 
 .block-row__button {
     margin: 10px auto;
@@ -88,7 +57,7 @@
     color: #FFF;
 }
 
-.explanation-card .block-row__list{
+.explanation-card .block-column__list{
     list-style: none;
     color: #FFF;
 }

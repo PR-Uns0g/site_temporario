@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +29,6 @@
     <meta name="twitter:description" content="Página Inicial Da Propago">
     <meta name="twitter:image" content="./assets/socialImage.png">
 </head>
-
 <body>
     <header class="header" id="header"> <!-- See about aria-label later -->
         <a href="#">
@@ -55,10 +53,10 @@
                 <li>
                     <div class="menu__item menu__item--highlighted">
                         <span class="menu__link" role="button">Saiba Mais</span>
-                        <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
+                        <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button" aria-controls="header-dropdown-menu"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                     </div>
-                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu"></li>
+                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="header-dropdown-menu"></li>
                         <li class="menu__item">
                             <a class="menu__link" href="./faca-o-bem.html">Faça O Bem!</a>
                             <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
@@ -68,11 +66,11 @@
                             <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="./parceiros.html">Parceiros</a>
+                            <a class="menu__link" href="./eventos.html">Eventos</a>
                             <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="./eventos.html">Eventos</a>
+                            <a class="menu__link" href="./parceiros.html">Parceiros</a>
                             <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
                         </li>
                         <li class="menu__item">
@@ -93,187 +91,196 @@
         </button>
     </header>
     <main>
-        <section id="imagens">
-            <div class="background">
-                <div class="background__item" style="background-image: url('./imgs/carousel/img2_main-carousel.jpg');">
-                    <div class="background__dark-wall">
+        <section class="block block--purple-white" id="inicial">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-row__header">
+                        <span class="block-row__text">PROPAGAMOS</span>
+                        <h1 class="block-row__title block-row__title--bigger"><span class="block-row__text--yellow">G</span>RATIDÃO & <span class="block-row__text--yellow">G</span>ENTILEZA & <span class="block-row__text--yellow">G</span>ENEROSIDADE</h1>
+                        <span class="block-row__text">FAZER O BEM FAZ BEM</span>
+                    </header>
+                </div>
+                <div class="block-column">
+                    <div class="block-row__image main-image">
+                        <img src="./imgs/handshake.png" alt="Foto de duas pessoas dando em um acordo" width="400" height="400">
                     </div>
-                    <h2 class="background__title">Propagar Gentileza</h2>
-                    <h3 class="background__subtitle">Promover e propagar o bem é nosso propósito</h3>
                 </div>
             </div>
         </section>
-        <section class="block" id="tiles">
+        <section class="block block--white-purple" id="tiles">
             <div class="block-row">
-                <div class="block-row__column">
-                    <div class="tiles-container">
-                        <div class="tile">
-                            <div class="tile__header">
-                                <div class="tile__icon"><i class="ri-hand-heart-line"></i></div>
-                                <div class="tile__title">Quem Ajudamos</div>
-                            </div>
-                            <div class="tile__body">
-                                <p class="tile__text">
-                                    Nos esforçamos diariamente para <strong>criar um ecossistema virtuoso</strong> para
-                                    seres
-                                    humanos e <strong>próspero para ONGs, OSCs e OSCIPs</strong> que, direta ou
-                                    indiretamente, precisam de apoio financeiro para o desenvolvimento de suas
-                                    atividades.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="tile">
-                            <div class="tile__header">
-                                <div class="tile__icon">
-                                    <img src="./imgs/propago-icon.svg" alt="Ícone da Propago" class="propago-icon" />
+                <div class="block-column">
+                    <header class="block-row__header block-row__header--center">
+                        <h2 class="block-row__title block-row__text--yellow">Quem Somos?</h2>
+                    </header>
+                    <div class="block-column__body">
+                        <div class="tiles-container">
+                            <div class="tile">
+                                <div class="tile__header">
+                                    <div class="tile__icon"><i class="ri-hand-heart-line"></i></div>
+                                    <div class="tile__title">Quem Ajudamos</div>
                                 </div>
-                                <div class="tile__title">A Propago</div>
+                                <div class="tile__body">
+                                    <p class="tile__text">
+                                        Nos esforçamos diariamente para <strong>criar um ecossistema virtuoso</strong> para
+                                        seres humanos e <strong>próspero para ONGs, OSCs e OSCIPs</strong> que, direta ou
+                                        indiretamente, precisam de apoio financeiro para o desenvolvimento de suas atividades.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="tile__body">
-                                <p class="tile__text">
-                                    A vontade de ajudar as pessoas e transformar a realidade atual está em nosso DNA
-                                    desde a fundação, no ano de 2017. Nossa missão é propagar o bem, ajudando o terceiro
-                                    setor a imprimir um maior impacto social
-                                </p>
+                            <div class="tile">
+                                <div class="tile__header">
+                                    <div class="tile__icon">
+                                        <img src="./imgs/propago-icon.svg" alt="Ícone da Propago" class="propago-icon" />
+                                    </div>
+                                    <div class="tile__title">A Propago</div>
+                                </div>
+                                <div class="tile__body">
+                                    <p class="tile__text">
+                                        A vontade de ajudar as pessoas e transformar a realidade atual está em nosso DNA
+                                        desde a fundação, no ano de 2017. Nossa missão é propagar o bem, ajudando o terceiro
+                                        setor a imprimir um maior impacto social
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tile">
-                            <div class="tile__header">
-                                <div class="tile__icon"><i class="ri-lightbulb-line"></i></div>
-                                <div class="tile__title">Como Funciona</div>
-                            </div>
-                            <div class="tile__body">
-                                <p class="tile__text">
-                                    Nossas ferramentas proporcionam <strong>valor</strong> às pessoas solidárias e ONGs
-                                    que aceitam ajuda para alavancar as iniciativas sociais e culturais e educacionais.
-                                </p>
+                            <div class="tile">
+                                <div class="tile__header">
+                                    <div class="tile__icon"><i class="ri-lightbulb-line"></i></div>
+                                    <div class="tile__title">Como Funciona</div>
+                                </div>
+                                <div class="tile__body">
+                                    <p class="tile__text">
+                                        Nossas ferramentas proporcionam <strong>valor</strong> às pessoas solidárias e ONGs
+                                        que aceitam ajuda para alavancar as iniciativas sociais e culturais e educacionais.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="block-row"><a href="" class="learn-more" style="background-color: var(--secondary-color);">Ver Mais</a></div>
         </section>
         <section class="block block--goal" id="propagar-gentileza">
             <div class="block-row">
-                <div class="block-row__column">
+                <div class="block-column">
                     <header class="block-row__header">
-                        <h2 class="block-row__title">NOSSO PROPÓSITO É PROMOVER E PROPAGAR O BEM</h2>
+                        <div class="block-row__label">Propagar Gentileza</div>
+                        <h2 class="block-row__title">Fazer o bem, é nosso <span class="block-row__text--yellow">objetivo</span> primordial!</h2>
                     </header>
-                    <div class="block-row__body">
+                    <div class="block-column__body">
                         <p class="block-row__text">Somos norteados por conceitos como Cooperação, Colaboração e
                             Co-evolução</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="block" id="pns">
+        <section class="block block--purple-white" id="pns">
             <div class="block-row">
-                <div class="block-row__column">
-                    <header class="block-row__header">
-                        <div class="block-row__label"><i class="block-row__icon ri-star-line"></i> Soluções
-                        </div>
-                        <h2 class="block-row__title">Conheça Nossos Produtos e Serviços</h2>
+                <div class="block-column">
+                    <header class="block-row__header block-row__header--center">
+                        <h2 class="block-row__title">Conheça nossos produtos e serviços</h2>
+                        <p class="block-row__text">
+                            Fique por dentro do que a Propago tem de melhor para lhe oferecer e lhe ajudar
+                        </p>
                     </header>
                     <div class="block-row__body">
-                        <p class="block-row__text">
-                            Fique por dentro do que a Propago tem de melhor para lhe oferecer e lhe ajudar.
-                        </p>
-                        <ul class="block-row__list">
-                            <li class="block-row__list-item block-row__list-item--with-icon">
-                                <i class="block-row__list-item-icon ri-check-fill"></i>
-                                Landing Page Doe+
-                            </li>
-                            <li class="block-row__list-item block-row__list-item--with-icon">
-                                <i class="block-row__list-item-icon ri-check-fill"></i>
-                                <span>Checkway</span>
-                            </li>
-                            <li class="block-row__list-item block-row__list-item--with-icon">
-                                <i class="block-row__list-item-icon ri-check-fill"></i>
-                                Agência Prósper
-                            </li>
-                            <li class="block-row__list-item block-row__list-item--with-icon">
-                                <i class="block-row__list-item-icon ri-check-fill"></i>
-                                Crédito Social
-                            </li>
-                        </ul>
-                        <a href="././solucoes.html" class="learn-more" id="learnMore-PnS">Saiba Mais</a>
-                    </div>
-                </div>
-                <aside class="block-row__column">
-                    <div class="block-row">
-                        <div class="carousel">
-                            <button class="carousel__arrow-button carousel__arrow-button--back" aria-label="previous-service">
-                                <i class="ri-arrow-left-s-line"></i>
-                            </button>
-                            <div class="carousel__container pns-images-container">
-                                <img src="./imgs/carousel/pns1.svg" alt="Ícone de uma landing page"
-                                    class="carousel__item" />
-                                <img src="./imgs/carousel/pns2.svg" alt="Ícone do Checkway"
-                                    class="carousel__item pns-image" />
-                                <img src="./imgs/carousel/pns3.svg" alt="Ícone da agência"
-                                    class="carousel__item pns-image" />
-                                <img src="./imgs/carousel/pns4.svg" alt="Ícone do Crédito Social"
-                                    class="carousel__item pns-image" />
+                        <div class="product-boxes-container">
+                            <div class="product-box">
+                                <div class="product-box__tile"><i class="product-box__icon ri-pages-line"></i></div>
+                                <span class="product-box__legend">LP Doe+</span>
                             </div>
-                            <button class="carousel__arrow-button carousel__arrow-button--forward" aria-label="next-service">
-                                <i class="ri-arrow-right-s-line"></i>
-                            </button>
-                            <small class="carousel__disclaimer">
-                                <strong>Você pode rolar para a direita para ver mais ícones dos serviços</strong>
-                            </small>
+                            <div class="product-box">
+                                <div class="product-box__tile"><i class="product-box__icon ri-shopping-cart-2-line"></i></div>
+                                <span class="product-box__legend">Checkway</span>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-box__tile"><i class="product-box__icon ri-money-dollar-circle-line"></i></div>
+                                <span class="product-box__legend">Crédito Social</span>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-box__tile"><i class="product-box__icon ri-tools-line"></i></div>
+                                <span class="product-box__legend">Box de ferramentas</span>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-box__tile"><i class="product-box__icon ri-dashboard-2-line"></i></div>
+                                <span class="product-box__legend">Agência Pros.per</span>
+                            </div>
                         </div>
                     </div>
-                </aside>
+                </div>
+            </div>
+            <div class="block-row"><a href="./solucoes.html" class="learn-more" style="color: var(--primary-color);">Ver Mais</a></div>
+        </section>
+        <section class="block block--white-purple" id="contribua">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-row__header block-row__header--center">
+                        <h2 class="block-row__title">Contribua</h2>
+                    </header>
+                    <div class="block-row__body contribute">
+                        <div class="box contribute__box--northwest">
+                            <div class="box__header">
+                                <div class="box__icon"><i class="ri-empathize-line"></i></div>
+                                <div class="box__title">SEJA UM VOLUNTÁRIO</div>
+                            </div>
+                            <div class="box__body">
+                                <p class="box__text">FAÇA O BEM e ajude nossas ONGs.</p>
+                                <p class="box__text">Cadastre-se na <a href="https://freehelper.com.br" target="_blank" style="color: var(--secondary-color); text-decoration: underline;">Freelper</p>
+                            </div>
+                            <div class="box__footer">
+                                <a href="./seja-um-voluntario.html" class="learn-more learn-more--box">Quero Saber Mais</a>
+                            </div>
+                        </div>
+                        <div class="contribute__image" style="background-image: url('./imgs/contribua.png');"></div>  
+                        <div class="box contribute__box--southeast">
+                            <div class="box__header">
+                                <div class="box__icon"><i class="ri-speak-line"></i></div>
+                                <div class="box__title">SEJA UM PROPAGADOR</div>
+                            </div>
+                            <div class="box__body">
+                                <p class="box__text">FAÇA O BEM tornando-se um embaixador de uma de nossas ONGs.</p>
+                            </div>
+                            <div class="box__footer">
+                                <a href="./seja-um-propagador.html" class="learn-more learn-more--box">Quero Saber Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="block block--gray" id="doacao">
+        <section class="block block--purple-white" id="faca-o-bem">
             <div class="block-row">
-                <div class="block-row__column">
-                    <div class="box box--purple">
-                        <div class="box__header">
-                            <div class="box__icon"><i class="ri-empathize-line"></i></div>
-                            <div class="box__title">SEJA UM VOLUNTÁRIO</div>
-                        </div>
-                        <div class="box__body">
-                            <p class="box__text">FAÇA O BEM e ajude nossas ONGs.</p>
-                            <p class="box__text">Cadastre-se na <a href="https://freehelper.com.br" target="_blank" style="color: var(--secondary-color); text-decoration: underline;">Freelper</p>
-                        </div>
-                        <div class="box__footer">
-                            <a href="./seja-um-voluntario.html" class="learn-more learn-more--box">Quero Saber Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-row__column">
-                    <div class="box">
-                        <div class="box__header">
-                            <div class="box__icon"><i class="ri-speak-line"></i></div>
-                            <div class="box__title">SEJA UM PROPAGADOR</div>
-                        </div>
-                        <div class="box__body">
-                            <p class="box__text">FAÇA O BEM tornando-se um embaixador de uma de nossas ONGs.</p>
-                        </div>
-                        <div class="box__footer">
-                            <a href="./seja-um-propagador.html" class="learn-more learn-more--box">Quero Saber Mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-row">
-                <div class="block-row__column">
+                <div class="block-column">
                     <header class="block-row__header">
                         <h2 class="block-row__title">Para quem você vai doar hoje?</h2>
                     </header>
-                    <div class="block-row__body">
+                    <div class="block-column__body">
                         <p class="block-row__text">
-                            Todas as nossas ONGs são certificadas pela Techsoup Brasil e Google for NonProfits.
+                            A Propago trabalha com afinco para trazer mais opções de Instituições para você escolher. 
+                            Todas as nossas ONGs são certificadas pela <strong>TechsoupBrasil</strong> e 
+                            <strong>Google for Nonprofits</strong>.
                         </p>
-                        <!-- <div class="hashtag-area"><strong><span
-                                    class="hashtag-area__hashtag">#FazerOBemFazBem</span></strong></div> -->
+                        <div class="hashtag-area">
+                            <strong><span class="hashtag-area__hashtag block-row__text--white">#FazerOBemFazBem</span></strong>
+                        </div>
                     </div>
+                </div>
+                <div class="block-column">
+                    <div class="block-row__image"><img src="./imgs/faca-o-bem.png" alt="Cartão escrito 'FAÇA O BEM' com um ícone de um coração em cima delas"></div>
+                </div>
+            </div>
+        </section>
+        <section class="block block--white-purple" id="doacao">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-row__header block-row__header--center">
+                        <h3 class="block-row__title">Nossas ONGs</h3>
+                    </header>
                 </div>
             </div>
             <div class="block-row">
-                <div class="block-row__column block-row__column--carousel">
+                <div class="block-column block-column--carousel">
                     <div class="carousel">
                         <button class="carousel__arrow-button carousel__arrow-button--back"><i
                                 class="carousel__arrow-icon ri-arrow-left-s-line"></i></button>
@@ -314,8 +321,9 @@
                                 </div>
                             </a>
                         </div>
-                        <button class="carousel__arrow-button carousel__arrow-button--forward"><i
-                                class="carousel__arrow-icon ri-arrow-right-s-line"></i></button>
+                        <button class="carousel__arrow-button carousel__arrow-button--forward">
+                            <i class="carousel__arrow-icon ri-arrow-right-s-line"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -323,22 +331,19 @@
                 <a href="././faca-o-bem.html#doacao" class="learn-more" id="learnMore-ONGs">Saiba Mais Sobre Nossas ONGs</a>
             </div>
         </section>
-        <section class="block" id="blog">
+        <section class="block block--yellow-purple" id="blog">
             <div class="block-row">
                 <header class="block-row__header block-row__header--center">
-                    <div class="block-row__label">
-                        <i class="block-row__icon ri-message-2-line"></i> Fique Por Dentro
-                    </div>
-                    <h2 class="block-row__title">Acompanhe nosso blog</h2>
+                    <h2 class="block-row__title">Visite nosso blog</h2>
                 </header>
             </div>
             <div class="block-row">
-                <div class="block-row__column block-row__column--carousel">
+                <div class="block-column block-column--carousel">
                     <div class="carousel">
                         <button class="carousel__arrow-button carousel__arrow-button--back" aria-label="previous-post">
                             <i class="carousel__arrow-icon ri-arrow-left-s-line"></i>
                             </button>
-                        <div class="carousel__container cards-container posts-container">
+                        <div class="carousel__container posts-container">
                         </div>
                         <button class="carousel__arrow-button carousel__arrow-button--forward" aria-label="next-post">
                             <i class="carousel__arrow-icon ri-arrow-right-s-line"></i>
@@ -382,26 +387,24 @@
         </section>
         <section class="block" id="programa-de-beneficios">
             <div class="block-row">
-                <div class="block-row__column">
+                <div class="block-column">
                     <div class="block-row__header block-row__header--center">
-                        <div class="block-row__label"><i class="block__icon ri-thumb-up-line"></i> Benefícios Da Doação
-                            Recorrente</div>
                         <h2 class="block-row__title">Programa de Benefícios e Vantagens</h2>
                     </div>
-                    <div class="block-row__body">
+                    <div class="block-column__body">
                         <p class="block-row__text">
                             Doando a partir de R$35,00 mensais, você terá acesso a descontos exclusivos em nossa rede de
                             parceiros. São mais de 30.000 parceiros nas categorias: comércio, saúde, educação, viagens e 
                             muito mais!
                         </p>
                         <div class="hashtag-area">
-                            <strong>A propósito, <span class="hashtag-area__hashtag">#FazerOBemFazBem!</span></strong>
+                            <strong>A propósito, <span class="hashtag-area__hashtag block-row__text--purple">#FazerOBemFazBem!</span></strong>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="block-row">
-                <div class="block-row__column block-row__column--carousel">
+                <div class="block-column block-column--carousel">
                     <div class="carousel">
                         <button class="carousel__arrow-button carousel__arrow-button--back carousel__arrow-button--no-top" aria-label="scroll-left">
                             <i class="ri-arrow-left-s-line"></i>
@@ -435,54 +438,78 @@
         </section>
     </main>
     <footer class="footer" id="footer">
-        <div class="footer__section footer__description">
-            <div class="footer__image"><img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="300" height="70"/></div>
-            <div class="footer__text">
-                <p><strong>Transformamos tecnologia em conexões.</strong></p>
-                <p><strong>E conexões dão significado à vida.</strong></p>
-                <p>
-                    A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
-                    visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover
-                    o bem-estar e dividir riqueza.
-                </p>
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__image"><img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="250" height="70"/></div>
+                <div class="footer__text">
+                    <p><strong>Transformamos tecnologia em conexões.</strong></p>
+                    <p><strong>E conexões dão significado à vida.</strong></p>
+                    <p>
+                        A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
+                        visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover
+                        o bem-estar e dividir riqueza.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="footer__section footer__pages-navigation">
-            <div class="footer__label">PÁGINAS</div>
-            <nav class="footer__navbar">
-                <ul class="footer__navbar-list">
-                    <li class="footer__nav-link footer__nav-link--active"><a href="#header">Home</a></li>
-                    <li class="footer__nav-link"><a href="./a-propago.html">A Propago</a></li>
-                    <li class="footer__nav-link"><a href="./solucoes.html">Soluções</a></li>
-                    <li class="footer__nav-link"><a href="./faca-o-bem.html">Faça O Bem!</a></li>
-                    <li class="footer__nav-link"><a href="./blog/index.html">Blog</a></li>
-                    <li class="footer__nav-link"><a href="./eventos.html">Eventos</a></li>
-                    <li class="footer__nav-link"><a href="./parceiros.html">Parceiros</a></li>
-                    <li class="footer__nav-link"><a href="./contato.html">Contato</a></li>
-                    <li class="footer__nav-link"><a href="./cadastro.html">Cadastro</a></li>
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__label">PÁGINAS</div>
+                <nav class="footer__navbar">
+                    <ul class="footer__navbar-list">
+                        <li class="footer__nav-item footer__nav-item--active"><a class="footer__nav-link" href="#header">Home</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/index.html">Blog</a></li>
+                        <li>
+                            <div class="footer__nav-item">
+                                <span role="button">Saiba Mais</span> 
+                                <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-controls="footer-dropdown-menu"></button>
+                            </div>
+                            <ul class="footer__navbar-list footer__navbar-list--dropdown footer__navbar-list--invisible footer__navbar-list" id="footer-dropdown-menu">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./faca-o-bem.html">Faça O Bem!</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./solucoes.html">Soluções</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./eventos.html">Eventos</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./parceiros.html">Parceiros</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./contato.html">Contato</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="./cadastro.html">Cadastro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__label">SIGA-NOS</div>
+                <div class="footer__social-media-container">
+                    <div class="footer__social-media">
+                        <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                            <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                            <i class="footer__social-media-icon ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                            <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section-row">
+                <div class="footer__label">INFORMAÇÕES DA PROPAGO</div>
+                <ul class="footer__info-container">
+                    <li class="footer__info"><strong class="footer__label">Razão Social:</strong> Propago Consultoria em Gestão Empresarial Ltda.</li>
+                    <li class="footer__info"><strong class="footer__label">E-mail:</strong> mkt@propago.com.br</li>
+                    <li class="footer__info"><strong class="footer__label">CNPJ:</strong> 05.452.059/0001-34</li>
+                    <li class="footer__info"><strong class="footer__label">Cidade:</strong> São Paulo - SP</li>
+                    <li class="footer__info"><strong class="footer__label">Bairro:</strong> Bela Vista (01310-927)</li>
+                    <li class="footer__info"><strong class="footer__label">Logradouro:</strong> Av. Paulista, 2028 - Andar 11</li>
                 </ul>
-            </nav>
-        </div>
-        <div class="footer__section footer__contact">
-            <div class="footer__label">SIGA-NOS</div>
-            <div class="footer__social-media-container">
-                <div class="footer__social-media">
-                    <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
-                        <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
-                    </a>
-                </div>
-                <div class="footer__social-media">
-                    <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
-                        <i class="footer__social-media-icon ri-instagram-fill"></i>
-                    </a>
-                </div>
-                <div class="footer__social-media">
-                    <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
-                        <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
-                    </a>
-                </div>
             </div>
-            <div class="footer__ssl-badge"></div>
         </div>
         <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
     </footer>
@@ -490,5 +517,4 @@
 <script src="./js/main.js" defer></script>
 <script src="./js/getPosts.js" type="module" defer></script>
 <script src="./js/carousels.js" defer></script>
-
 </html>

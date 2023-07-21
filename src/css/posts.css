@@ -1,4 +1,6 @@
 .posts-container{
+    display: flex;
+    gap: 50px;
     overflow-x: hidden;
 }
 
@@ -6,8 +8,28 @@
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    outline: 2px solid var(--secondary-color);
     max-width: 300px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    outline: 2px solid var(--secondary-color);
+    text-align: center;
+    opacity: .8;
+}
+
+.post--active {
+    border: none;
+    border-radius: 50px;
+    background-color: var(--block-foreground-color);
+    opacity: 1;
+}
+
+.post--active .post__image {
+    border-radius: 50px 50px 0 0;
+}
+
+.post--active .post__footer{
+    padding-bottom: 20px;
 }
 
 .post__image{
@@ -25,14 +47,12 @@
 .post__title{
     margin: auto;
     padding: 10px;
-    color: var(--primary-color);
     text-transform: capitalize;
     font-size: var(--icon-size);
 }
 
 .post__metadata{
     padding: 5px 10px;
-    background-color: var(--darker-gray-color);
     font-size: var(--normal-text-size);
 }
 
@@ -42,7 +62,6 @@
 
 .post__footer{
     padding: 10px;
-    background-color: var(--primary-color);
 }
 
 .post__button{
@@ -51,31 +70,36 @@
     padding: 10px;
     margin: auto;
     border-radius: 5px;
-    background-color: var(--secondary-color);
-    color: #FFF;
+    background-color: var(--block-background-color);
+    color: var(--text-color);
     font-size: var(--normal-text-size);
     font-weight: 500;
 }
 
 .post__button:hover{
-    box-shadow: 1px 1px 2px #FFF,
-                -1px -1px 2px #FFF;
+    box-shadow: 1px 1px 2px var(--text-color),
+                -1px -1px 2px var(--text-color);
     font-weight: bolder;
 }
 
 .no-post {
     padding: 20px;
     margin: auto;
+    border: 3px solid #BD0000;
+    border-radius: 10px;
+    background-color: var(--lighter-gray-color);
+    text-align: center;
 }
 
 .no-post__title {
-    color: #8B0000;
+    color: #BD0000;
     font-size: var(--title-text-size);
     text-transform: capitalize;
 }
 
 .no-post__message {
     font-size: 16px;
+    color: #111111;
 }
 
 @media (min-width: 1024px){
