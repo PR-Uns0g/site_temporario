@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&family=Open+Sans:wght@700&display=swap');
 
 /* DEFAULTS */
 *, *::before, *::after{
@@ -21,7 +21,7 @@ html {
     --normal-text-size: 18px;
     --menu-text-size: 18px;
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -95,6 +95,7 @@ a {
     padding: 15px;
     width: 100%;
     color: #000;
+    font-family: 'Poppins', Helvetica, sans-serif;
     z-index: 1;
 }
 
@@ -174,6 +175,8 @@ a {
     --subtitle-color: var(--secondary-color);
     --text-color: #111111;
     --icon-color: var(--secondary-color);
+    --button-primary-color: var(--secondary-color);
+    --button-secondary-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     padding: 30px 0;
@@ -190,6 +193,8 @@ a {
     --in-container-title-color: #FFFFFF;
     --in-container-text-color: #FFFFFF;
     --in-container-icon-color: #FFFFFF;
+    --button-primary-color: var(--primary-color);
+    --button-secondary-color: #FFFFFF;
 }
 
 .block--purple-yellow {
@@ -201,6 +206,8 @@ a {
     --icon-color: var(--secondary-color);
     --in-container-title-color: #FFFFFF;
     --in-container-text-color: #FFFFFF;
+    --button-primary-color: var(--secondary-color);
+    --button-secondary-color: #FFFFFF;
 }
 
 .block--purple-white {
@@ -213,6 +220,8 @@ a {
     --in-container-title-color: #111111;
     --in-container-text-color: #111111;
     --in-container-icon-color: var(--primary-color);
+    --button-primary-color: #FFFFFF;
+    --button-secondary-color: var(--primary-color);
 }
 
 .block--yellow-purple {
@@ -225,6 +234,8 @@ a {
     --in-container-title-color: var(--secondary-color);
     --in-container-text-color: #FFFFFF;
     --in-container-icon-color: #FFFFFF;
+    --button-primary-color: var(--primary-color);
+    --button-secondary-color: #FFFFFF;
 }
 
 .block--goal {
@@ -233,6 +244,8 @@ a {
     --title-color: var(--primary-color);
     --subtitle-color: var(--secondary-color);
     --text-color: #111111;
+    --button-primary-color: var(--secondary-color);
+    --button-secondary-color: #FFFFFF;
     padding: 50px 0;
     text-align: center;
 }
@@ -248,10 +261,8 @@ a {
     --title-color: var(--primary-color);
     --subtitle-color: var(--secondary-color);
     --text-color: #111111;
-}
-
-.block--purple{
-    background-color: var(--primary-color);
+    --button-primary-color: var(--secondary-color);
+    --button-secondary-color: #FFFFFF;
 }
 
 .block-row {
@@ -282,7 +293,7 @@ a {
 .block-row__label {
     margin-bottom: 10px;
     color: var(--block-foreground-color);
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--label-text-size);
     font-weight: bold;
     text-transform: capitalize;
@@ -290,7 +301,7 @@ a {
 
 .block-row__title {
     color: var(--title-color);
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--title-text-size);
 }
 
@@ -308,8 +319,37 @@ a {
 
 .block-row__subtitle {
     color: var(--subtitle-color);
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--subtitle-text-size);
+}
+
+.block-row__item-icon{
+    position: absolute;
+    left: -10px;
+    color: var(--block-foreground-color);
+    font-size: calc(2*var(--icon-size));
+}
+
+.block-column__item-icon--circle{
+    left: initial;
+    right: -5px;
+    bottom: -40px;
+    display: block;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--block-foreground-color);
+    box-shadow: -8px -8px var(--block-background-color);
+    color: var(--text-color);
+}
+
+.block-row__text-section--contrained {
+    position: relative;
+    padding: 0 20px 10px 40px;  
+}
+
+.block-row__text-section--very-contrained{
+    position: relative;
+    padding: 0 0 10px 50px;
 }
 
 .block-row__text, .block-column__list {
@@ -360,6 +400,7 @@ a {
 
 .block-column__title {
     color: var(--in-container-title-color);
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--subtitle-text-size);
     font-weight: bold;
 } 
@@ -369,22 +410,40 @@ a {
     font-size: var(--normal-text-size);
 }
 
+/* EXPLANATION CARDS */
+.explanation-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 0 50px 50px 50px;
+    background-color: var(--block-foreground-color);
+    color: #FFF;
+}
+
+.explanation-card .block-column__list{
+    list-style: none;
+    color: #FFFFFF;
+}
+
 /* BOTÃO SAIBA MAIS */
 .learn-more {
     display: block;
     margin: 10px auto;
     padding: 12px 20px;
+    border: 3px solid var(--button-primary-color);
     border-radius: 50px;
-    background-color: var(--block-foreground-color);
-    color: #FFF;
+    background-color: var(--button-primary-color);
+    color: var(--button-secondary-color);
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--normal-text-size);
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
 
-.learn-more--purple{
-    background-color: var(--primary-color);
+.learn-more:hover {
+    background-color: var(--button-secondary-color);
+    color: var(--button-primary-color);
+    transition: all .3s ease;
 }
 
 /* HASHTAG */
@@ -417,6 +476,7 @@ a {
 }
 
 .box__title{
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--label-text-size);
     font-weight: bold;
 }
@@ -429,14 +489,16 @@ a {
     padding-top: 10px;
 }
 
-.learn-more--box{
+.learn-more--box {
     background-color: #FFFFFF;
     color: var(--secondary-color);
     font-weight: bold;
 }
 
-.box--purple .learn-more--box{
-    color: var(--primary-color);
+.learn-more--box:hover {
+    background-color: var(--secondary-color);
+    color: var(--block-background-color);
+    transition: all .3s ease;
 }
 
 /* CAROUSEL */
@@ -499,6 +561,7 @@ a {
 
 .carousel__title{
     color: #fff;
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-size: var(--title-text-size);
     text-transform: capitalize;
 }
@@ -616,6 +679,10 @@ a {
     padding: 5px;
 }
 
+.footer__nav-item--active{
+    background-color: var(--primary-color);
+}
+
 .footer__dropdown-button {
     color: #FFFFFF;
     font-size: var(--label-text-size);
@@ -669,6 +736,7 @@ a {
 .footer__foot {
     padding: 15px 0;
     background-color: var(--text-color);
+    font-family: 'Poppins', Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
 }

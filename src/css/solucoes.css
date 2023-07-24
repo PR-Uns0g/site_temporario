@@ -1,35 +1,4 @@
 /* BLOCK STUFF */
-.block-row__text-section--contrained {
-    position: relative;
-    padding: 0 20px 10px 40px;  
-}
-
-.block-row__text-section--very-contrained{
-    position: relative;
-    padding: 0 0 10px 50px;
-}
-
-.block-row__item-icon{
-    position: absolute;
-    left: -10px;
-    color: var(--block-foreground-color);
-    font-size: calc(2*var(--icon-size));
-}
-
-.block-column__item-icon--circle{
-    left: initial;
-    right: -5px;
-    bottom: -40px;
-    display: block;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: var(--block-foreground-color);
-    box-shadow: -8px -8px var(--block-background-color);
-    color: var(--text-color);
-}
-
-
-
 .block-row__button {
     margin: 10px auto;
     padding: 10px 20px;
@@ -49,23 +18,10 @@
     transition: .6s ease;
 }
 
-.explanation-card {
-    position: relative;
-    padding: 20px;
-    border-radius: 0 50px 50px 50px;
-    background-color: var(--block-foreground-color);
-    color: #FFF;
-}
-
-.explanation-card .block-column__list{
-    list-style: none;
-    color: #FFF;
-}
-
 /* PLANOS */
 .plan{
     background-color: var(--block-foreground-color);
-    border: 2px solid var(--block-foreground-color);
+    border:rgb(58, 50, 50) solid var(--block-foreground-color);
     border-radius: 40px;
     overflow: hidden;
 }

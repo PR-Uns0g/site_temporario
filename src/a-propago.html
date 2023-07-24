@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" href="./assets/favicon.ico" sizes="114x114">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/a-propago.css">
     <title>Propago - Sobre Nós</title>
     <meta name="description" content="Página Inicial Da Propago">
     <link rel="canonical" href="https://propago.com.br">
@@ -54,38 +55,36 @@
                 <li>
                     <div class="menu__item menu__item--highlighted">
                         <span class="menu__link" role="button">Saiba Mais</span>
-                        <button class="menu__dropdown-button ri-arrow-drop-down-fill"
-                            id="menu-dropdown-button"></button>
+                        <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button" aria-controls="header-dropdown-menu"></button>
                         <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                     </div>
-                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu">
+                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="header-dropdown-menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./faca-o-bem.html">Faça O Bem!</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./solucoes.html">Soluções</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./eventos.html">Eventos</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./parceiros.html">Parceiros</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./contato.html">Contato</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./cadastro.html">Cadastro</a>
+                            <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                        </li>
+                    </ul>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./faca-o-bem.html">Faça O Bem!</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./solucoes.html">Soluções</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./eventos.html">Eventos</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./parceiros.html">Parceiros</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./contato.html">Contato</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./cadastro.html">Cadastro</a>
-                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
-                </li>
-            </ul>
-            </li>
             </ul>
         </nav>
         <button class="menu-button" id="menu-btn" aria-label="menu-button">
@@ -94,7 +93,94 @@
         </button>
     </header>
     <main>
-        <section class="block " id="quem-somos">
+        <section class="block block--purple-white" id="inicial">
+            <div class="block-row">
+                <div class="block-column">
+                    <div class="block-row__image">
+                        <img src="./imgs/stack-of-hands.png" width="290" height="430" class="image-580" alt="Várias mãos emplilhadas uma sobre as outras como símbolo de união"/>
+                    </div>
+                </div>
+                <div class="block-column">
+                    <header class="block-column__header">
+                        <h1 class="block-row__title">
+                            Olá nós somos a Propago
+                        </h1>
+                    </header>
+                    <div class="block-column__body">
+                        <h2 class="block-row__text">
+                            Fazer o bem é nosso objetivo primordial
+                        </h2>
+                        <p class="block-row__text">
+                            A vontade de ajudar as pessoas e transformar a realidade atual está em nosso DNA desde a fundação, no ano de 2017. Acreditamos e investimos na construção de uma sociedade mais justa e igualitária e, por esse motivo, desde o nascimento, o principal pilar da Propago é o SOCIAL que estrutura os nossos projetos presentes e planos futuros.
+                        </p>
+                        <p class="block-row__text">
+                            Nosso propósito é repensar a sociedade em que vivemos, propondo ações do bem e ajudando o terceiro setor em suas múltiplas causas. A Propago é resultado de uma vontade coletiva de mudar o mundo e de sempre fazer o bem!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block block--white-purple" id="ecossistema">
+            <div class="block-row">
+                <div class="block-column">
+                    <div class="explanation-card">
+                        <header class="block-column__header">
+                            <h2 class="block-column__title">Um ecossistema</h2>
+                        </header>
+                        <div class="block-column__body">
+                            <p class="block-column__text">
+                                Ecossistema é um conjunto de comunidades que se relacionam – entre si e com o meio ambiente – compondo um sistema estável e autossuficiente.
+                            </p>
+                            <p class="block-column__text">
+                                Pensando na dificuldade de arrecadação do terceiro setor e em nosso lema de “fazer o bem a quem o faz também”, organizações sem fins lucrativos e doadores são nosso foco principal de atuação. É dentro deste conceito que a Propago atua: conecta pessoas e empresas interessadas em financiar causas relevantes (doadores), organizações que precisam desse aporte (ONGs) e empresas e instituições de tecnologia e de serviços financeiros que também acreditam na construção de um futuro melhor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-column">
+                    <div class="block-row__image">
+                        <img src="./imgs/ecosystem.png" width="215" height="215" class="image-430" alt="Um ícone de ecossistema">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block block--purple-white" id="pilares">
+            <div class="block-row">
+                <header class="block-row__header">
+                    <h2 class="block-row__title">O que nos move?</h2>
+                </header>
+            </div>
+            <div class="block-row">
+                <div class="block-column">
+                    <div class="block-row__text-section block-row__text-section--very-contrained">
+                        <div class="block-row__item-icon block-row__item-icon--rounded"><i class="ri-flag-fill"></i></div>
+                        <h3 class="block-row__subtitle">Propósito</h3>
+                        <p class="block-row__text">Promover e propagar o bem</p>
+                    </div>
+                    <div class="block-row__text-section block-row__text-section--very-contrained">
+                        <div class="block-row__item-icon block-row__item-icon--rounded"><i class="ri-focus-fill"></i></div>
+                        <h3 class="block-row__subtitle">Missão</h3>
+                        <p class="block-row__text">Otimizar e aumentar a receita de organizações sem fins lucrativos, profissionalizar o setor e valorizar o bem</p>
+                    </div>
+                    <div class="block-row__text-section block-row__text-section--very-contrained">
+                        <div class="block-row__item-icon block-row__item-icon--rounded"><i class="ri-eye-fill"></i></div>
+                        <h3 class="block-row__subtitle">Visão</h3>
+                        <p class="block-row__text">Ser o maior e melhor ecossistema de otimização de recursos para o terceiro setor</p>
+                    </div>
+                    <div class="block-row__text-section block-row__text-section--very-contrained">
+                        <div class="block-row__item-icon block-row__item-icon--rounded"><i class="ri-brain-fill"></i></div>
+                        <h3 class="block-row__subtitle">Filosofia</h3>
+                        <p class="block-row__text">Cooperação. Colaboração. Co-evolução.</p>
+                    </div>
+                </div>
+                <div class="block-column">
+                    <div class="block-row__image">
+                        <img src="./imgs/women.png" width="215" height="320" class="image-430" alt="Uma mulher mostrando a outra alguma conteúdo vindo de um tablet que ela está segurando">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="block " id="quem-somos">
             <div class="block-row ">
                 <aside class="block-column">
                     <div class="block-row__image">
@@ -160,10 +246,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="block-row">
-                <!-- NUVEM DE PALAVRAS -->
-            </div>
-        </section>
+        </section> -->
         <section class="block block--goal" id="propagar-gratidao">
             <div class="block-row">
                 <div class="block-column">
@@ -179,7 +262,123 @@
                 </div>
             </div>
         </section>
-        <section class="block" id="quem-ajudamos">
+        <!-- <section class="block block--purple-yellow">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-column__header">
+                        <h2 class="block-column__title">
+                            Atuação
+                        </h2>
+                    </header>
+                    <div class="block-column__body">
+                        <p class="block-row__text">
+                            Nos esforçamos diariamente para <strong>criar um ecossistema virtuoso</strong> para seres
+                            humanos e <strong>próspero para ONGs, OSCs e OSCIPs</strong> que, direta ou indiretamente,
+                            precisam de apoio financeiro para o desenvolvimento de suas atividades.
+                        </p>
+                        <p class="block-row__text">
+                            Planejamos, executamos e gerenciamos estratégias para captar recursos
+                            para as instituições e logo após, promovemos e divulgamos essas instituições, atividades e
+                            os resultados obtidos por suas ações.
+                        </p>
+                        <p class="block-row__text">
+                            Nosso trabalho apoia ONGs que atuam nas áreas correlatas a todos os Objetivos de
+                            Desenvolvimento Sustentável da ONU.
+                        </p>
+                    </div>
+                </div>
+                <div class="block-column">
+                    <div class="explanation-card">
+                        <div class="block-column__header">
+                            <h3 class="block-column__subtitle">Nossas principais atividades são</h3>
+                        </div>
+                        <div class="block-column__body">
+                            <ul class="block-column__list block-column__list--with-bullet">
+                                <li class="block-column__list-item">
+                                    Planejar, executar e gerenciar estratégias de captação de recursos para instituições do terceiro setor; 
+                                </li>
+                                <li class="block-column__list-item">
+                                    Promover e divulgar as instituições do terceiro setor, suas atividades e seus resultados; 
+                                </li>
+                                <li class="block-column__list-item">
+                                    Contribuir e cooperar para melhorar e profissionalizar a Gestão Administrativa das Instituições do terceiro setor, por meio da democratização do conhecimento e cursos on-line; 
+                                </li>
+                                <li class="block-column__list-item">
+                                    Facilitar a Gestão Financeira das Instituições do terceiro setor; 
+                                </li>
+                                <li class="block-column__list-item">
+                                    Oferecer soluções e produtos financeiros para o terceiro setor, atuando como ponte com Bancos Sociais. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="block block--white-purple" id="terceiro-setor">
+            <div class="block-row">
+                <div class="block-column">
+                    <div class="block-row__image"><img src="./imgs/hands-holding-a-heart.png" width="290" height="375" class="image-580" alt="Duas mãos segurando um pequeno objeto em forma de coração"></div>
+                </div>
+                <div class="block-column">
+                    <div class="block-column__header">
+                        <div class="block-row__text-section--contrained">
+                            <h2 class="block-row__title">
+                                Você sabe o que é o TERCEIRO SETOR?
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="block-column__body">
+                        <div class="block-row__text-section--contrained">
+                            <p class="block-row__text">
+                                O <strong>Terceiro Setor</strong> engloba instituições privadas, de
+                                perfil não lucrativo, que concentram esforços, pessoal e recursos materiais para o
+                                Desenvolvimento Social. Originário dos Estados Unidos, onde existe desde os tempos
+                                coloniais, fazem parte do setor as conhecidas <strong>ONGs</strong> – Organizações Não
+                                Governamentais; Organizações da Sociedade Civil (<strong>OSC</strong>), Organizações da
+                                Sociedade Civil de Interesse Público (<strong>OSCIP</strong>), bem como fundações, fundos
+                                comunitários, entidades sem fins lucrativos, associações, dentre outros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block block--purple-white" id="motivacoes">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-column__header">
+                        <h2 class="block-row__title">
+                            O que, para quem e porque fazemos?
+                        </h2>
+                    </header>
+                    <div class="block-column__body">
+                        <p class="block-row__text">
+                            Oferecemos produtos e serviços para o <strong>Terceiro Setor</strong> –
+                            um setor que encontra dificuldades de arrecadação e, consequentemente, aumento de receita –
+                            visto que a maioria dessas entidades obtém seus recursos invariavelmente através de
+                            <strong>DOAÇÕES</strong>.
+                        </p>
+                        <p class="block-row__text">
+                            Fazemos este trabalho para que as ONGs se concentrem nos seus afazeres e
+                            na concretização dos seus propósitos, enquanto cuidamos da Gestão e Prosperidade Financeira
+                            delas. Também atuamos para profissionalizar o terceiro setor e democratizar o acesso ao capital
+                            ao mesmo.
+                        </p>
+                        <p class="block-row__text">
+                            A <strong>Propago</strong> desenvolve soluções tanto tecnológicas quanto
+                            operacionais, a fim de viabilizar e facilitar a entrada dessas receitas. Com o nosso trabalho,
+                            reduzimos barreiras e criamos conexões entre <strong>DOADORES</strong> e
+                            <strong>INSTITUIÇÕES</strong>.
+                        </p>
+                    </div>
+                </div>
+                <div class="block-column">
+                    <div class="block-row__image"><img src="./imgs/girl-softly-smiling.png" width="290" height="225" class="image-580" alt="Foto de uma garota com um sorriso no rosto"/></div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="block" id="quem-ajudamos">
             <div class="block-row">
                 <div class="block-column">
                     <header class="block-row__header">
@@ -269,7 +468,7 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="block block--gray" id="como-funciona">
             <div class="block-row">
                 <div class="block-column">
@@ -279,7 +478,7 @@
                     </header>
                     <div class="block-column__body">
                         <p class="block-row__text">
-                            Neste link, você encontra o <strong>passo-a-passo</strong> onde explicamos e exemplificamos
+                            <a href="">Neste link</a>, você encontra o <strong>passo-a-passo</strong> onde explicamos e exemplificamos
                             como podemos <strong>ajudar sua ONG a captar mais recursos</strong> – e da melhor forma.
                         </p>
                         <p class="block-row__text">
@@ -328,14 +527,14 @@
                 <nav class="footer__navbar">
                     <ul class="footer__navbar-list">
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Home</a></li>
-                        <li class="footer__nav-item footer__nav-item--active"><a class="footer__nav-link" href="#">A Propago</a></li>
+                        <li class="footer__nav-item footer__nav-item--active"><a class="footer__nav-link" href="#header">A Propago</a></li>
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/index.html">Blog</a></li>
                         <li>
                             <div class="footer__nav-item">
                                 <span role="button">Saiba Mais</span> 
                                 <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-controls="footer-dropdown-menu"></button>
                             </div>
-                            <ul class="footer__navbar-list footer__navbar-list--dropdown footer__navbar-list--invisible footer__navbar-list" id="footer-dropdown-menu">
+                            <ul class="footer__navbar-list footer__navbar-list--dropdown footer__navbar-list--invisible" id="footer-dropdown-menu">
                                 <li class="footer__nav-item"><a class="footer__nav-link" href="./faca-o-bem.html">Faça O Bem!</a></li>
                                 <li class="footer__nav-item"><a class="footer__nav-link" href="./solucoes.html">Soluções</a></li>
                                 <li class="footer__nav-item"><a class="footer__nav-link" href="./eventos.html">Eventos</a></li>

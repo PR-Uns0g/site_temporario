@@ -29,6 +29,7 @@
 
 .tile__title {
     color: var(--in-container-title-color);
+    font-family: 'Poppins', sans-serif;
     font-size: var(--subtitle-text-size);
     font-weight: bold;
 }
@@ -136,17 +137,18 @@
         width: 512px;
     }
 
-    .contribute__box--northwest {
+    .contribute__box{
         position: absolute;
-        left: 20px;
         width: 320px;
+    }
+
+    .contribute__box--northwest {
+        left: 20px;
     } 
 
     .contribute__box--southeast {
-        position: absolute;
         right: -20px;
         bottom: -20px;
-        width: 320px;
     }
 
     .contribute__image {

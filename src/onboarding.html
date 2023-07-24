@@ -53,10 +53,10 @@
                     <li>
                         <div class="menu__item menu__item--highlighted">
                             <span class="menu__link" role="button">Saiba Mais</span>
-                            <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"></button>
+                            <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button" aria-controls="header-dropdown-menu"></button>
                             <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
                         </div>
-                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="dropdown-menu"></li>
+                        <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="header-dropdown-menu"></li>
                             <li class="menu__item">
                                 <a class="menu__link" href="./faca-o-bem.html">Faça O Bem!</a>
                                 <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
@@ -648,53 +648,78 @@
             </section>
         </main>
         <footer class="footer" id="footer">
-            <div class="footer__section footer__description">
-                <div class="footer__image"><img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="300" height="70" /></div>
-                <div class="footer__text">
-                    <p><strong>Transformamos tecnologia em conexões.</strong></p>
-                    <p><strong>E conexões dão significado à vida.</strong></p>
-                    <p>
-                        A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>, visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover o bem-estar e dividir
-                        riqueza.
-                    </p>
+            <div class="footer__section">
+                <div class="footer__section-row">
+                    <div class="footer__image"><img src="./imgs/logos/propago_logo_footer.svg" alt="Logo da Propago" width="250" height="70"/></div>
+                    <div class="footer__text">
+                        <p><strong>Transformamos tecnologia em conexões.</strong></p>
+                        <p><strong>E conexões dão significado à vida.</strong></p>
+                        <p>
+                            A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
+                            visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento, promover
+                            o bem-estar e dividir riqueza.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="footer__section footer__pages-navigation">
-                <div class="footer__label">PÁGINAS</div>
-                <nav class="footer__navbar">
-                    <ul class="footer__navbar-list">
-                        <li class="footer__nav-link"><a href="./index.html">Home</a></li>
-                        <li class="footer__nav-link"><a href="./a-propago.html">A Propago</a></li>
-                        <li class="footer__nav-link"><a href="./solucoes.html">Soluções</a></li>
-                        <li class="footer__nav-link"><a href="nossas_ongs.html">Nossas ONGs</a></li>
-                        <li class="footer__nav-link"><a href="./blog/index.html">Blog</a></li>
-                        <li class="footer__nav-link"><a href="./eventos.html">Eventos</a></li>
-                        <li class="footer__nav-link"><a href="./parceiros.html">Parceiros</a></li>
-                        <li class="footer__nav-link"><a href="./contato.html">Contato</a></li>
-                        <li class="footer__nav-link"><a href="./cadastro.html">Cadastro</a></li>
+            <div class="footer__section">
+                <div class="footer__section-row">
+                    <div class="footer__label">PÁGINAS</div>
+                    <nav class="footer__navbar">
+                        <ul class="footer__navbar-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Home</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/index.html">Blog</a></li>
+                            <li>
+                                <div class="footer__nav-item">
+                                    <span role="button">Saiba Mais</span> 
+                                    <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-controls="footer-dropdown-menu"></button>
+                                </div>
+                                <ul class="footer__navbar-list footer__navbar-list--dropdown footer__navbar-list--invisible" id="footer-dropdown-menu">
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./faca-o-bem.html">Faça O Bem!</a></li>
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./solucoes.html">Soluções</a></li>
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./eventos.html">Eventos</a></li>
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./parceiros.html">Parceiros</a></li>
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./contato.html">Contato</a></li>
+                                    <li class="footer__nav-item"><a class="footer__nav-link" href="./cadastro.html">Cadastro</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__section">
+                <div class="footer__section-row">
+                    <div class="footer__label">SIGA-NOS</div>
+                    <div class="footer__social-media-container">
+                        <div class="footer__social-media">
+                            <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                                <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                            </a>
+                        </div>
+                        <div class="footer__social-media">
+                            <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                                <i class="footer__social-media-icon ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                        <div class="footer__social-media">
+                            <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
+                                <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__section-row">
+                    <div class="footer__label">INFORMAÇÕES DA PROPAGO</div>
+                    <ul class="footer__info-container">
+                        <li class="footer__info"><strong class="footer__label">Razão Social:</strong> Propago Consultoria em Gestão Empresarial Ltda.</li>
+                        <li class="footer__info"><strong class="footer__label">E-mail:</strong> mkt@propago.com.br</li>
+                        <li class="footer__info"><strong class="footer__label">CNPJ:</strong> 05.452.059/0001-34</li>
+                        <li class="footer__info"><strong class="footer__label">Cidade:</strong> São Paulo - SP</li>
+                        <li class="footer__info"><strong class="footer__label">Bairro:</strong> Bela Vista (01310-927)</li>
+                        <li class="footer__info"><strong class="footer__label">Logradouro:</strong> Av. Paulista, 2028 - Andar 11</li>
                     </ul>
-                </nav>
-            </div>
-            <div class="footer__section footer__contact">
-                <div class="footer__label">SIGA-NOS</div>
-                <div class="footer__social-media-container">
-                    <div class="footer__social-media">
-                        <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
-                            <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
-                        </a>
-                    </div>
-                    <div class="footer__social-media">
-                        <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
-                            <i class="footer__social-media-icon ri-instagram-fill"></i>
-                        </a>
-                    </div>
-                    <div class="footer__social-media">
-                        <a href="https://www.other.com/company/propago-brasil/" target="_blank" aria-label="linkedin-link">
-                            <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
-                        </a>
-                    </div>
                 </div>
-                <div class="footer__ssl-badge"></div>
             </div>
             <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
         </footer>
