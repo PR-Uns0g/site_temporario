@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" sizes="72x72">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" sizes="114x114">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="/css/core.css">
+
+    <title>Propago - Promover o bem é nosso primordial</title>
+    <meta name="description" content="Página Inicial Da Propago">
+    <link rel="canonical" href="https://propago.com.br">
+
+    <meta property="og:title" content="Propago - Promover o bem é nosso primordial">
+    <meta property="og:description" content="Página Inicial Da Propago">
+    <meta property="og:image" content="/assets/socialImage.png">
+    <meta property="og:image:width" content="2500">
+    <meta property="og:image:height" content="1330">
+    <meta property="og:url" content="https://propago.com.br/">
+    <meta property="og:site_name" content="Propago">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Propago - Promover o bem é nosso primordial">
+    <meta name="twitter:description" content="Página Inicial Da Propago">
+    <meta name="twitter:image" content="/assets/socialImage.png">
+</head>
+
+<body>
+    <header class="header" id="header"> <!-- See about aria-label later -->
+        <a href="/">
+            <div class="logo">
+                <img src="/imgs/logos/propago_logo_header.svg" alt="Logo da Propago" width="185" height="45">
+            </div>
+        </a>
+        <nav class="menu" id="menu-nav">
+            <ul class="menu__item-container">
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="/">Home</a>
+                    <span class="menu__item-clapboard"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/a-propago.html">A Propago</a>
+                    <span class="menu__item-clapboard"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/blog/">Blog</a>
+                    <span class="menu__item-clapboard"></span>
+                </li>
+                <li>
+                    <div class="menu__item menu__item--highlighted">
+                        <span class="menu__link" role="button">Saiba Mais</span>
+                        <button class="menu__dropdown-button ri-arrow-drop-down-fill" id="menu-dropdown-button"
+                            aria-controls="header-dropdown-menu"></button>
+                        <span class="menu__item-clapboard menu__item-clapboard--yellow"></span>
+                    </div>
+                    <ul class="menu__dropdown-links menu__dropdown-links--invisible" id="header-dropdown-menu">
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/faca-o-bem.html">Faça O Bem!</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/solucoes.html">Soluções</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/eventos.html">Eventos</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/parceiros.html">Parceiros</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contato.html">Contato</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/cadastro.html">Cadastro</a>
+                    <span class="menu__item-clapboard menu__item-clapboard--yellow menu__item-clapboard--child"></span>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </nav>
+        <button class="menu-button" id="menu-btn" aria-label="menu-button">
+            <i class="menu-button__icon ri-menu-fill"></i>
+            <i class="menu-button__icon menu-button__icon--invisible ri-close-fill"></i>
+        </button>
+    </header>
+    <main>
+        <section class="block">
+            <div class="block-row">
+                <div class="block-column">
+                    <div class="block-row__image">
+                        <img src="/imgs/orgs/{nome-da-imagem.extensao}" alt="Logo de {nome da organização}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block">
+            <div class="block-row">
+                <div class="block-column">
+                    <header class="block-row__header block-row__header--center">
+                        <h1 class="block-row__title">{Título}</h1>
+                    </header>
+                    <div class="block-column__body">
+                        <p class="block-column__text">
+                            <strong>ESTE É UM PARÁGRAFO:</strong> Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Magnam voluptas odit ipsam nostrum fugit, soluta nemo reprehenderit accusantium, nulla
+                            delectus veniam quidem minima libero sunt corporis accusamus quas, ducimus distinctio.
+                        </p>
+                        <div class="block-column__text-section">
+                            <p class="block-column__text">
+                                Uma lista:
+                            </p>
+                            <ul class="block-column__list">
+                                <li class="block-column__list-item">Item de lista não-ordenada</li>
+                                <li class="block-column__list-item">Item de lista não-ordenada</li>
+                                <li class="block-column__list-item">Item de lista não-ordenada</li>
+                            </ul>
+                        </div>
+                        <h2 class="block-row__subtitle">{Subtítulo}</h2>
+                        <div class="block-column__text-section">
+                            <p class="block-column__text">Mais texto ainda, só que com formatações diferentinhas:</p>
+                            <p class="block-column__text">
+                                <small>Pequeno</small>, <sub>embaixo</sub>, <sup>em cima</sup>,
+                                <strong>negrito</strong>, <em>itálico</em>, <del>riscado</del>, <u>sublinhado</u>,
+                                <code>código</code>, teclas de computador: <kbd>Ctrl + A</kbd>
+                            </p>
+                        </div>
+                        <div class="block-column__text-section">
+                            <p class="block-column__text">Outra lista</p>
+                            <ol class="block-column__list">
+                                <li class="block-column__list-item">Item de lista ordenada</li>
+                                <li class="block-column__list-item">Item de lista ordenada</li>
+                                <li class="block-column__list-item">Item de lista ordenada</li>
+                            </ol>
+                        </div>
+                        <div class="block-row__image">
+                            <img src="https://placehold.it/1920x1080/CCCCCC/000000.png" alt="{Algum texto}" width="192" height="108">
+                            <p>Legenda</p>
+                        </div>
+                        <div class="block-column__text-section">
+                            <p class="block-row__text">Tabela</p>
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Nome</th>
+                                        <th>Nome</th>
+                                        <th>Nome</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>dado</td>
+                                        <td>dado</td>
+                                        <td>dado</td>
+                                        <td>dado</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__image"><img src="/imgs/logos/propago_logo_footer.svg" alt="Logo da Propago"
+                        width="250" height="70" /></div>
+                <div class="footer__text">
+                    <p><strong>Transformamos tecnologia em conexões.</strong></p>
+                    <p><strong>E conexões dão significado à vida.</strong></p>
+                    <p>
+                        A <strong>Propago</strong> oferece produtos e serviços para o <strong>Terceiro Setor</strong>,
+                        visando ampliar a receita de organizações sem fins lucrativos, além de gerar conhecimento,
+                        promover
+                        o bem-estar e dividir riqueza.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__label">PÁGINAS</div>
+                <nav class="footer__navbar">
+                    <ul class="footer__navbar-list">
+                        <li class="footer__nav-item footer__nav-item--active"><a class="footer__nav-link"
+                                href="#header">Home</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="/a-propago.html">A Propago</a>
+                        </li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="/blog/">Blog</a></li>
+                        <li>
+                            <div class="footer__nav-item">
+                                <span role="button">Saiba Mais</span>
+                                <button class="footer__dropdown-button ri-arrow-drop-down-fill"
+                                    id="footer-dropdown-button" aria-controls="footer-dropdown-menu"></button>
+                            </div>
+                            <ul class="footer__navbar-list footer__navbar-list--dropdown footer__navbar-list--invisible"
+                                id="footer-dropdown-menu">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="/faca-o-bem.html">Faça O
+                                        Bem!</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link"
+                                        href="/solucoes.html">Soluções</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link"
+                                        href="/eventos.html">Eventos</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link"
+                                        href="/parceiros.html">Parceiros</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link"
+                                        href="/contato.html">Contato</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link"
+                                        href="/cadastro.html">Cadastro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__section">
+            <div class="footer__section-row">
+                <div class="footer__label">SIGA-NOS</div>
+                <div class="footer__social-media-container">
+                    <div class="footer__social-media">
+                        <a href="https://www.facebook.com/propago.brasil" target="_blank" aria-label="facebook-link">
+                            <i class="footer__social-media-icon ri-facebook-circle-fill"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.instagram.com/propago.brasil/" target="_blank" aria-label="instagram-link">
+                            <i class="footer__social-media-icon ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-media">
+                        <a href="https://www.linkedin.com/company/propago-brasil/" target="_blank"
+                            aria-label="linkedin-link">
+                            <i class="footer__social-media-icon ri-linkedin-box-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section-row">
+                <div class="footer__label">INFORMAÇÕES DA PROPAGO</div>
+                <ul class="footer__info-container">
+                    <li class="footer__info"><strong class="footer__label">Razão Social:</strong> Propago Consultoria em
+                        Gestão Empresarial Ltda.</li>
+                    <li class="footer__info"><strong class="footer__label">E-mail:</strong> mkt@propago.com.br</li>
+                    <li class="footer__info"><strong class="footer__label">CNPJ:</strong> 05.452.059/0001-34</li>
+                    <li class="footer__info"><strong class="footer__label">Cidade:</strong> São Paulo - SP</li>
+                    <li class="footer__info"><strong class="footer__label">Bairro:</strong> Bela Vista (01310-927)</li>
+                    <li class="footer__info"><strong class="footer__label">Logradouro:</strong> Av. Paulista, 2028 -
+                        Andar 11</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__foot">Todos os direitos reservados &#169; 2023 Propago</div>
+    </footer>
+</body>
+<script src="/js/main.js" defer></script>
+
+</html>

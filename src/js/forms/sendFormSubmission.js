@@ -1,5 +1,5 @@
-import { sendToDatabase } from './registerForm.js';
-import { sendToEmail } from './emailForm.js';
+import { sendToDatabase } from '/registerForm.js';
+import { sendToEmail } from '/emailForm.js';
 
 const FORM__EL = document.querySelector('.form');
 
@@ -106,7 +106,7 @@ function createMessageLog(isSuccess, title, messages){
     if(isSuccess){
         let goToHomeBtn = document.createElement('a');
         goToHomeBtn.className = 'message__button';
-        goToHomeBtn.href = './index.html'
+        goToHomeBtn.href = '/'
         goToHomeBtn.innerText = "Ir À Página Principal"
 
         btnsAreaEl.appendChild(goToHomeBtn);

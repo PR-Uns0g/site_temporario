@@ -1,6 +1,6 @@
 const POSTS_CONTAINER_EL = document.querySelector('.posts-container');
 
-const postsURL = "https://blog.propago.com.br/wp-json/wp/v2/posts";
+const postsURL = "https://propago.com.br/blog//wp-json/wp/v2/posts";
 const ALL_THE_POSTS = await getThePosts(postsURL+'?_fields=title,link,_links.wp:featuredmedia,date&per_page=8');
 if(ALL_THE_POSTS){
     ALL_THE_POSTS.forEach(async (postObject) => {    

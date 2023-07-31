@@ -19,12 +19,12 @@ CAROUSEL__ELS.forEach((carouselEl, nthCarousel) =>{
 });
 
 function scrollContainer(containerEl, nthCarousel){
-                                                                        // if the current value scrolled is >= the total scrollWidth of the container
-    if(currentSlideIndex[nthCarousel] > containerEl.children.length-1 || currentSlideIndex[nthCarousel]*containerEl.clientWidth >= containerEl.scrollWidth){
+    // if the current value scrolled is >= the total scrollWidth of the container
+    if(currentSlideIndex[nthCarousel]*containerEl.clientWidth >= containerEl.scrollWidth){
         currentSlideIndex[nthCarousel] = 0;
     }
     else if(currentSlideIndex[nthCarousel] < 0){
-        currentSlideIndex[nthCarousel] = containerEl.children.length-1;
+        currentSlideIndex[nthCarousel] = 2; // CHANGE THIS LATER
     }
 
     containerEl.scroll(currentSlideIndex[nthCarousel]*containerEl.clientWidth, 0);
