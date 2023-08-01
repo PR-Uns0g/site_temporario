@@ -1,3 +1,102 @@
+/* PRODUCT PLAN */
+.product-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    padding: 5em 0;
+}
+
+.product-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    padding: 3em 1em 1em 1em;
+    border: 3px solid #FFFFFF;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+}
+
+.product-plan__top {
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    top: -15px;
+}
+
+.product-plan__top--center {
+    left: 0;
+    display: grid;
+    place-items: center;
+}
+
+.product-plan__name {
+    width: max-content;
+    padding: 5px 8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    background-color: #00CC00;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    z-index: 2;
+}
+
+/* PRICE BOXES */
+.price-box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    text-align: center;
+    overflow: hidden;
+}
+
+.price-box__header {
+    padding: 1em;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.price-box__header--premium {
+    background-color: var(--primary-color);
+}
+
+.price-box__content {
+    display: flex;
+    flex-direction: column;
+    padding: .5em 3em;
+}
+
+.price-box__value {
+    font-size: 3.5em;
+}
+
+.price-box__value--cents {
+    font-size: .5em;
+}
+
+.price-box__footer {
+    padding: .3em 0 1em 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.price-box__icon {
+    font-weight: normal;
+    color: #FF0000;
+}
+
+.price-box__icon--green {
+    color: #00CC00;
+}
+
 /* BLOCK STUFF */
 .block-row__button {
     margin: 10px auto;
@@ -21,7 +120,7 @@
 /* PLANOS */
 .plan{
     background-color: var(--block-foreground-color);
-    border:rgb(58, 50, 50) solid var(--block-foreground-color);
+    border: 3px solid var(--block-foreground-color);
     border-radius: 40px;
     overflow: hidden;
 }
@@ -130,6 +229,14 @@
 @media (min-width: 1024px) {
     .icon-container{
         width: 512px;
+    }
+
+    .product-plan-container, .product-plan {
+        flex-direction: row;
+    }
+
+    .product-plan-container {
+        width: max-content;
     }
 
     .plan-row {

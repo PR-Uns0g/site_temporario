@@ -16,7 +16,7 @@ if(ALL_THE_POSTS){
         let postElement = `
         <article class="post">
             <div class="post__header">
-                <img src="${imageURL}" class="post__image" alt="Imagem do Post"/>
+                <img src="${imageURL}" class="post__image" width="300" height="300" alt="Imagem do Post"/>
             </div>
             <div class="post__body">
                 <h3 class="post__title">${postObject.title.rendered}</h3>

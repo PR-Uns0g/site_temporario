@@ -1,7 +1,6 @@
 .posts-container{
     display: flex;
     gap: 50px;
-    overflow-x: hidden;
 }
 
 .post{

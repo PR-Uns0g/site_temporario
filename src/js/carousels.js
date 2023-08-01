@@ -1,31 +1,26 @@
 const CAROUSEL__ELS = document.querySelectorAll('.carousel');
-let currentSlideIndex = Array(CAROUSEL__ELS.length).fill(0);
-CAROUSEL__ELS.forEach((carouselEl, nthCarousel) =>{
+// let currentSlideIndex = Array(CAROUSEL__ELS.length).fill(0);
+CAROUSEL__ELS.forEach((carouselEl) =>{
     let containerEl = carouselEl.querySelector('.carousel__container');
     // scrolls to the first slide initially
     containerEl.scroll(0,0);
 
     let leftButton = carouselEl.querySelector('.carousel__arrow-button--back');
     leftButton.addEventListener('click', () =>{
-        currentSlideIndex[nthCarousel]--;
-        scrollContainer(containerEl,nthCarousel)
+        scrollContainer(-1,containerEl)
     });
 
     let rightButton = carouselEl.querySelector('.carousel__arrow-button--forward');
     rightButton.addEventListener('click', () =>{
-        currentSlideIndex[nthCarousel]++;
-        scrollContainer(containerEl,nthCarousel);
+        scrollContainer(1,containerEl);
     });
 });
 
-function scrollContainer(containerEl, nthCarousel){
-    // if the current value scrolled is >= the total scrollWidth of the container
-    if(currentSlideIndex[nthCarousel]*containerEl.clientWidth >= containerEl.scrollWidth){
-        currentSlideIndex[nthCarousel] = 0;
+function scrollContainer(modifier,containerEl){
+    if(modifier == 1){
+        containerEl.scrollLeft >= (containerEl.scrollWidth - containerEl.clientWidth) ? containerEl.scroll(0,0) : containerEl.scrollBy(containerEl.clientWidth,0);
     }
-    else if(currentSlideIndex[nthCarousel] < 0){
-        currentSlideIndex[nthCarousel] = 2; // CHANGE THIS LATER
+    else if(modifier == -1){
+        containerEl.scrollLeft < 15 ? containerEl.scroll(containerEl.scrollWidth,0) : containerEl.scrollBy(modifier*containerEl.clientWidth,0);  
     }
-
-    containerEl.scroll(currentSlideIndex[nthCarousel]*containerEl.clientWidth, 0);
 }

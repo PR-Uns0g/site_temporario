@@ -513,7 +513,6 @@ a {
 .carousel__arrow-button{
     position: absolute;
     top: 45%;
-    display: flex;
     display: none;
     align-items: center;
     color: var(--primary-color);
@@ -859,7 +858,7 @@ a {
 
     /* CAROUSEL */
     .carousel__arrow-button {
-        display: block;
+        display: flex;
     }
 
     .carousel__disclaimer{
