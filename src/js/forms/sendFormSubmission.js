@@ -1,3 +1,8 @@
+window.addEventListener('beforeunload', (ev) => {
+    ev.preventDefault();
+    confirm();
+});
+
 import { sendToDatabase } from './registerForm.js';
 import { sendToEmail } from './emailForm.js';
 
