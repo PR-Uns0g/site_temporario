@@ -19,21 +19,23 @@
 
     <title>Propago - Cadastre a sua organização</title>
     <meta name="description" content="Para cadastrar sua ONG, OSC ou OSCIP, basta preencher um formulário com alguns dados da sua organização">
-    <link rel="canonical" href="https://propago.com.br">
+    <link rel="canonical" href="https://propago.com.br/cadastro.html">
     
     <meta property="og:title" content="Propago - Cadastre a sua organização">
     <meta property="og:description" content="Para cadastrar sua ONG, OSC ou OSCIP, basta preencher um formulário com alguns dados da sua organização">
-    <meta property="og:image" content="./assets/socialImage.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="/assets/socialImage.webp">
+    <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="2500">
     <meta property="og:image:height" content="1330">
-    <meta property="og:url" content="https://propago.com.br/">
+    <meta property="og:url" content="https://propago.com.br/cadastro.html">
     <meta property="og:site_name" content="Propago">
     <meta property="og:type" content="website">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Propago - Cadastre a sua organização">
     <meta name="twitter:description" content="Para cadastrar sua ONG, OSC ou OSCIP, basta preencher um formulário com alguns dados da sua organização">
-    <meta name="twitter:image" content="./assets/socialImage.webp">
+    <meta name="twitter:image" content="/assets/socialImage.webp">
 
 </head>
 
@@ -108,11 +110,11 @@
                             </p>
                         </header>
                         <div class="form">
-                            <form class="form__container" method="post" data-type="test_organization_signup">
+                            <form class="form__container" method="post" data-type="organization_signup">
                                 <div class="form__meta">
                                     <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se Para Receber Os Serviços Da Propago" disabled>
                                     <input type="hidden" class="form__metadata" name="success_modal_title" value="O Cadastro Foi Realizado" disabled>
-                                    <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contato com a sua organização pelo e-mail enviado" disabled>
+                                    <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contato com a sua organização pelo e-mail fornecido" disabled>
                                 </div>
                                 <div class="form__header">
                                     <h3 class="form__title">CADASTRO DE ORGANIZAÇÃO</h3>
@@ -122,7 +124,7 @@
                                     <fieldset class="form__field-group">
                                         <legend class="form__field-title">Informações Da Organização</legend>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="org-name" class="form__label" data-role="field_question">Nome Da Organização</label>
+                                            <label for="org-name" class="form__label" data-role="field_question">Nome Da Organização*</label>
                                             <input type="text" class="form__input" data-role="field_answer" id="org-name" name="name" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
@@ -134,7 +136,7 @@
                                             <textarea class="form__input form__input--textbox" data-role="field_answer" id="org-social-media" name="organization_social_media"></textarea>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="org-field" class="form__label" data-role="field_question">Área De Atuação Da Organização</label>
+                                            <label for="org-field" class="form__label" data-role="field_question">Área De Atuação Da Organização*</label>
                                             <select class="form__input form__select" data-role="field_answer" id="org-field" name="organization_field" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Arte e Cultura" class="form__option">Arte e Cultura</option>
@@ -153,7 +155,7 @@
                                             </select>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="org-legal-structure" class="form__label" data-role="field_question">Estrutura Jurídica</label>
+                                            <label for="org-legal-structure" class="form__label" data-role="field_question">Estrutura Jurídica*</label>
                                             <select class="form__input form__select" data-role="field_answer" id="org-legal-structure" name="organization_legal_structure" required>
                                                 <option label="Selecione uma opção" class="form__option" selected="selected" disabled="disabled"></option>
                                                 <option value="Associação" class="form__option">Associação</option>
@@ -166,22 +168,22 @@
                                     <fieldset class="form__field-group">
                                         <legend class="form__field-title">Informações Do Responsável</legend>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="spokeperson-name" class="form__label" data-role="field_question">Nome Do Responsável</label>
+                                            <label for="spokeperson-name" class="form__label" data-role="field_question">Nome Do Responsável*</label>
                                             <input type="text" class="form__input" data-role="field_answer" id="spokeperson-name" name="spokeperson_name" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="spokeperson-position" class="form__label" data-role="field_question">Cargo Do Responsável</label>
+                                            <label for="spokeperson-position" class="form__label" data-role="field_question">Cargo Do Responsável*</label>
                                             <input type="text" class="form__input" data-role="field_answer" id="spokeperson-position" name="spokeperson_position" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
                                             <label for="spokeperson-phone-number" class="form__label" data-role="field_question">Telefone Do Responsável (com
-                                                DDD)</label>
+                                                DDD)*</label>
                                             <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="spokeperson-phone-number"
-                                                name="spokeperson_phone_number" minlength="15" maxlength="15"
+                                                name="spokeperson_phone_number" pattern=".{15,15}"
                                                 placeholder="(__) _____-____" required="required"/>
                                         </div>
                                         <div class="form__field" data-role="field_container">
-                                            <label for="spokeperson-email-address" class="form__label" data-role="field_question">Email Do Responsável</label>
+                                            <label for="spokeperson-email-address" class="form__label" data-role="field_question">Email Do Responsável*</label>
                                             <input type="email" class="form__input" data-role="field_answer" id="spokeperson-email-address" name="email"
                                                 required="required"/>
                                         </div>
@@ -232,7 +234,7 @@
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/">Blog</a></li>
                         <li>
-                            <div class="footer__nav-item">
+                            <div class="footer__nav-item footer__nav-item--dropdown">
                                 <span role="button">Saiba Mais</span> 
                                 <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-label="footer-other-pages-dropdown-button" aria-controls="footer-dropdown-menu"></button>
                             </div>

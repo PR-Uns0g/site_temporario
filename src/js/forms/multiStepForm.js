@@ -50,6 +50,9 @@ SUBMIT_BTN__EL.addEventListener('click', () => {
     let allInputsEls = [...FORM__CTN.querySelectorAll('.form__input')];
     allInputsEls.forEach((inputEl) => {
         if (!inputEl.checkValidity()) {
+            inputEl.previousElementSibling.classList.add('form__label--invalid');
+            inputEl.classList.add('form__input--invalid');
+
             let stepIndex = inputEl.closest('.form__step').dataset.index;
             let groupName = inputEl.closest('.form__field-group').firstElementChild.innerText;
             let errorEl = createErrorEl(inputEl, stepIndex, groupName);
@@ -63,9 +66,13 @@ SUBMIT_BTN__EL.addEventListener('click', () => {
 
             inputEl.addEventListener('input', () => {
                 if (inputEl.checkValidity()) {
+                    inputEl.previousElementSibling.classList.remove('form__label--invalid');
+                    inputEl.classList.remove('form__input--invalid');
                     ERRORS__CTN.removeChild(errorEl)
                 }
                 else {
+                    inputEl.previousElementSibling.classList.add('form__label--invalid');
+                    inputEl.classList.add('form__input--invalid');
                     ERRORS__CTN.appendChild(errorEl);
                 }
             });

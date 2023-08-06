@@ -7,20 +7,20 @@ CAROUSEL__ELS.forEach((carouselEl) =>{
 
     let leftButton = carouselEl.querySelector('.carousel__arrow-button--back');
     leftButton.addEventListener('click', () =>{
-        scrollContainer(-1,containerEl)
+        scrollContainer('left',containerEl)
     });
 
     let rightButton = carouselEl.querySelector('.carousel__arrow-button--forward');
     rightButton.addEventListener('click', () =>{
-        scrollContainer(1,containerEl);
+        scrollContainer('right',containerEl);
     });
 });
 
-function scrollContainer(modifier,containerEl){
-    if(modifier == 1){
+function scrollContainer(direction,containerEl){
+    if(direction == 'right'){
         containerEl.scrollLeft >= (containerEl.scrollWidth - containerEl.clientWidth) ? containerEl.scroll(0,0) : containerEl.scrollBy(containerEl.clientWidth,0);
     }
-    else if(modifier == -1){
-        containerEl.scrollLeft < 15 ? containerEl.scroll(containerEl.scrollWidth,0) : containerEl.scrollBy(modifier*containerEl.clientWidth,0);  
+    else if(direction == 'left'){
+        containerEl.scrollLeft < 15 ? containerEl.scroll(containerEl.scrollWidth,0) : containerEl.scrollBy(-containerEl.clientWidth,0);  
     }
 }

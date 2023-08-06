@@ -131,7 +131,7 @@
                                         <span class="form-nav__item-label">Acessos De TI</span>
                                     </div>
                                 </nav>
-                                <form class="form__container" method="post" data-type="test_onboarding">
+                                <form class="form__container" action="https://menir-prod-4zzog2c4tq-uc.a.run.app/api/form_submit" method="post" data-type="onboarding">
                                     <div class="form__meta">
                                         <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se No Formulário De Onboarding" disabled>
                                         <input type="hidden" class="form__metadata" name="success_modal_title" value="O Cadastro Foi Realizado" disabled>
@@ -154,11 +154,11 @@
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-cnpj" class="form__label" data-role="field_question">CNPJ*</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="org_cnpj" minlength="18" maxlength="18" placeholder="__.___.___/____-__" required />
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="org_cnpj" placeholder="__.___.___/____-__" required="required" pattern=".{15}">
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-phone-number" class="form__label" data-role="field_question">Telefone Da Organização (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org_phone" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org_phone" placeholder="(__) _____-____" required="required" pattern=".{15}">
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-foundation-date" class="form__label" data-role="field_question">Data De Fundação*</label>
@@ -169,7 +169,7 @@
                                             <legend class="form__field-title">Localização</legend>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="locale-zipcode" class="form__label" data-role="field_question">CEP*</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="locale_zip_code" minlength="9" maxlength="9" placeholder="_____-___" required />
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="locale_zip_code" pattern=".{15,}" placeholder="_____-___" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="locale-address" class="form__label" data-role="field_question">Endereço Completo (com número e complemento)*</label>
@@ -192,7 +192,7 @@
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="head-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head_phone_number" minlength="15" maxlength="15" placeholder="(__) _____-____" required />
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head_phone_number" pattern=".{15}" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="head-address" class="form__label" data-role="field_question">Endereço*</label>
@@ -231,7 +231,7 @@
                                             <legend class="form__field-title">Sobre O Administrador Financeiro</legend>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="adm-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" minlength="15" maxlength="15" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" pattern=".{15}" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="adm-email" class="form__label" data-role="field_question">E-Mail*</label>
@@ -661,7 +661,7 @@
                             <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
                             <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/">Blog</a></li>
                             <li>
-                                <div class="footer__nav-item">
+                                <div class="footer__nav-item footer__nav-item--dropdown">
                                     <span role="button">Saiba Mais</span> 
                                     <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-label="footer-other-pages-dropdown-button" aria-controls="footer-dropdown-menu"></button>
                                 </div>

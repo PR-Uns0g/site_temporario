@@ -1,13 +1,19 @@
-import { sendToDatabase } from '/registerForm.js';
-import { sendToEmail } from '/emailForm.js';
+import { sendToDatabase } from './registerForm.js';
+import { sendToEmail } from './emailForm.js';
 
 const FORM__EL = document.querySelector('.form');
 
 const FORM_CTN__EL = document.querySelector('.form__container');
+
+let successMessages = {
+    title: FORM_CTN__EL.querySelector('[name="success_modal_title"]').value,
+    messages: FORM_CTN__EL.querySelector('[name="success_modal_messages"]').value.split(',')
+}
+
 FORM_CTN__EL.addEventListener('submit', async (ev) =>{
     ev.preventDefault();
 
-    let formDataObject = {
+    let databasePayload = {
         form_type: FORM_CTN__EL.dataset.type,
         values: []
     }
@@ -60,11 +66,12 @@ FORM_CTN__EL.addEventListener('submit', async (ev) =>{
             delete emailRequestBody[`${questionValue}`];
         }
         else{
-            formDataObject.values.push(menirRequestBodyValues);
+            databasePayload.values.push(menirRequestBodyValues);
         }
     });
-
-    let menirResponse = await sendToDatabase(formDataObject);
+    
+    createLoadingEl();
+    let menirResponse = await sendToDatabase(databasePayload);
     if(!menirResponse.success) { 
         createMessageLog(false, 'Não Foi Possível Conectar Com O Banco De Dados', ['Perdão, volte mais tarde para tentar novamente']);
         FORM__EL.scrollIntoView();
@@ -72,7 +79,7 @@ FORM_CTN__EL.addEventListener('submit', async (ev) =>{
         console.log(menirResponse); 
     }
     else {
-        createMessageLog(true, document.querySelector('[name="success_modal_title"]').value, document.querySelector('[name="success_modal_messages"]').value.split(','));
+        createMessageLog(true, successMessages.title, successMessages.messages);
         FORM__EL.scrollIntoView();
 
         console.log(menirResponse); 
@@ -81,6 +88,18 @@ FORM_CTN__EL.addEventListener('submit', async (ev) =>{
         console.log(emailResponse); 
     }
 });
+
+function createLoadingEl(){
+    let loaderHTML = `
+    <div class="loader">
+        <div class="loader__circle">
+        </div>
+        <span class="loader__message">O seu cadastro está sendo processado...</span>
+    </div>
+    `
+    FORM__EL.innerHTML = loaderHTML;
+}
+
 
 function createMessageLog(isSuccess, title, messages){
     let messageHTML = `
@@ -107,7 +126,7 @@ function createMessageLog(isSuccess, title, messages){
         let goToHomeBtn = document.createElement('a');
         goToHomeBtn.className = 'message__button';
         goToHomeBtn.href = '/'
-        goToHomeBtn.innerText = "Ir À Página Principal"
+        goToHomeBtn.innerText = "Voltar À Página Principal"
 
         btnsAreaEl.appendChild(goToHomeBtn);
     }

@@ -19,21 +19,23 @@
     
     <title>Propago - Entre em contato conosco</title>
     <meta name="description" content="Mande uma mensagem para o nosso e-mail para esclarecer as suas dúvidas como doador ou como organização">
-    <link rel="canonical" href="https://propago.com.br">
+    <link rel="canonical" href="https://propago.com.br/contato.html">
     
     <meta property="og:title" content="Propago - Entre em contato conosco">
     <meta property="og:description" content="Mande uma mensagem para o nosso e-mail para esclarecer as suas dúvidas como doador ou como organização">
-    <meta property="og:image" content="./assets/socialImage.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="/assets/socialImage.webp">
+    <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="2500">
     <meta property="og:image:height" content="1330">
-    <meta property="og:url" content="https://propago.com.br/">
+    <meta property="og:url" content="https://propago.com.br/contato.html">
     <meta property="og:site_name" content="Propago">
     <meta property="og:type" content="website">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Propago - Entre em contato conosco">
     <meta name="twitter:description" content="Mande uma mensagem para o nosso e-mail para esclarecer as suas dúvidas como doador ou como organização">
-    <meta name="twitter:image" content="./assets/socialImage.webp">
+    <meta name="twitter:image" content="/assets/socialImage.webp">
 </head>
 
 <body>
@@ -118,32 +120,32 @@
                             <strong class="block-row__text--purple">contato@propago.com</strong>
                         </p>
                     </div>
-                    <form method="post" class="form__container" data-type="test_contact">
+                    <form method="post" class="form__container" data-type="contact">
                         <div class="form__meta">
-                            <input type="hidden" class="form__metadata" name="success_modal_title" value="Teu E-mail Foi Enviado" disabled>
-                            <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde para entrarmos em contato contigo pelo e-mail :)" disabled>
+                            <input type="hidden" class="form__metadata" name="success_modal_title" value="Seu E-mail Foi Enviado" disabled>
+                            <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até entrarmos em contato com você pelo e-mail :)" disabled>
                         </div>
                         <div class="form__field" data-role="field_container">
-                            <label class="form__label" data-role="field_question" for="full-name">Nome Completo</label>
+                            <label class="form__label" data-role="field_question" for="full-name">Nome Completo*</label>
                             <input class="form__input" type="text" data-role="field_answer" name="name" id="full-name"
                                 required="required"/>
                         </div>
                         <div class="form__field" data-role="field_container">
-                            <label class="form__label" data-role="field_question" for="email-address">E-Mail</label>
+                            <label class="form__label" data-role="field_question" for="email-address">E-mail*</label>
                             <input class="form__input" type="email-address" data-role="field_answer" name="email"
                                 id="email-address" required="required"/>
                         </div>
                         <div class="form__field" data-role="field_container">
                             <label class="form__label" data-role="field_question" for="phone-number">Telefone (Whatsapp)</label>
                             <input class="form__input" type="tel" name="phone_number" data-role="field_answer" data-mask="cellphone" id="phone-number"
-                                placeholder="(__) _____-____" required="required"/>
+                                placeholder="(__) _____-____"/>
                         </div>
                         <div class="form__field">
-                            <label class="form__label" for="subject">Assunto</label>
+                            <label class="form__label" for="subject">Assunto*</label>
                             <input class="form__input" type="text" name="_subject" id="subject" required="required"/>
                         </div>
                         <div class="form__field" data-role="field_container">
-                            <label class="form__label" data-role="field_question" for="message">Mensagem</label>
+                            <label class="form__label" data-role="field_question" for="message">Mensagem*</label>
                             <textarea class="form__input" name="email_message" data-role="field_answer" id="message" cols="25" rows="5"
                                 required="required"></textarea>
                         </div>
@@ -197,7 +199,7 @@
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
                         <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/">Blog</a></li>
                         <li>
-                            <div class="footer__nav-item">
+                            <div class="footer__nav-item footer__nav-item--dropdown">
                                 <span role="button">Saiba Mais</span> 
                                 <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-label="footer-other-pages-dropdown-button" aria-controls="footer-dropdown-menu"></button>
                             </div>
@@ -251,7 +253,6 @@
     </footer>
 </body>
 <script src="./js/main.js" defer></script>
-<!-- <script src="./js/forms/contato.js" defer></script> -->
 <script src="./js/forms/masks.js" defer></script>
 <script src="./js/forms/sendFormSubmission.js" type="module" defer></script>
 </html>

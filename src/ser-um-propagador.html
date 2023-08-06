@@ -11,21 +11,23 @@
 
         <title>Propago - Seja um propagador</title>
         <meta name="description" content="Utilize a sua influência para propagar o bem conosco e ajudar a organização que você acredita">
-        <link rel="canonical" href="https://propago.com.br">
+        <link rel="canonical" href="https://propago.com.br/ser-um-propagador.html">
         
         <meta property="og:title" content="Propago - Seja um propagador">
         <meta property="og:description" content="Utilize a sua influência para propagar o bem conosco e ajudar a organização que você acredita">
-        <meta property="og:image" content="./assets/socialImage.webp">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:image" content="/assets/socialImage.webp">
+        <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="2500">
         <meta property="og:image:height" content="1330">
-        <meta property="og:url" content="https://propago.com.br/">
+        <meta property="og:url" content="https://propago.com.br/ser-um-propagador.html">
         <meta property="og:site_name" content="Propago">
         <meta property="og:type" content="website">
         
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Propago - Seja um propagador">
         <meta name="twitter:description" content="Utilize a sua influência para propagar o bem conosco e ajudar a organização que você acredita">
-        <meta name="twitter:image" content="./assets/socialImage.webp">
+        <meta name="twitter:image" content="/assets/socialImage.webp">
     </head>
 
     <body>
@@ -116,11 +118,11 @@
                                 </p>
                             </header>
                             <div class="form">
-                                <form class="form__container" method="post" data-type="test_propagator_signup">
+                                <form class="form__container" method="post" data-type="propagator_signup">
                                     <div class="form__meta">
                                         <input type="hidden" class="form__metadata" name="_subject" value="Cadastrou-se Como Voluntário" disabled>
-                                        <input type="hidden" class="form__metadata" name="success_modal_title" value="Teu Cadastro Foi Realizado" disabled>
-                                        <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em contigo pelo e-mail :)" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_title" value="Seu Cadastro Foi Realizado" disabled>
+                                        <input type="hidden" class="form__metadata" name="success_modal_messages" value="Aguarde até que entremos em com você pelo e-mail :)" disabled>
                                     </div>
                                     <div class="form__header">
                                         <h3 class="form__title">CADASTRO DE PROPAGADOR</h3>
@@ -132,30 +134,30 @@
                                                 Informações Pessoais
                                             </legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="full-name" class="form__label" data-role="field_question">Nome Completo</label>
+                                                <label for="full-name" class="form__label" data-role="field_question">Nome Completo*</label>
                                                 <input type="text" class="form__input" data-role="field_answer" name="name" id="full-name" required="required"/>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="birthday-date" class="form__label" data-role="field_question">Data De Nascimento</label>
+                                                <label for="birthday-date" class="form__label" data-role="field_question">Data De Nascimento*</label>
                                                 <input type="date" class="form__input" data-role="field_answer" name="birthday_date" id="birthday-date" required="required"/>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="email-address" class="form__label" data-role="field_question">E-mail</label>
+                                                <label for="email-address" class="form__label" data-role="field_question">E-mail*</label>
                                                 <input type="email" class="form__input" data-role="field_answer" name="email" id="email-address" required="required"/>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="phone-number" class="form__label" data-role="field_question">Celular</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" name="phone_number" id="phone-number" minlength="15" maxlength="15" placeholder="(__) _____-____" required="required"/>
+                                                <label for="phone-number" class="form__label" data-role="field_question">Celular*</label>
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" name="phone_number" id="phone-number" pattern=".{15}" placeholder="(__) _____-____" required="required"/>
                                             </div>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="social-media" class="form__label" data-role="field_question">Links para as redes sociais:</label>
+                                                <label for="social-media" class="form__label" data-role="field_question">Links para as redes sociais:*</label>
                                                 <textarea class="form__input form__input--textbox" data-role="field_answer" name="social_media" id="social-media" placeholder="https://www.facebook.com/nomeDoPerfilOuGrupo&#10;https://instagram.com/nomeDoPerfil&#10;https://www.youtube.com/@nomeDoCanal" required="required"/></textarea>
                                             </div>
                                         </fieldset>
                                         <fieldset class="form__field-group">
                                             <legend class="form__field-title">Como Quer Contribuir</legend>
                                             <div class="form__field" data-role="field_container">
-                                                <label for="propagate-good" class="form__label" data-role="field_question">Como Quer Propagar O Bem?</label>
+                                                <label for="propagate-good" class="form__label" data-role="field_question">Como Quer Propagar O Bem?*</label>
                                                 <textarea class="form__input form__input--textbox" data-role="field_answer" name="propagate_good" id="propagate-good" placeholder="Quero contribuir publicando posts, stories e shorts no meu perfil do Facebook, Instagram e canal do Youtube, que divulguem o trabalho da [organização(ões) que quer ajudar] e incentivem minha base de seguidores a doar para esta(s) organização(ões)" required="required"></textarea>
                                             </div>
                                         </fieldset>
@@ -175,7 +177,7 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
+                            </div> 
                         </section>
                     </div>
                 </div>
@@ -205,7 +207,7 @@
                             <li class="footer__nav-item"><a class="footer__nav-link" href="./a-propago.html">A Propago</a></li>
                             <li class="footer__nav-item"><a class="footer__nav-link" href="./blog/">Blog</a></li>
                             <li>
-                                <div class="footer__nav-item">
+                                <div class="footer__nav-item footer__nav-item--dropdown">
                                     <span role="button">Saiba Mais</span> 
                                     <button class="footer__dropdown-button ri-arrow-drop-down-fill" id="footer-dropdown-button" aria-label="footer-other-pages-dropdown-button" aria-controls="footer-dropdown-menu"></button>
                                 </div>

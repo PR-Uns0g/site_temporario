@@ -79,6 +79,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu__item--active{
@@ -485,6 +486,12 @@ a {
     font-size: var(--normal-text-size);
 }
 
+.box__link {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    font-weight: 800;
+}
+
 .box__footer{
     padding-top: 10px;
 }
@@ -676,6 +683,10 @@ a {
 
 .footer__nav-item {
     padding: 5px;
+}
+
+.footer__nav-item--dropdown {
+    cursor: pointer;
 }
 
 .footer__nav-item--active{
