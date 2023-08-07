@@ -1,0 +1,3 @@
+ErrorDocument 403 /erros/acesso-negado.html
+ErrorDocument 404 /erros/nao-encontrado.html
+ErrorDocument 500 /erros/erro-interno.html

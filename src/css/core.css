@@ -731,14 +731,6 @@ a {
     font-size: var(--subtitle-text-size);
 }
 
-.footer__info-container{
-    list-style: none;
-}
-
-.footer__info {
-    font-style: italic;
-}
-
 .footer__foot {
     padding: 15px 0;
     background-color: var(--text-color);

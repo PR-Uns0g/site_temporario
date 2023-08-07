@@ -130,7 +130,7 @@ function createMessageLog(isSuccess, title, messages){
     if(isSuccess){
         let goToHomeBtn = document.createElement('a');
         goToHomeBtn.className = 'message__button';
-        goToHomeBtn.href = '/'
+        goToHomeBtn.href = './index.html'
         goToHomeBtn.innerText = "Voltar À Página Principal"
 
         btnsAreaEl.appendChild(goToHomeBtn);

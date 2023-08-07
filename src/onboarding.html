@@ -154,11 +154,11 @@
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-cnpj" class="form__label" data-role="field_question">CNPJ*</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="org_cnpj" placeholder="__.___.___/____-__" required="required" pattern=".{15}">
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cnpj" id="org-cnpj" name="org_cnpj" placeholder="__.___.___/____-__" required="required" pattern=".{18}" title="O número do CNPJ deve conter 18 caracteres">
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-phone-number" class="form__label" data-role="field_question">Telefone Da Organização (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org_phone" placeholder="(__) _____-____" required="required" pattern=".{15}">
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="org-phone-number" name="org_phone" placeholder="(__) _____-____" required="required" pattern=".{15}" title="O número de telefone celular deve conter 15 caracteres">
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="org-foundation-date" class="form__label" data-role="field_question">Data De Fundação*</label>
@@ -169,7 +169,7 @@
                                             <legend class="form__field-title">Localização</legend>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="locale-zipcode" class="form__label" data-role="field_question">CEP*</label>
-                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="locale_zip_code" pattern=".{15,}" placeholder="_____-___" required />
+                                                <input type="text" class="form__input" data-role="field_answer" data-mask="cep" id="locale-zipcode" name="locale_zip_code" pattern=".{15}" title="O número de telefone celular deve conter 15 caracteres" placeholder="_____-___" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="locale-address" class="form__label" data-role="field_question">Endereço Completo (com número e complemento)*</label>
@@ -192,7 +192,7 @@
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="head-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head_phone_number" pattern=".{15}" placeholder="(__) _____-____" required />
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" id="head-phone" name="head_phone_number" pattern=".{15}" title="O número de telefone celular deve conter 15 caracteres" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="head-address" class="form__label" data-role="field_question">Endereço*</label>
@@ -231,7 +231,7 @@
                                             <legend class="form__field-title">Sobre O Administrador Financeiro</legend>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="adm-phone" class="form__label" data-role="field_question">Telefone (com DDD)*</label>
-                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" pattern=".{15}" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
+                                                <input type="tel" class="form__input" data-role="field_answer" data-mask="cellphone" pattern=".{15}" title="O número de telefone celular deve conter 15 caracteres" id="adm-phone" name="finance_manager__phone_number" placeholder="(__) _____-____" required />
                                             </div>
                                             <div class="form__field" data-role="field_container">
                                                 <label for="adm-email" class="form__label" data-role="field_question">E-Mail*</label>
