@@ -10,7 +10,6 @@ export async function sendToDatabase(bodyContent) {
         body: JSON.stringify(bodyContent),
     }
 
-    // Getting a result
     let result = await fetch('https://menir-prod-4zzog2c4tq-uc.a.run.app/api/form_submit', options)
     .then((response) => { return response.json() })
     .catch((error) => { return error; });

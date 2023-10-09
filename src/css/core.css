@@ -597,6 +597,7 @@ a {
 }
 
 .card{
+    position: relative;
     align-items: center;
     gap: 20px;
     padding: 20px;
@@ -612,11 +613,11 @@ a {
 }
 
 .card__image {
-    width: 240px;
-    height: 200px;
+    width: 400px;
+    height: 210px;
     background-position: center;
     background-size: cover;
-} 
+}
 
 /* ÍCONE DA PROPAGO*/
 .propago-icon {

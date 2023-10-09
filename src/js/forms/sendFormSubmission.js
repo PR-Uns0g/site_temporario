@@ -25,6 +25,7 @@ FORM_CTN__EL.addEventListener('submit', async (ev) =>{
     let emailRequestBody = new Object({
         "_subject": document.querySelector('[name="name"]').value+' - '+document.querySelector('[name="_subject"]').value, 
         "_replyto": document.querySelector('[name="email"]').value,
+        "_cc": 'paola@propago.com.br,patricia@propago.com.br,juliana.ricci@propago.com.br',
         "_template": 'box',
     })
 
